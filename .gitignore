@@ -1,4 +1,5 @@
 dist/
+*.pem
 .DS_Store
 *.swp
 *.swo
