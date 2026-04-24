@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Preferiti · bwlab</title>
+  <link rel="stylesheet" href="manager.css">
+  <script src="theme-init.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand">bwlab <span>Preferiti</span></div>
+    <input id="search" type="search" placeholder="Cerca tra i preferiti  (premi /)" spellcheck="false">
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle" title="Cambia tema (dark/light)">
+        <span class="theme-icon-dark">🌙</span>
+        <span class="theme-icon-light">☀</span>
+      </button>
+      <div class="meta" id="meta"></div>
+    </div>
+  </header>
+  <main>
+    <aside id="sidebar">
+      <div class="section-title">Viste</div>
+      <div class="presets">
+        <button class="preset" data-preset="all">Tutti</button>
+        <button class="preset" data-preset="recent">Recenti 30gg</button>
+        <button class="preset" data-preset="oldest">Piu' vecchi 100</button>
+        <button class="preset" data-preset="stray">Senza cartella</button>
+      </div>
+      <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;padding-right:12px">
+        <span>Cartelle</span>
+        <button id="new-root-folder" class="folder-act" title="Nuova cartella in Barra preferiti">+ nuova</button>
+      </div>
+      <nav id="tree"></nav>
+    </aside>
+    <section id="content">
+      <div id="breadcrumb"></div>
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <label>Ordine</label>
+          <select id="sort">
+            <option value="manual">Manuale</option>
+            <option value="title">Titolo</option>
+            <option value="date-desc">Recenti prima</option>
+            <option value="date-asc">Vecchi prima</option>
+            <option value="domain">Dominio</option>
+          </select>
+        </div>
+        <span id="count"></span>
+      </div>
+      <ul id="list"></ul>
+    </section>
+  </main>
+  <footer id="hint">
+    <kbd>/</kbd> cerca · <kbd>↑</kbd><kbd>↓</kbd> naviga · <kbd>Enter</kbd> apri · <kbd>Ctrl+Click</kbd> nuova tab · <kbd>E</kbd> rinomina · <kbd>Del</kbd> elimina · <kbd>Esc</kbd> reset
+  </footer>
+  <script src="manager.js"></script>
+</body>
+</html>

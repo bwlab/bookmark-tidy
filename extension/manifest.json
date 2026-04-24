@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Tidy (bwlab)",
+  "version": "0.1.0",
+  "description": "Normalizza e ristruttura i preferiti Chrome via API chrome.bookmarks (sync-safe).",
+  "permissions": ["bookmarks", "tabs"],
+  "action": {
+    "default_title": "Bookmark Tidy",
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides": {
+    "bookmarks": "manager.html"
+  },
+  "commands": {
+    "open-manager": {
+      "suggested_key": { "default": "Alt+Shift+B" },
+      "description": "Apri Bookmark Manager bwlab"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

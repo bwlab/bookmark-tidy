@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.swo
+*~
+node_modules/
+.idea/
+.vscode/
+*.log
+Bookmarks.bak*
+*.crx
+*.zip

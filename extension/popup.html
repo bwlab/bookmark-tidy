@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bookmark Tidy</title>
+  <style>
+    body { font: 13px/1.4 system-ui, sans-serif; width: 520px; margin: 0; padding: 12px; }
+    h1 { font-size: 14px; margin: 0 0 8px; }
+    button { padding: 6px 10px; margin: 2px 4px 2px 0; cursor: pointer; }
+    button.primary { background: #1a73e8; color: #fff; border: 0; border-radius: 4px; }
+    button.danger { background: #d93025; color: #fff; border: 0; border-radius: 4px; }
+    #log { margin-top: 10px; max-height: 360px; overflow: auto;
+           font: 11px/1.35 ui-monospace, monospace; white-space: pre-wrap;
+           background: #f6f8fa; padding: 8px; border: 1px solid #d1d5da; border-radius: 4px; }
+    .row { margin: 4px 0; }
+    .hint { color: #555; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>Bookmark Tidy — bwlab</h1>
+  <div class="row">
+    <button id="btn-open-manager" class="primary" style="width:100%;padding:10px;font-size:14px">📑 Apri Bookmark Manager (Alt+Shift+B)</button>
+  </div>
+  <div class="row">
+    <button id="btn-analyze" class="primary">1. Analizza Fase 1</button>
+    <button id="btn-phase1" class="danger" disabled>2. Applica Fase 1</button>
+  </div>
+  <div class="row">
+    <button id="btn-analyze2" class="primary">3. Analizza Fase 2</button>
+    <button id="btn-phase2" class="danger">4. Applica Fase 2</button>
+  </div>
+  <div class="row">
+    <button id="btn-consolidate" class="danger">5. Consolida AI + Google (flat)</button>
+    <button id="btn-clear">Pulisci log</button>
+  </div>
+  <div class="hint">Analizza prima, applica dopo. Modifiche via chrome.bookmarks → sync propaga a telefono/tablet/altri PC.</div>
+  <div id="log">Pronto.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
