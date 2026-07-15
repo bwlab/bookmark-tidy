@@ -1,0 +1,277 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Limpia, deduplica y organiza tus marcadores de Chrome con una interfaz moderna. Compatible con sync (API chrome.bookmarks)."
+  },
+  "pageTitle": {
+    "message": "Marcadores · bwlab"
+  },
+  "brandTagline": {
+    "message": "Marcadores"
+  },
+  "searchPlaceholder": {
+    "message": "Buscar en marcadores (pulsa /)"
+  },
+  "themeToggleTitle": {
+    "message": "Cambiar tema (oscuro/claro)"
+  },
+  "viewsLabel": {
+    "message": "Vistas"
+  },
+  "presetAll": {
+    "message": "Todos"
+  },
+  "presetRecent": {
+    "message": "Recientes 30d"
+  },
+  "presetOldest": {
+    "message": "Más antiguos 100"
+  },
+  "presetStray": {
+    "message": "Sin carpeta"
+  },
+  "foldersLabel": {
+    "message": "Carpetas"
+  },
+  "newFolderRootTitle": {
+    "message": "Nueva carpeta en la barra de marcadores"
+  },
+  "newFolderBtn": {
+    "message": "+ nueva"
+  },
+  "sortLabel": {
+    "message": "Orden"
+  },
+  "sortManual": {
+    "message": "Manual"
+  },
+  "sortTitle": {
+    "message": "Título"
+  },
+  "sortDateDesc": {
+    "message": "Más recientes primero"
+  },
+  "sortDateAsc": {
+    "message": "Más antiguos primero"
+  },
+  "sortDomain": {
+    "message": "Dominio"
+  },
+  "hintSearch": {
+    "message": "buscar"
+  },
+  "hintNav": {
+    "message": "navegar"
+  },
+  "hintOpen": {
+    "message": "abrir"
+  },
+  "hintNewTab": {
+    "message": "nueva pestaña"
+  },
+  "hintRename": {
+    "message": "renombrar"
+  },
+  "hintDelete": {
+    "message": "eliminar"
+  },
+  "hintReset": {
+    "message": "reiniciar"
+  },
+  "dateToday": {
+    "message": "hoy"
+  },
+  "dateYesterday": {
+    "message": "ayer"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "sem"
+  },
+  "dateUnitMonth": {
+    "message": "mes"
+  },
+  "dateUnitYear": {
+    "message": "año"
+  },
+  "newSubfolderTitle": {
+    "message": "Nueva subcarpeta"
+  },
+  "renameTitleAttr": {
+    "message": "Renombrar"
+  },
+  "deleteTitleAttr": {
+    "message": "Eliminar"
+  },
+  "folderNewNamePrompt": {
+    "message": "Nombre de la nueva subcarpeta:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nuevo nombre de carpeta:"
+  },
+  "folderDeleteConfirmWithCount": {
+    "message": "¿Eliminar \"$TITLE$\" y $COUNT$ marcadores dentro? No se puede deshacer.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "¿Eliminar la carpeta vacía \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Error: "
+  },
+  "rootNodeLabel": {
+    "message": "(root)"
+  },
+  "itemsCountSingular": {
+    "message": "marcador"
+  },
+  "itemsCountPlural": {
+    "message": "marcadores"
+  },
+  "subfolderCountSingular": {
+    "message": "subcarpeta"
+  },
+  "subfolderCountPlural": {
+    "message": "subcarpetas"
+  },
+  "emptyFolderLabel": {
+    "message": "vacía"
+  },
+  "noNameFolder": {
+    "message": "(sin nombre)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Resultados para \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Sin resultados para \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Carpeta vacía"
+  },
+  "openNewTabTitle": {
+    "message": "Abrir en nueva pestaña"
+  },
+  "copyUrlTitle": {
+    "message": "Copiar URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Renombrar (E)"
+  },
+  "moveToTitle": {
+    "message": "Mover a..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Eliminar (Supr)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "El bookmarklet (URL javascript:) no se puede ejecutar aquí por restricciones de seguridad CSP. Copia la URL y pégala en la barra de direcciones."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copiada"
+  },
+  "renameTitlePrompt": {
+    "message": "Nuevo título:"
+  },
+  "moveToPrompt": {
+    "message": "Mover a (ruta tipo 'Trabajo/Servidor', separada por /):"
+  },
+  "itemDeleteConfirm": {
+    "message": "¿Eliminar \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "¿Eliminar \"$TITLE$\" y $COUNT$ marcadores + $SUBCOUNT$ subcarpetas? No se puede deshacer.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Nombre de la nueva carpeta (bajo la barra de marcadores):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Marcadores"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ carpetas",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Créditos · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Créditos"
+  },
+  "creditsBack": {
+    "message": "← Atrás"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Desarrollado por "
+  },
+  "creditsIntroPost": {
+    "message": ", una agencia de desarrollo web y e-commerce con sede en Italia, especializada en PrestaShop y soluciones web a medida."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Sitio web:"
+  },
+  "creditsSourceLabel": {
+    "message": "Código fuente:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licencia: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Esta extensión funciona completamente en tu dispositivo. Lee y modifica tus marcadores solo a través de la API oficial chrome.bookmarks de Chrome — no se recopilan, transmiten ni venden datos."
+  }
+}

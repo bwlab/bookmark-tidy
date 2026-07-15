@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Bookmark Tidy bwlab",
+  "name": "__MSG_extName__",
   "version": "1.0.0",
-  "description": "Riordina, dedup e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API).",
+  "description": "__MSG_extDescription__",
+  "default_locale": "it",
   "author": "bwlab",
   "homepage_url": "https://github.com/bwlab/bookmark-tidy",
   "permissions": ["bookmarks", "tabs"],
@@ -14,7 +15,6 @@
   },
   "action": {
     "default_title": "Bookmark Tidy",
-    "default_popup": "popup.html",
     "default_icon": {
       "16":  "icons/icon-16.png",
       "32":  "icons/icon-32.png",

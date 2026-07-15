@@ -1,17 +1,20 @@
 <!doctype html>
-<html lang="it">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Preferiti · bwlab</title>
+  <title data-i18n="pageTitle">Preferiti · bwlab</title>
   <link rel="stylesheet" href="manager.css">
   <script src="theme-init.js"></script>
 </head>
 <body>
   <header>
-    <div class="brand">bwlab <span>Preferiti</span></div>
-    <input id="search" type="search" placeholder="Cerca tra i preferiti  (premi /)" spellcheck="false">
+    <div class="brand-wrap">
+      <div class="brand">bwlab <span data-i18n="brandTagline">Preferiti</span></div>
+      <a class="credits-link" href="credits.html" target="_blank" rel="noopener" data-i18n="creditsLinkLabel">Credits</a>
+    </div>
+    <input id="search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Cerca tra i preferiti  (premi /)" spellcheck="false">
     <div class="header-right">
-      <button id="theme-toggle" class="theme-toggle" title="Cambia tema (dark/light)">
+      <button id="theme-toggle" class="theme-toggle" data-i18n-title="themeToggleTitle" title="Cambia tema (dark/light)">
         <span class="theme-icon-dark">🌙</span>
         <span class="theme-icon-light">☀</span>
       </button>
@@ -20,16 +23,18 @@
   </header>
   <main>
     <aside id="sidebar">
-      <div class="section-title">Viste</div>
+      <div class="section-title" data-i18n="viewsLabel">Viste</div>
       <div class="presets">
-        <button class="preset" data-preset="all">Tutti</button>
-        <button class="preset" data-preset="recent">Recenti 30gg</button>
-        <button class="preset" data-preset="oldest">Piu' vecchi 100</button>
-        <button class="preset" data-preset="stray">Senza cartella</button>
+        <button class="preset" data-preset="all" data-i18n="presetAll">Tutti</button>
+        <button class="preset" data-preset="recent" data-i18n="presetRecent">Recenti 30gg</button>
+        <button class="preset" data-preset="oldest" data-i18n="presetOldest">Piu' vecchi 100</button>
+        <button class="preset" data-preset="stray" data-i18n="presetStray">Senza cartella</button>
       </div>
       <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;padding-right:12px">
-        <span>Cartelle</span>
-        <button id="new-root-folder" class="folder-act" title="Nuova cartella in Barra preferiti">+ nuova</button>
+        <span data-i18n="foldersLabel">Cartelle</span>
+        <button id="new-root-folder" class="folder-act" data-i18n-title="newFolderRootTitle" title="Nuova cartella in Barra preferiti">
+          <span data-i18n="newFolderBtn">+ nuova</span>
+        </button>
       </div>
       <nav id="tree"></nav>
     </aside>
@@ -37,13 +42,13 @@
       <div id="breadcrumb"></div>
       <div class="toolbar">
         <div class="toolbar-left">
-          <label>Ordine</label>
+          <label data-i18n="sortLabel">Ordine</label>
           <select id="sort">
-            <option value="manual">Manuale</option>
-            <option value="title">Titolo</option>
-            <option value="date-desc">Recenti prima</option>
-            <option value="date-asc">Vecchi prima</option>
-            <option value="domain">Dominio</option>
+            <option value="manual" data-i18n="sortManual">Manuale</option>
+            <option value="title" data-i18n="sortTitle">Titolo</option>
+            <option value="date-desc" data-i18n="sortDateDesc">Recenti prima</option>
+            <option value="date-asc" data-i18n="sortDateAsc">Vecchi prima</option>
+            <option value="domain" data-i18n="sortDomain">Dominio</option>
           </select>
         </div>
         <span id="count"></span>
@@ -52,8 +57,15 @@
     </section>
   </main>
   <footer id="hint">
-    <kbd>/</kbd> cerca · <kbd>↑</kbd><kbd>↓</kbd> naviga · <kbd>Enter</kbd> apri · <kbd>Ctrl+Click</kbd> nuova tab · <kbd>E</kbd> rinomina · <kbd>Del</kbd> elimina · <kbd>Esc</kbd> reset
+    <kbd>/</kbd> <span data-i18n="hintSearch">cerca</span> ·
+    <kbd>↑</kbd><kbd>↓</kbd> <span data-i18n="hintNav">naviga</span> ·
+    <kbd>Enter</kbd> <span data-i18n="hintOpen">apri</span> ·
+    <kbd>Ctrl+Click</kbd> <span data-i18n="hintNewTab">nuova tab</span> ·
+    <kbd>E</kbd> <span data-i18n="hintRename">rinomina</span> ·
+    <kbd>Del</kbd> <span data-i18n="hintDelete">elimina</span> ·
+    <kbd>Esc</kbd> <span data-i18n="hintReset">reset</span>
   </footer>
+  <script src="i18n.js"></script>
   <script src="manager.js"></script>
 </body>
 </html>

@@ -1,0 +1,277 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Chrome-Lesezeichen aufräumen, deduplizieren und verwalten mit einer modernen Oberfläche. Sync-sicher (chrome.bookmarks-API)."
+  },
+  "pageTitle": {
+    "message": "Lesezeichen · bwlab"
+  },
+  "brandTagline": {
+    "message": "Lesezeichen"
+  },
+  "searchPlaceholder": {
+    "message": "Lesezeichen durchsuchen (drücke /)"
+  },
+  "themeToggleTitle": {
+    "message": "Design wechseln (dunkel/hell)"
+  },
+  "viewsLabel": {
+    "message": "Ansichten"
+  },
+  "presetAll": {
+    "message": "Alle"
+  },
+  "presetRecent": {
+    "message": "Neueste 30T"
+  },
+  "presetOldest": {
+    "message": "Älteste 100"
+  },
+  "presetStray": {
+    "message": "Ohne Ordner"
+  },
+  "foldersLabel": {
+    "message": "Ordner"
+  },
+  "newFolderRootTitle": {
+    "message": "Neuer Ordner in der Lesezeichenleiste"
+  },
+  "newFolderBtn": {
+    "message": "+ neu"
+  },
+  "sortLabel": {
+    "message": "Sortierung"
+  },
+  "sortManual": {
+    "message": "Manuell"
+  },
+  "sortTitle": {
+    "message": "Titel"
+  },
+  "sortDateDesc": {
+    "message": "Neueste zuerst"
+  },
+  "sortDateAsc": {
+    "message": "Älteste zuerst"
+  },
+  "sortDomain": {
+    "message": "Domain"
+  },
+  "hintSearch": {
+    "message": "suchen"
+  },
+  "hintNav": {
+    "message": "navigieren"
+  },
+  "hintOpen": {
+    "message": "öffnen"
+  },
+  "hintNewTab": {
+    "message": "neuer Tab"
+  },
+  "hintRename": {
+    "message": "umbenennen"
+  },
+  "hintDelete": {
+    "message": "löschen"
+  },
+  "hintReset": {
+    "message": "zurücksetzen"
+  },
+  "dateToday": {
+    "message": "heute"
+  },
+  "dateYesterday": {
+    "message": "gestern"
+  },
+  "dateUnitDay": {
+    "message": "T"
+  },
+  "dateUnitWeek": {
+    "message": "W"
+  },
+  "dateUnitMonth": {
+    "message": "Mon"
+  },
+  "dateUnitYear": {
+    "message": "J"
+  },
+  "newSubfolderTitle": {
+    "message": "Neuer Unterordner"
+  },
+  "renameTitleAttr": {
+    "message": "Umbenennen"
+  },
+  "deleteTitleAttr": {
+    "message": "Löschen"
+  },
+  "folderNewNamePrompt": {
+    "message": "Name des neuen Unterordners:"
+  },
+  "folderRenamePrompt": {
+    "message": "Neuer Ordnername:"
+  },
+  "folderDeleteConfirmWithCount": {
+    "message": "\"$TITLE$\" und $COUNT$ enthaltene Lesezeichen löschen? Nicht rückgängig zu machen.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Leeren Ordner \"$TITLE$\" löschen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Fehler: "
+  },
+  "rootNodeLabel": {
+    "message": "(root)"
+  },
+  "itemsCountSingular": {
+    "message": "Lesezeichen"
+  },
+  "itemsCountPlural": {
+    "message": "Lesezeichen"
+  },
+  "subfolderCountSingular": {
+    "message": "Unterordner"
+  },
+  "subfolderCountPlural": {
+    "message": "Unterordner"
+  },
+  "emptyFolderLabel": {
+    "message": "leer"
+  },
+  "noNameFolder": {
+    "message": "(unbenannt)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Ergebnisse für \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Keine Ergebnisse für \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Leerer Ordner"
+  },
+  "openNewTabTitle": {
+    "message": "In neuem Tab öffnen"
+  },
+  "copyUrlTitle": {
+    "message": "URL kopieren"
+  },
+  "renameShortcutTitle": {
+    "message": "Umbenennen (E)"
+  },
+  "moveToTitle": {
+    "message": "Verschieben nach..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Löschen (Entf)"
+  },
+  "bookmarkletChip": {
+    "message": "Bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklet (javascript:-URL) kann hier aus CSP-Sicherheitsgründen nicht ausgeführt werden. URL kopieren und in die Adressleiste einfügen."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopiert"
+  },
+  "renameTitlePrompt": {
+    "message": "Neuer Titel:"
+  },
+  "moveToPrompt": {
+    "message": "Verschieben nach (Pfad wie 'Arbeit/Server', getrennt durch /):"
+  },
+  "itemDeleteConfirm": {
+    "message": "\"$TITLE$\" löschen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "\"$TITLE$\" und $COUNT$ Lesezeichen + $SUBCOUNT$ Unterordner löschen? Nicht rückgängig zu machen.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Name des neuen Ordners (unter der Lesezeichenleiste):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Lesezeichen"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URLs · $FOLDERS$ Ordner",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Danksagung · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Danksagung"
+  },
+  "creditsBack": {
+    "message": "← Zurück"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Entwickelt von "
+  },
+  "creditsIntroPost": {
+    "message": ", einer Webentwicklungs- und E-Commerce-Agentur mit Sitz in Italien, spezialisiert auf PrestaShop und maßgeschneiderte Weblösungen."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Website:"
+  },
+  "creditsSourceLabel": {
+    "message": "Quellcode:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Lizenz: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Diese Erweiterung läuft vollständig auf deinem Gerät. Sie liest und ändert deine Lesezeichen nur über die offizielle chrome.bookmarks-API von Chrome — es werden keine Daten gesammelt, übertragen oder verkauft."
+  }
+}
