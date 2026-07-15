@@ -54,17 +54,18 @@ function faviconUrl(u) {
 function formatDate(ms) {
   if (!ms) return "";
   const diff = (Date.now() - Number(ms)) / 86400000;
-  if (diff < 1) return "oggi";
-  if (diff < 2) return "ieri";
-  if (diff < 7) return `${Math.floor(diff)}g`;
-  if (diff < 30) return `${Math.floor(diff/7)}set`;
-  if (diff < 365) return `${Math.floor(diff/30)}mes`;
-  return `${Math.floor(diff/365)}ann`;
+  if (diff < 1) return t("dateToday");
+  if (diff < 2) return t("dateYesterday");
+  if (diff < 7) return `${Math.floor(diff)}${t("dateUnitDay")}`;
+  if (diff < 30) return `${Math.floor(diff/7)}${t("dateUnitWeek")}`;
+  if (diff < 365) return `${Math.floor(diff/30)}${t("dateUnitMonth")}`;
+  return `${Math.floor(diff/365)}${t("dateUnitYear")}`;
 }
 function formatDateFull(ms) {
   if (!ms) return "";
   const d = new Date(Number(ms));
-  return d.toLocaleDateString("it-IT") + " " + d.toLocaleTimeString("it-IT", {hour:"2-digit",minute:"2-digit"});
+  const loc = chrome.i18n.getUILanguage();
+  return d.toLocaleDateString(loc) + " " + d.toLocaleTimeString(loc, {hour:"2-digit",minute:"2-digit"});
 }
 function debounce(fn, ms) {
   let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
@@ -135,7 +136,7 @@ function getItems() {
 function sortItems(items) {
   if (state.preset === "recent" || state.preset === "oldest") return items;
   const s = state.sort;
-  if (s === "title")     return items.slice().sort((a,b) => a.title.localeCompare(b.title,"it"));
+  if (s === "title")     return items.slice().sort((a,b) => a.title.localeCompare(b.title, chrome.i18n.getUILanguage()));
   if (s === "date-desc") return items.slice().sort((a,b) => Number(b.dateAdded) - Number(a.dateAdded));
   if (s === "date-asc")  return items.slice().sort((a,b) => Number(a.dateAdded) - Number(b.dateAdded));
   if (s === "domain")    return items.slice().sort((a,b) => hostOf(a.url).localeCompare(hostOf(b.url)));
@@ -166,7 +167,7 @@ function renderNode(node, parent) {
   icon.textContent = hasSubFolders && isExpanded ? "📂" : "📁";
   const label = document.createElement("span");
   label.className = "label";
-  label.textContent = node.title || "(root)";
+  label.textContent = node.title || t("rootNodeLabel");
   const cnt = document.createElement("span");
   cnt.className = "count";
   cnt.textContent = count;
@@ -174,12 +175,12 @@ function renderNode(node, parent) {
   actions.className = "folder-actions";
   if (!ROOT_IDS.has(node.id)) {
     actions.innerHTML = `
-      <button class="folder-act" data-fact="new" title="Nuova sotto-cartella">+</button>
-      <button class="folder-act" data-fact="rename" title="Rinomina">✎</button>
-      <button class="folder-act danger" data-fact="delete" title="Elimina">✕</button>
+      <button class="folder-act" data-fact="new" title="${t("newSubfolderTitle")}">+</button>
+      <button class="folder-act" data-fact="rename" title="${t("renameTitleAttr")}">✎</button>
+      <button class="folder-act danger" data-fact="delete" title="${t("deleteTitleAttr")}">✕</button>
     `;
   } else {
-    actions.innerHTML = `<button class="folder-act" data-fact="new" title="Nuova sotto-cartella">+</button>`;
+    actions.innerHTML = `<button class="folder-act" data-fact="new" title="${t("newSubfolderTitle")}">+</button>`;
   }
 
   row.appendChild(twisty); row.appendChild(icon); row.appendChild(label); row.appendChild(cnt); row.appendChild(actions);
@@ -198,7 +199,7 @@ function renderNode(node, parent) {
   // folder actions
   actions.querySelector("[data-fact=new]")?.addEventListener("click", async (e) => {
     e.stopPropagation();
-    const name = prompt("Nome nuova sotto-cartella:");
+    const name = prompt(t("folderNewNamePrompt"));
     if (!name) return;
     await bm.create({ parentId: node.id, title: name });
     state.expanded.add(node.id);
@@ -206,7 +207,7 @@ function renderNode(node, parent) {
   });
   actions.querySelector("[data-fact=rename]")?.addEventListener("click", async (e) => {
     e.stopPropagation();
-    const nv = prompt("Nuovo nome cartella:", node.title);
+    const nv = prompt(t("folderRenamePrompt"), node.title);
     if (nv !== null && nv !== node.title) { await bm.update(node.id, { title: nv }); await refresh(); }
   });
   actions.querySelector("[data-fact=delete]")?.addEventListener("click", async (e) => {
@@ -214,14 +215,14 @@ function renderNode(node, parent) {
     const fi = state.folders.get(node.id);
     const count = fi ? fi.count : 0;
     const msg = count > 0
-      ? `Eliminare "${node.title}" e ${count} preferiti dentro? Irreversibile.`
-      : `Eliminare cartella vuota "${node.title}"?`;
+      ? t("folderDeleteConfirmWithCount", [node.title, String(count)])
+      : t("folderDeleteConfirmEmpty", [node.title]);
     if (!confirm(msg)) return;
     try {
       await bm.removeTree(node.id);
       if (state.selectedFolderId === node.id) selectFolder(BAR_ROOT_ID);
       else await refresh();
-    } catch (err) { alert("Errore: " + err.message); }
+    } catch (err) { alert(t("errorPrefix") + err.message); }
   });
 
   twisty.addEventListener("click", (e) => {
@@ -267,18 +268,18 @@ function renderList() {
   renderBreadcrumb();
 
   if (subfolders.length > 0 && state.sort === "title") {
-    subfolders.sort((a,b) => (a.title||"").localeCompare(b.title||"","it"));
+    subfolders.sort((a,b) => (a.title||"").localeCompare(b.title||"", chrome.i18n.getUILanguage()));
   }
 
   const totalTxt = [];
-  if (subfolders.length) totalTxt.push(`${subfolders.length} ${subfolders.length === 1 ? "cartella" : "cartelle"}`);
-  totalTxt.push(`${items.length} ${items.length === 1 ? "preferito" : "preferiti"}`);
+  if (subfolders.length) totalTxt.push(`${subfolders.length} ${t(subfolders.length === 1 ? "subfolderCountSingular" : "subfolderCountPlural")}`);
+  totalTxt.push(`${items.length} ${t(items.length === 1 ? "itemsCountSingular" : "itemsCountPlural")}`);
   el.count.textContent = totalTxt.join(" · ");
 
   if (!items.length && !subfolders.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.textContent = state.query ? `Nessun risultato per "${state.query}"` : "Cartella vuota";
+    empty.textContent = state.query ? t("noResultsFor", [state.query]) : t("emptyFolder");
     el.list.appendChild(empty);
     return;
   }
@@ -299,7 +300,7 @@ function renderList() {
     li.innerHTML = `
       <img class="favicon" src="${faviconUrl(it.url)}" alt="" referrerpolicy="no-referrer">
       <div class="main">
-        <a class="title${isJsUrl ? ' jsurl' : ''}" href="${safeHref}" title="${escapeHtml(it.url)}" data-url="${escapeHtml(it.url)}">${highlight(it.title || it.url, state.query)}${isJsUrl ? ' <span class="folder-chip">bookmarklet</span>' : ''}</a>
+        <a class="title${isJsUrl ? ' jsurl' : ''}" href="${safeHref}" title="${escapeHtml(it.url)}" data-url="${escapeHtml(it.url)}">${highlight(it.title || it.url, state.query)}${isJsUrl ? ` <span class="folder-chip">${t("bookmarkletChip")}</span>` : ''}</a>
         <div class="subline">
           <span class="domain">${escapeHtml(hostOf(it.url))}</span>
           <span class="dot">·</span>
@@ -308,11 +309,11 @@ function renderList() {
         </div>
       </div>
       <div class="actions">
-        <button class="act" data-act="newtab" title="Apri in nuova tab">↗</button>
-        <button class="act" data-act="copy" title="Copia URL">⎘</button>
-        <button class="act" data-act="rename" title="Rinomina (E)">✎</button>
-        <button class="act" data-act="move" title="Sposta in...">→</button>
-        <button class="act danger" data-act="delete" title="Elimina (Del)">✕</button>
+        <button class="act" data-act="newtab" title="${t("openNewTabTitle")}">↗</button>
+        <button class="act" data-act="copy" title="${t("copyUrlTitle")}">⎘</button>
+        <button class="act" data-act="rename" title="${t("renameShortcutTitle")}">✎</button>
+        <button class="act" data-act="move" title="${t("moveToTitle")}">→</button>
+        <button class="act danger" data-act="delete" title="${t("deleteShortcutTitle")}">✕</button>
       </div>
     `;
     bindItemEvents(li, it);
@@ -332,19 +333,19 @@ function buildFolderRow(f) {
   const count = fi ? fi.count : 0;
   const subFolders = (f.children || []).filter(c => !c.url).length;
   const subInfo = [];
-  if (count) subInfo.push(`${count} ${count === 1 ? "preferito" : "preferiti"}`);
-  if (subFolders) subInfo.push(`${subFolders} ${subFolders === 1 ? "sotto-cartella" : "sotto-cartelle"}`);
+  if (count) subInfo.push(`${count} ${t(count === 1 ? "itemsCountSingular" : "itemsCountPlural")}`);
+  if (subFolders) subInfo.push(`${subFolders} ${t(subFolders === 1 ? "subfolderCountSingular" : "subfolderCountPlural")}`);
   li.innerHTML = `
     <span class="favicon folder-big-icon">📁</span>
     <div class="main">
-      <a class="title folder-title" href="#" data-folder-id="${f.id}">${escapeHtml(f.title || "(senza nome)")}</a>
+      <a class="title folder-title" href="#" data-folder-id="${f.id}">${escapeHtml(f.title || t("noNameFolder"))}</a>
       <div class="subline">
-        <span class="date">${subInfo.join(" · ") || "vuota"}</span>
+        <span class="date">${subInfo.join(" · ") || t("emptyFolderLabel")}</span>
       </div>
     </div>
     <div class="actions">
-      <button class="act" data-fact="rename" title="Rinomina (E)">✎</button>
-      <button class="act danger" data-fact="delete" title="Elimina (Del)">✕</button>
+      <button class="act" data-fact="rename" title="${t("renameShortcutTitle")}">✎</button>
+      <button class="act danger" data-fact="delete" title="${t("deleteShortcutTitle")}">✕</button>
     </div>
   `;
   // apri al click
@@ -375,17 +376,17 @@ function buildFolderRow(f) {
   // rename / delete
   li.querySelector("[data-fact=rename]").addEventListener("click", async (e) => {
     e.stopPropagation();
-    const nv = prompt("Nuovo nome cartella:", f.title);
+    const nv = prompt(t("folderRenamePrompt"), f.title);
     if (nv !== null && nv !== f.title) { await bm.update(f.id, { title: nv }); await refresh(); }
   });
   li.querySelector("[data-fact=delete]").addEventListener("click", async (e) => {
     e.stopPropagation();
     const msg = count > 0 || subFolders > 0
-      ? `Eliminare "${f.title}" e ${count} preferiti + ${subFolders} sotto-cartelle? Irreversibile.`
-      : `Eliminare cartella vuota "${f.title}"?`;
+      ? t("folderDeleteConfirmFull", [f.title, String(count), String(subFolders)])
+      : t("folderDeleteConfirmEmpty", [f.title]);
     if (!confirm(msg)) return;
     try { await bm.removeTree(f.id); await refresh(); }
-    catch (err) { alert("Errore: " + err.message); }
+    catch (err) { alert(t("errorPrefix") + err.message); }
   });
   return li;
 }
@@ -397,7 +398,7 @@ function bindItemEvents(li, it) {
     selectItem(li, it);
     if (isJsUrl) {
       e.preventDefault();
-      alert("Bookmarklet (javascript:URL) non eseguibile da qui per motivi di sicurezza CSP. Copia URL e incolla nella barra indirizzi.");
+      alert(t("bookmarkletAlert"));
     }
   });
   li.addEventListener("click", (e) => {
@@ -421,16 +422,16 @@ function bindItemEvents(li, it) {
   li.querySelector("[data-act=copy]").addEventListener("click", async (e) => {
     e.stopPropagation();
     await navigator.clipboard.writeText(it.url);
-    flash(li, "URL copiato");
+    flash(li, t("urlCopiedFlash"));
   });
   li.querySelector("[data-act=rename]").addEventListener("click", async (e) => {
     e.stopPropagation();
-    const nv = prompt("Nuovo titolo:", it.title);
+    const nv = prompt(t("renameTitlePrompt"), it.title);
     if (nv !== null && nv !== it.title) { await bm.update(it.id, { title: nv }); await refresh(); }
   });
   li.querySelector("[data-act=move]").addEventListener("click", async (e) => {
     e.stopPropagation();
-    const path = prompt("Sposta in (path tipo '01 Lavoro/Server', separato da /):", it.path.join("/"));
+    const path = prompt(t("moveToPrompt"), it.path.join("/"));
     if (!path) return;
     const segs = path.split("/").map(s => s.trim()).filter(Boolean);
     let pid = BAR_ROOT_ID;
@@ -445,7 +446,7 @@ function bindItemEvents(li, it) {
   });
   li.querySelector("[data-act=delete]").addEventListener("click", async (e) => {
     e.stopPropagation();
-    if (confirm(`Eliminare "${it.title || it.url}" ?`)) {
+    if (confirm(t("itemDeleteConfirm", [it.title || it.url]))) {
       await bm.remove(it.id); await refresh();
     }
   });
@@ -470,12 +471,12 @@ function selectItem(li, it) {
 function renderBreadcrumb() {
   el.breadcrumb.innerHTML = "";
   if (state.query) {
-    el.breadcrumb.textContent = `🔍 Risultati per "${state.query}"`;
+    el.breadcrumb.textContent = t("searchResultsFor", [state.query]);
     return;
   }
   if (state.preset) {
-    const labels = { all: "Tutti", recent: "Recenti 30gg", oldest: "Piu' vecchi 100", stray: "Senza cartella" };
-    el.breadcrumb.textContent = `⚑ ${labels[state.preset]}`;
+    const labels = { all: "presetAll", recent: "presetRecent", oldest: "presetOldest", stray: "presetStray" };
+    el.breadcrumb.textContent = `⚑ ${t(labels[state.preset])}`;
     return;
   }
   const fi = state.folders.get(state.selectedFolderId);
@@ -493,14 +494,14 @@ function renderBreadcrumb() {
     }
     const c = document.createElement("span");
     c.className = "crumb" + (i === ancestors.length - 1 ? " current" : "");
-    c.textContent = a.title || "Preferiti";
+    c.textContent = a.title || t("bookmarksRootLabel");
     c.addEventListener("click", () => selectFolder(a.id));
     el.breadcrumb.appendChild(c);
   });
 }
 
 function updateMeta() {
-  el.meta.textContent = `${state.flat.length} URL · ${state.folders.size} cartelle`;
+  el.meta.textContent = t("metaSummary", [String(state.flat.length), String(state.folders.size)]);
 }
 
 // ---- selection actions ----
@@ -614,7 +615,7 @@ document.getElementById("theme-toggle")?.addEventListener("click", () => {
 // ---- bottone nuova cartella root ----
 document.getElementById("new-root-folder")?.addEventListener("click", async (e) => {
   e.stopPropagation();
-  const name = prompt("Nome nuova cartella (sotto Barra preferiti):");
+  const name = prompt(t("rootFolderPrompt"));
   if (!name) return;
   await bm.create({ parentId: BAR_ROOT_ID, title: name });
   state.expanded.add(BAR_ROOT_ID);

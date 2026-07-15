@@ -1,0 +1,277 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Nettoyez, dédupliquez et gérez vos favoris Chrome avec une interface moderne. Compatible sync (API chrome.bookmarks)."
+  },
+  "pageTitle": {
+    "message": "Favoris · bwlab"
+  },
+  "brandTagline": {
+    "message": "Favoris"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher dans les favoris (appuyez sur /)"
+  },
+  "themeToggleTitle": {
+    "message": "Changer de thème (sombre/clair)"
+  },
+  "viewsLabel": {
+    "message": "Vues"
+  },
+  "presetAll": {
+    "message": "Tous"
+  },
+  "presetRecent": {
+    "message": "Récents 30j"
+  },
+  "presetOldest": {
+    "message": "Plus anciens 100"
+  },
+  "presetStray": {
+    "message": "Sans dossier"
+  },
+  "foldersLabel": {
+    "message": "Dossiers"
+  },
+  "newFolderRootTitle": {
+    "message": "Nouveau dossier dans la barre des favoris"
+  },
+  "newFolderBtn": {
+    "message": "+ nouveau"
+  },
+  "sortLabel": {
+    "message": "Tri"
+  },
+  "sortManual": {
+    "message": "Manuel"
+  },
+  "sortTitle": {
+    "message": "Titre"
+  },
+  "sortDateDesc": {
+    "message": "Plus récents d'abord"
+  },
+  "sortDateAsc": {
+    "message": "Plus anciens d'abord"
+  },
+  "sortDomain": {
+    "message": "Domaine"
+  },
+  "hintSearch": {
+    "message": "rechercher"
+  },
+  "hintNav": {
+    "message": "naviguer"
+  },
+  "hintOpen": {
+    "message": "ouvrir"
+  },
+  "hintNewTab": {
+    "message": "nouvel onglet"
+  },
+  "hintRename": {
+    "message": "renommer"
+  },
+  "hintDelete": {
+    "message": "supprimer"
+  },
+  "hintReset": {
+    "message": "réinitialiser"
+  },
+  "dateToday": {
+    "message": "aujourd'hui"
+  },
+  "dateYesterday": {
+    "message": "hier"
+  },
+  "dateUnitDay": {
+    "message": "j"
+  },
+  "dateUnitWeek": {
+    "message": "sem"
+  },
+  "dateUnitMonth": {
+    "message": "mois"
+  },
+  "dateUnitYear": {
+    "message": "an"
+  },
+  "newSubfolderTitle": {
+    "message": "Nouveau sous-dossier"
+  },
+  "renameTitleAttr": {
+    "message": "Renommer"
+  },
+  "deleteTitleAttr": {
+    "message": "Supprimer"
+  },
+  "folderNewNamePrompt": {
+    "message": "Nom du nouveau sous-dossier :"
+  },
+  "folderRenamePrompt": {
+    "message": "Nouveau nom du dossier :"
+  },
+  "folderDeleteConfirmWithCount": {
+    "message": "Supprimer \"$TITLE$\" et $COUNT$ favoris à l’intérieur ? Action irréversible.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Supprimer le dossier vide \"$TITLE$\" ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Erreur : "
+  },
+  "rootNodeLabel": {
+    "message": "(root)"
+  },
+  "itemsCountSingular": {
+    "message": "favori"
+  },
+  "itemsCountPlural": {
+    "message": "favoris"
+  },
+  "subfolderCountSingular": {
+    "message": "sous-dossier"
+  },
+  "subfolderCountPlural": {
+    "message": "sous-dossiers"
+  },
+  "emptyFolderLabel": {
+    "message": "vide"
+  },
+  "noNameFolder": {
+    "message": "(sans nom)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Résultats pour \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Aucun résultat pour \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Dossier vide"
+  },
+  "openNewTabTitle": {
+    "message": "Ouvrir dans un nouvel onglet"
+  },
+  "copyUrlTitle": {
+    "message": "Copier l'URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Renommer (E)"
+  },
+  "moveToTitle": {
+    "message": "Déplacer vers..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Supprimer (Suppr)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Ce bookmarklet (URL javascript:) ne peut pas s'exécuter ici pour des raisons de sécurité CSP. Copiez l'URL et collez-la dans la barre d'adresse."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copiée"
+  },
+  "renameTitlePrompt": {
+    "message": "Nouveau titre :"
+  },
+  "moveToPrompt": {
+    "message": "Déplacer vers (chemin type 'Travail/Serveur', séparé par /) :"
+  },
+  "itemDeleteConfirm": {
+    "message": "Supprimer \"$TITLE$\" ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Supprimer \"$TITLE$\" et $COUNT$ favoris + $SUBCOUNT$ sous-dossiers ? Action irréversible.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Nom du nouveau dossier (sous la barre des favoris) :"
+  },
+  "bookmarksRootLabel": {
+    "message": "Favoris"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ dossiers",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Crédits · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Crédits"
+  },
+  "creditsBack": {
+    "message": "← Retour"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Développé par "
+  },
+  "creditsIntroPost": {
+    "message": ", une agence de développement web et e-commerce basée en Italie, spécialisée dans PrestaShop et les solutions web sur mesure."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Site web :"
+  },
+  "creditsSourceLabel": {
+    "message": "Code source :"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licence : MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Cette extension fonctionne entièrement sur votre appareil. Elle lit et modifie vos favoris uniquement via l'API officielle chrome.bookmarks de Chrome — aucune donnée n'est collectée, transmise ou vendue."
+  }
+}

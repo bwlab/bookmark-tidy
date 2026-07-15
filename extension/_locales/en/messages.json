@@ -1,0 +1,277 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Clean up, deduplicate and manage your Chrome bookmarks with a modern interface. Sync-safe (chrome.bookmarks API)."
+  },
+  "pageTitle": {
+    "message": "Bookmarks · bwlab"
+  },
+  "brandTagline": {
+    "message": "Bookmarks"
+  },
+  "searchPlaceholder": {
+    "message": "Search bookmarks (press /)"
+  },
+  "themeToggleTitle": {
+    "message": "Switch theme (dark/light)"
+  },
+  "viewsLabel": {
+    "message": "Views"
+  },
+  "presetAll": {
+    "message": "All"
+  },
+  "presetRecent": {
+    "message": "Recent 30d"
+  },
+  "presetOldest": {
+    "message": "Oldest 100"
+  },
+  "presetStray": {
+    "message": "No folder"
+  },
+  "foldersLabel": {
+    "message": "Folders"
+  },
+  "newFolderRootTitle": {
+    "message": "New folder in Bookmarks bar"
+  },
+  "newFolderBtn": {
+    "message": "+ new"
+  },
+  "sortLabel": {
+    "message": "Sort"
+  },
+  "sortManual": {
+    "message": "Manual"
+  },
+  "sortTitle": {
+    "message": "Title"
+  },
+  "sortDateDesc": {
+    "message": "Newest first"
+  },
+  "sortDateAsc": {
+    "message": "Oldest first"
+  },
+  "sortDomain": {
+    "message": "Domain"
+  },
+  "hintSearch": {
+    "message": "search"
+  },
+  "hintNav": {
+    "message": "navigate"
+  },
+  "hintOpen": {
+    "message": "open"
+  },
+  "hintNewTab": {
+    "message": "new tab"
+  },
+  "hintRename": {
+    "message": "rename"
+  },
+  "hintDelete": {
+    "message": "delete"
+  },
+  "hintReset": {
+    "message": "reset"
+  },
+  "dateToday": {
+    "message": "today"
+  },
+  "dateYesterday": {
+    "message": "yesterday"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "w"
+  },
+  "dateUnitMonth": {
+    "message": "mo"
+  },
+  "dateUnitYear": {
+    "message": "y"
+  },
+  "newSubfolderTitle": {
+    "message": "New subfolder"
+  },
+  "renameTitleAttr": {
+    "message": "Rename"
+  },
+  "deleteTitleAttr": {
+    "message": "Delete"
+  },
+  "folderNewNamePrompt": {
+    "message": "New subfolder name:"
+  },
+  "folderRenamePrompt": {
+    "message": "New folder name:"
+  },
+  "folderDeleteConfirmWithCount": {
+    "message": "Delete \"$TITLE$\" and $COUNT$ bookmarks inside? This cannot be undone.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Delete empty folder \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Error: "
+  },
+  "rootNodeLabel": {
+    "message": "(root)"
+  },
+  "itemsCountSingular": {
+    "message": "bookmark"
+  },
+  "itemsCountPlural": {
+    "message": "bookmarks"
+  },
+  "subfolderCountSingular": {
+    "message": "subfolder"
+  },
+  "subfolderCountPlural": {
+    "message": "subfolders"
+  },
+  "emptyFolderLabel": {
+    "message": "empty"
+  },
+  "noNameFolder": {
+    "message": "(unnamed)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Results for \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "No results for \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Empty folder"
+  },
+  "openNewTabTitle": {
+    "message": "Open in new tab"
+  },
+  "copyUrlTitle": {
+    "message": "Copy URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Rename (E)"
+  },
+  "moveToTitle": {
+    "message": "Move to..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Delete (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklet (javascript: URL) can't run from here due to CSP security restrictions. Copy the URL and paste it into the address bar."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copied"
+  },
+  "renameTitlePrompt": {
+    "message": "New title:"
+  },
+  "moveToPrompt": {
+    "message": "Move to (path like 'Work/Server', separated by /):"
+  },
+  "itemDeleteConfirm": {
+    "message": "Delete \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Delete \"$TITLE$\" and $COUNT$ bookmarks + $SUBCOUNT$ subfolders? This cannot be undone.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "New folder name (under Bookmarks bar):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Bookmarks"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URLs · $FOLDERS$ folders",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Credits · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Credits"
+  },
+  "creditsBack": {
+    "message": "← Back"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Built by "
+  },
+  "creditsIntroPost": {
+    "message": ", a web development and e-commerce agency based in Italy specializing in PrestaShop and custom web solutions."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Website:"
+  },
+  "creditsSourceLabel": {
+    "message": "Source code:"
+  },
+  "creditsLicenseLabel": {
+    "message": "License: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "This extension runs entirely on your device. It reads and modifies your bookmarks only through Chrome's official chrome.bookmarks API — no data is collected, transmitted, or sold."
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Riordina, dedup e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API)."
+  },
+  "pageTitle": {
+    "message": "Preferiti · bwlab"
+  },
+  "brandTagline": {
+    "message": "Preferiti"
+  },
+  "searchPlaceholder": {
+    "message": "Cerca tra i preferiti  (premi /)"
+  },
+  "themeToggleTitle": {
+    "message": "Cambia tema (dark/light)"
+  },
+  "viewsLabel": {
+    "message": "Viste"
+  },
+  "presetAll": {
+    "message": "Tutti"
+  },
+  "presetRecent": {
+    "message": "Recenti 30gg"
+  },
+  "presetOldest": {
+    "message": "Piu' vecchi 100"
+  },
+  "presetStray": {
+    "message": "Senza cartella"
+  },
+  "foldersLabel": {
+    "message": "Cartelle"
+  },
+  "newFolderRootTitle": {
+    "message": "Nuova cartella in Barra preferiti"
+  },
+  "newFolderBtn": {
+    "message": "+ nuova"
+  },
+  "sortLabel": {
+    "message": "Ordine"
+  },
+  "sortManual": {
+    "message": "Manuale"
+  },
+  "sortTitle": {
+    "message": "Titolo"
+  },
+  "sortDateDesc": {
+    "message": "Recenti prima"
+  },
+  "sortDateAsc": {
+    "message": "Vecchi prima"
+  },
+  "sortDomain": {
+    "message": "Dominio"
+  },
+  "hintSearch": {
+    "message": "cerca"
+  },
+  "hintNav": {
+    "message": "naviga"
+  },
+  "hintOpen": {
+    "message": "apri"
+  },
+  "hintNewTab": {
+    "message": "nuova tab"
+  },
+  "hintRename": {
+    "message": "rinomina"
+  },
+  "hintDelete": {
+    "message": "elimina"
+  },
+  "hintReset": {
+    "message": "reset"
+  },
+  "dateToday": {
+    "message": "oggi"
+  },
+  "dateYesterday": {
+    "message": "ieri"
+  },
+  "dateUnitDay": {
+    "message": "g"
+  },
+  "dateUnitWeek": {
+    "message": "set"
+  },
+  "dateUnitMonth": {
+    "message": "mes"
+  },
+  "dateUnitYear": {
+    "message": "ann"
+  },
+  "newSubfolderTitle": {
+    "message": "Nuova sotto-cartella"
+  },
+  "renameTitleAttr": {
+    "message": "Rinomina"
+  },
+  "deleteTitleAttr": {
+    "message": "Elimina"
+  },
+  "folderNewNamePrompt": {
+    "message": "Nome nuova sotto-cartella:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nuovo nome cartella:"
+  },
+  "folderDeleteConfirmWithCount": {
+    "message": "Eliminare \"$TITLE$\" e $COUNT$ preferiti dentro? Irreversibile.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Eliminare cartella vuota \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Errore: "
+  },
+  "rootNodeLabel": {
+    "message": "(root)"
+  },
+  "itemsCountSingular": {
+    "message": "preferito"
+  },
+  "itemsCountPlural": {
+    "message": "preferiti"
+  },
+  "subfolderCountSingular": {
+    "message": "sotto-cartella"
+  },
+  "subfolderCountPlural": {
+    "message": "sotto-cartelle"
+  },
+  "emptyFolderLabel": {
+    "message": "vuota"
+  },
+  "noNameFolder": {
+    "message": "(senza nome)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Risultati per \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Nessun risultato per \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Cartella vuota"
+  },
+  "openNewTabTitle": {
+    "message": "Apri in nuova tab"
+  },
+  "copyUrlTitle": {
+    "message": "Copia URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Rinomina (E)"
+  },
+  "moveToTitle": {
+    "message": "Sposta in..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Elimina (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklet (javascript:URL) non eseguibile da qui per motivi di sicurezza CSP. Copia URL e incolla nella barra indirizzi."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copiato"
+  },
+  "renameTitlePrompt": {
+    "message": "Nuovo titolo:"
+  },
+  "moveToPrompt": {
+    "message": "Sposta in (path tipo '01 Lavoro/Server', separato da /):"
+  },
+  "itemDeleteConfirm": {
+    "message": "Eliminare \"$TITLE$\" ?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Eliminare \"$TITLE$\" e $COUNT$ preferiti + $SUBCOUNT$ sotto-cartelle? Irreversibile.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Nome nuova cartella (sotto Barra preferiti):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Preferiti"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ cartelle",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Crediti · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Crediti"
+  },
+  "creditsBack": {
+    "message": "← Indietro"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Sviluppato da "
+  },
+  "creditsIntroPost": {
+    "message": ", agenzia di sviluppo web ed e-commerce con sede in Italia, specializzata in PrestaShop e soluzioni web su misura."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Sito web:"
+  },
+  "creditsSourceLabel": {
+    "message": "Codice sorgente:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licenza: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Questa estensione funziona interamente sul tuo dispositivo. Legge e modifica i tuoi preferiti solo tramite l'API ufficiale chrome.bookmarks — nessun dato viene raccolto, trasmesso o venduto."
+  }
+}
