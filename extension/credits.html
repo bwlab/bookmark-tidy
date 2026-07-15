@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="creditsPageTitle">Credits · Bookmark Tidy</title>
+  <link rel="stylesheet" href="manager.css">
+  <script src="theme-init.js"></script>
+  <style>
+    body { display: block; overflow-y: auto; }
+    .credits { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
+    .credits h1 { font-size: 1.5rem; color: var(--fg-1); margin: 0 0 8px; }
+    .credits p { color: var(--fg-3); line-height: 1.6; }
+    .credits a { color: var(--accent-a); text-decoration: none; }
+    .credits a:hover { text-decoration: underline; }
+    .credits .back { display: inline-block; margin-bottom: 24px; color: var(--fg-4); }
+    .credits ul { color: var(--fg-3); line-height: 1.8; padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="credits">
+    <a class="back" href="manager.html" data-i18n="creditsBack">&larr; Back</a>
+    <div class="brand">bwlab <span data-i18n="brandTagline">Preferiti</span></div>
+    <h1 data-i18n="creditsHeading">Bookmark Tidy</h1>
+    <p>
+      <span data-i18n="creditsIntroPre">Built by </span><a href="https://bwlab.it" target="_blank" rel="noopener">bwlab</a><span data-i18n="creditsIntroPost">, a web development and e-commerce agency based in Italy specializing in PrestaShop and custom web solutions.</span>
+    </p>
+    <ul>
+      <li><span data-i18n="creditsWebsiteLabel">Website:</span> <a href="https://bwlab.it" target="_blank" rel="noopener">bwlab.it</a></li>
+      <li><span data-i18n="creditsSourceLabel">Source code:</span> <a href="https://github.com/bwlab/bookmark-tidy" target="_blank" rel="noopener">github.com/bwlab/bookmark-tidy</a></li>
+      <li data-i18n="creditsLicenseLabel">License: MIT</li>
+    </ul>
+    <p data-i18n="creditsPrivacyNote">This extension runs entirely on your device. It reads and modifies your bookmarks only through Chrome's official <code>chrome.bookmarks</code> API — no data is collected, transmitted, or sold.</p>
+  </div>
+  <script src="i18n.js"></script>
+</body>
+</html>
