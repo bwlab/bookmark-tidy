@@ -17,9 +17,9 @@
   --bw-ink-100: #e6e8ec;
 
   /* Heritage accents (brand bwlab) */
-  --heritage-a:       #F5D000;               /* giallo primario */
-  --heritage-a-hover: #FFE02E;
-  --heritage-a-weak:  rgba(245, 208, 0, 0.16);
+  --heritage-a:       #B8FF3E;               /* lime bwlab */
+  --heritage-a-hover: #C9FF5E;
+  --heritage-a-weak:  rgba(184, 255, 62, 0.18);
   --heritage-b:       #E30613;               /* rosso secondario */
   --heritage-b-hover: #FF1A28;
   --heritage-b-weak:  rgba(227, 6, 19, 0.18);
@@ -248,11 +248,11 @@ aside {
 .node:hover { background: var(--surface-2); color: var(--fg-1); }
 .node.active {
   background: var(--accent-a-weak);
-  color: var(--accent-a);
+  color: var(--fg-1);
   font-weight: 600;
   box-shadow: inset 3px 0 0 var(--accent-a);
 }
-.node.active .count { color: var(--accent-a); }
+.node.active .count { color: var(--fg-1); }
 .node.drop-target {
   background: var(--accent-b) !important;
   color: var(--bw-white) !important;
@@ -399,7 +399,7 @@ aside {
   border-radius: var(--r-md);
 }
 .folder-row .title.folder-title {
-  color: var(--accent-a);
+  color: var(--fg-1);
   font-weight: 700;
 }
 .folder-row:hover { background: var(--accent-a-weak); }

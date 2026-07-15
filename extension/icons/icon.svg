@@ -7,7 +7,7 @@
   </defs>
   <rect width="128" height="128" rx="22" fill="url(#bg)"/>
   <g transform="translate(22,22)">
-    <rect width="84" height="84" rx="10" fill="#F5D000"/>
-    <path d="M84 0 L84 84 L0 84 Z" fill="#E30613"/>
+    <rect width="84" height="84" rx="10" fill="#B8FF3E"/>
+    <path d="M84 0 L84 84 L0 84 Z" fill="#0d0d10"/>
   </g>
 </svg>
