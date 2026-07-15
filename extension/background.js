@@ -1,4 +1,4 @@
-// Apre manager.html su shortcut Alt+Shift+B. Una sola tab riutilizzata se gia' aperta.
+// Apre manager.html su click icona o shortcut Alt+Shift+B. Una sola tab riutilizzata se gia' aperta.
 
 async function openManager() {
   const url = chrome.runtime.getURL("manager.html");
@@ -10,6 +10,8 @@ async function openManager() {
     await chrome.tabs.create({ url });
   }
 }
+
+chrome.action.onClicked.addListener(openManager);
 
 chrome.commands.onCommand.addListener((cmd) => {
   if (cmd === "open-manager") openManager();
