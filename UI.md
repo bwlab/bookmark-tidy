@@ -6,14 +6,15 @@ Documentazione struttura interfaccia, contenuti, icone, navigazione.
 
 ## 1. Punti di accesso
 
-L'estensione espone **due UI distinte**, accessibili in modi diversi:
+L'estensione espone **una sola UI**, il Bookmark Manager (nessuna popup):
 
 | UI | Come si apre | Scopo |
 |----|--------------|-------|
-| **Bookmark Manager** | `chrome://bookmarks` (override) · `Alt+Shift+B` · click icona toolbar → bottone blu "📑 Apri Bookmark Manager" | Navigazione, ricerca, gestione quotidiana dei preferiti |
-| **Popup Tidy** | Click sull'icona estensione (puzzle-piece se nascosta) | Operazioni bulk sul tree (dedup, ristrutturazione, consolidamento) |
+| **Bookmark Manager** | `chrome://bookmarks` (override) · `Alt+Shift+B` · click icona toolbar (riusa la tab se già aperta) | Navigazione, ricerca, gestione quotidiana dei preferiti |
 
-Entrambe usano la palette **bwlab Heritage** (giallo `#F5D000` + rosso `#E30613`), font Inter Tight.
+Pagina accessoria: **Credits** (`credits.html`), linkata dall'header del manager.
+
+Palette bwlab: accent lime `#B8FF3E` (`--accent-a`) + rosso `#E30613` (`--accent-b`, stati di errore/drop), font Inter Tight.
 
 ---
 
@@ -29,9 +30,9 @@ Entrambe usano la palette **bwlab Heritage** (giallo `#F5D000` + rosso `#E30613`
 │  • Recenti  │                                            M preferiti│
 │    30gg     │  ─────────────────────────────────────────────────────│
 │  • Più      │  📁 BigCommerce                                        │
-│    vecchi   │     10 preferiti                            ✎ ✕       │
+│    vecchi   │     10 preferiti                          ✎ → ✕       │
 │    100      │  📁 Shopify                                            │
-│  • Senza    │     2 preferiti                             ✎ ✕       │
+│  • Senza    │     2 preferiti                           ✎ → ✕       │
 │    cartella │  ────                                                  │
 │             │  [favicon] PrestaShop Hooks Reference                  │
 │  CARTELLE   │           devdocs.prestashop-project.org · 2m         │
@@ -51,16 +52,18 @@ Entrambe usano la palette **bwlab Heritage** (giallo `#F5D000` + rosso `#E30613`
 3 colonne grid:
 
 1. **Brand bwlab** (sinistra, 240px)
-   - Quadrato 28×28 con gradient diagonale 135°: metà giallo `#F5D000`, metà rosso `#E30613`
+   - Quadrato 28×28 con gradient diagonale 135°: metà lime `#B8FF3E`, metà nero
    - Testo "bwlab" minuscolo grassetto + "PREFERITI" maiuscolo letter-spacing wider colore muted
+   - Sotto: link "Credits" → `credits.html`
 
 2. **Ricerca** (centro, flex)
    - Input fullwidth, placeholder "Cerca tra i preferiti (premi /)"
-   - Focus → bordo giallo accent + glow soft
+   - Focus → bordo lime accent + glow soft
    - Tipizzando filtra istantaneamente (debounce 120ms) titolo + URL + path cartella
 
 3. **Header-right** (destra)
-   - **Theme toggle** rotondo 42×42px: 🌙 in light mode, ☀ in dark mode. Hover → bordo+icona giallo, scale 1.05
+   - **☕ Offrimi un caffè**: pulsante pill giallo pieno (`--support-bg`, uguale nei due temi) → `https://buymeacoffee.com/bwlab` in nuova tab. Sotto 1100px di larghezza mostra solo l'icona (testo nel tooltip). Presente anche nella pagina Credits
+   - **Theme toggle** rotondo 42×42px: 🌙 in light mode, ☀ in dark mode. Hover → bordo+icona lime, scale 1.05
    - **Meta counter**: "N URL · M cartelle"
 
 ### 2.2 Sidebar sinistra (300px)
@@ -74,7 +77,7 @@ Entrambe usano la palette **bwlab Heritage** (giallo `#F5D000` + rosso `#E30613`
 - **Più vecchi 100** — i 100 URL più antichi
 - **Senza cartella** — URL al root di Barra preferiti / Altri preferiti (orfani)
 
-Stile attivo: sfondo giallo pieno, testo nero, font weight 600.
+Stile attivo: sfondo lime pieno, testo nero, font weight 600.
 
 #### Sezione "CARTELLE"
 
@@ -84,15 +87,16 @@ Albero ricorsivo. Ogni nodo è una riga grid con colonne:
 
 | Twisty | Icon | Label | Conteggio | Actions (hover) |
 |--------|------|-------|-----------|-----------------|
-| `▶`/`▼` | `📁`/`📂` | Nome cartella | N (mono) | `+ ✎ ✕` |
+| `▶`/`▼` | `📁`/`📂` | Nome cartella | N (mono) | `+ ✎ → ✕` |
 
 - **Twisty** `▶` chiusa, `▼` aperta. Click solo sul twisty espande/collassa
 - **Folder icon** 18px: `📁` chiusa, `📂` aperta
 - **Label**: nome cartella (truncate ellipsis)
 - **Conteggio**: numero ricorsivo di URL contenuti (sostituito da actions su hover)
 - **Actions hover**:
-  - `+` → crea sotto-cartella (prompt nome)
-  - `✎` → rinomina (prompt)
+  - `+` → crea sotto-cartella (dialog con nome)
+  - `✎` → rinomina (dialog)
+  - `→` → sposta in (dialog con path testuale, come per i preferiti)
   - `✕` → elimina con conferma; se non vuota usa `removeTree`
   - Root (Barra/Altri/Mobile): solo `+`, no rinomina/cancella
 
@@ -100,7 +104,7 @@ Albero ricorsivo. Ogni nodo è una riga grid con colonne:
 
 **Drag handle**: l'intero nodo è draggable (eccetto root). Drop su altra cartella → sposta dentro.
 
-**Cartella selezionata**: sfondo giallo soft 16%, testo giallo, bordo sinistro pieno giallo 3px.
+**Cartella selezionata**: sfondo lime soft 18%, bordo sinistro pieno lime 3px.
 
 ### 2.3 Content area (destra, flex)
 
@@ -129,9 +133,10 @@ Grid 56px | 1fr | auto, padding 14px·24px:
 
 | Slot 1 | Slot 2 | Slot 3 (hover) |
 |--------|--------|----------------|
-| Quadrato 48×48 giallo soft + bordo giallo, dentro 📁 grande | Titolo cartella **giallo grassetto** + sotto-info "N preferiti · M sotto-cartelle" o "vuota" | `✎` `✕` |
+| Quadrato 48×48 lime soft + bordo lime, dentro 📁 grande | Titolo cartella **grassetto** + sotto-info "N preferiti · M sotto-cartelle" o "vuota" | `✎` `→` `✕` |
 
-- Click ovunque (tranne actions) → entra nella cartella (selectFolder)
+- Click ovunque (tranne actions) o `Enter` con riga selezionata → entra nella cartella (selectFolder)
+- `E` / `Del` con riga selezionata → rinomina / elimina cartella
 - Drag → sposta cartella altrove
 - Drop → accetta item/cartelle dentro
 
@@ -141,7 +146,7 @@ Grid 56px | 1fr | auto:
 
 | Slot 1 | Slot 2 | Slot 3 (hover) |
 |--------|--------|----------------|
-| **Favicon 48×48** rounded, padding 6, bordo soft. Caricata da `google.com/s2/favicons?sz=64` | **Titolo** (link, font 16px, hover giallo) sopra · **Sotto-info**: dominio (mono) · data relativa (oggi/2g/3set/...) · chip cartella `📁 path/...` quando sei in search/preset | 5 bottoni icon: `↗` (nuova tab) · `⎘` (copia URL) · `✎` (rinomina) · `→` (sposta in path testuale) · `✕` (elimina, rosso hover) |
+| **Favicon 48×48** rounded, padding 6, bordo soft. Dalla cache locale di Chrome (`_favicon/?pageUrl=…&size=32`, permesso `favicon`), lazy | **Titolo** (link, font 16px, hover lime) sopra · **Sotto-info**: dominio (mono) · data relativa (oggi/2g/3set/...) · chip cartella `📁 path/...` quando sei in search/preset | 5 bottoni icon: `↗` (nuova tab) · `⎘` (copia URL) · `✎` (rinomina) · `→` (sposta in path testuale) · `✕` (elimina, rosso hover) |
 
 - Click sul titolo → naviga (current tab)
 - Ctrl+click / middle-click → nuova tab (default `<a href>`)
@@ -149,7 +154,7 @@ Grid 56px | 1fr | auto:
 - Drag → sposta su altra cartella in sidebar/lista
 - **Bookmarklet** (`javascript:URL`) → titolo rosso + chip "bookmarklet", click avvisa CSP block
 
-**Item selezionato** (tastiera o click): bordo sinistro giallo 3px + sfondo surface-1.
+**Item selezionato** (tastiera o click): bordo sinistro lime 3px + sfondo surface-1.
 
 **Item hover**: actions appaiono, sfondo lievemente più chiaro.
 
@@ -173,22 +178,24 @@ Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓
 2. **Click cartella nella lista content** → entra (selezione si sposta)
 3. **Click crumb breadcrumb** → torna a livello superiore
 4. **Click bottone preset** (Tutti/Recenti/...) → sidebar deselezionata, lista mostra preset, breadcrumb mostra `⚑ <nome>`
-5. **Tipizza nella ricerca** → tutto si resetta, lista mostra match cross-folder con highlight giallo + chip cartella
+5. **Tipizza nella ricerca** → tutto si resetta, lista mostra match cross-folder con highlight lime + chip cartella
+6. **Svuota la ricerca** (Backspace o `Esc` nel campo) → torna alla vista attiva prima della ricerca (cartella o preset); se la cartella nel frattempo è stata eliminata, torna alla Barra
 
 ### Operazioni su item
 
 - **Apri**: click titolo (current tab) · Ctrl+click (nuova tab) · `↗` (nuova tab background)
 - **Copia URL**: `⎘` → clipboard + chip verde "URL copiato" 1.5s
-- **Rinomina**: `✎` o tasto `E` con item selezionato → prompt
-- **Sposta**: `→` → prompt con path testuale (es. `01 Lavoro/Server`); cartelle mancanti vengono create
-- **Elimina**: `✕` o `Del` → conferma → `chrome.bookmarks.remove`
-- **Drag**: trascina item su qualsiasi cartella (sidebar o lista) → sposta
+- **Rinomina**: `✎` o tasto `E` con item selezionato → dialog
+- **Sposta**: `→` → dialog con path testuale precompilato con il path attuale (es. `Barra dei preferiti/01 Lavoro`). Se il primo segmento è il nome di una root (Barra/Altri/Mobile) si parte da lì, altrimenti il path è relativo alla Barra (es. `01 Lavoro/Server`); cartelle mancanti vengono create
+- **Elimina**: `✕` o `Del` → conferma (bottone rosso) → `chrome.bookmarks.remove`
+- **Drag**: trascina item su qualsiasi cartella (sidebar o lista) → sposta. Accetta solo drag interni al manager (MIME `application/x-bookmark-tidy-ids`); link/testo trascinati da altre pagine vengono ignorati. Errori di spostamento (es. cartella dentro sé stessa) → dialog di errore
 
 ### Operazioni su cartelle
 
-- **Crea root**: bottone `+ nuova` accanto a "CARTELLE" → prompt → crea sotto Barra preferiti
+- **Crea root**: bottone `+ nuova` accanto a "CARTELLE" → dialog → crea sotto Barra preferiti
 - **Crea sotto-cartella**: hover su nodo sidebar → bottone `+`
 - **Rinomina**: `✎` (sidebar o folder row in lista)
+- **Sposta**: `→` (sidebar o folder row) → dialog precompilato con il path della cartella genitore; stesse regole dei preferiti (root iniziale opzionale, cartelle mancanti create). Spostare una cartella dentro sé stessa o una sua sotto-cartella → errore, senza creare nulla. Oppure drag&drop
 - **Elimina**: `✕` con conferma (mostra conteggio URL+sub se non vuota); usa `removeTree` ricorsivo
 
 ### Theme switch
@@ -201,54 +208,11 @@ Listener su `chrome.bookmarks.onCreated/onRemoved/onChanged/onMoved/onChildrenRe
 
 ---
 
-## 4. Popup Tidy — Struttura
-
-Dimensioni 520×auto, mostrato al click icona toolbar.
-
-```
-┌────────────────────────────────────────────────┐
-│ Bookmark Tidy — bwlab                          │
-├────────────────────────────────────────────────┤
-│  📑 Apri Bookmark Manager (Alt+Shift+B)       │
-├────────────────────────────────────────────────┤
-│  [1. Analizza Fase 1]  [2. Applica Fase 1]    │
-├────────────────────────────────────────────────┤
-│  [3. Analizza Fase 2]  [4. Applica Fase 2]    │
-├────────────────────────────────────────────────┤
-│  [5. Consolida AI + Google (flat)] [Pulisci]  │
-├────────────────────────────────────────────────┤
-│  Analizza prima, applica dopo. Modifiche via  │
-│  chrome.bookmarks → sync propaga.             │
-├────────────────────────────────────────────────┤
-│ ╔═════════ LOG OUTPUT (mono, scroll) ═══════╗ │
-│ ║                                           ║ │
-│ ║                                           ║ │
-│ ╚═══════════════════════════════════════════╝ │
-└────────────────────────────────────────────────┘
-```
-
-### 4.1 Bottoni
-
-| # | Bottone | Colore | Azione |
-|---|---------|--------|--------|
-| 0 | 📑 Apri Bookmark Manager | blu primary | Apre tab manager (riusa se già aperta) |
-| 1 | Analizza Fase 1 | blu primary | Dry-run: lista typo, merge, dup |
-| 2 | Applica Fase 1 | rosso danger | Esegue dedup/merge/typo/empty |
-| 3 | Analizza Fase 2 | blu primary | Dry-run: tabella classificazione URL |
-| 4 | Applica Fase 2 | rosso danger | Crea top-level numerati, sposta cartelle, classifica URL |
-| 5 | Consolida AI + Google | rosso danger | Raccoglie *.google.com in `04 Dev/Google-Tools`, flatten 02 AI |
-| - | Pulisci log | neutro | Svuota area log |
-
-### 4.2 Log area
-
-Area scroll mono 11px, max 360px altezza. Ogni operazione appende righe con risultati (typo X→Y, dedup URL, merge cartelle, errori).
-
----
-
-## 5. Icone usate
+## 4. Icone usate
 
 ### Brand
-- **Quadrato bwlab** (header manager, popup): gradient diagonale 135° giallo→rosso, rounded-md
+- **Icona estensione** (toolbar, chrome://extensions, Web Store): nastro segnalibro lime con angolo piegato nero; righe decrescenti solo a 128/48 px, silhouette a 32 px, versione a pixel a 16 px (`extension/icons/`)
+- **Quadrato bwlab** (header manager e credits): gradient diagonale 135° lime→nero, rounded
 
 ### UI universali
 - 🌙 / ☀ — theme toggle
@@ -256,7 +220,6 @@ Area scroll mono 11px, max 360px altezza. Ogni operazione appende righe con risu
 - ⚑ — preset attivo (breadcrumb)
 - 📁 / 📂 — cartella chiusa/aperta (sidebar tree, lista folder row)
 - ▶ / ▼ — twisty espandi/collassa
-- 📑 — apri manager (popup)
 
 ### Actions item
 - ↗ apri in nuova tab
@@ -268,19 +231,28 @@ Area scroll mono 11px, max 360px altezza. Ogni operazione appende righe con risu
 ### Actions cartella (sidebar)
 - + nuova sotto-cartella
 - ✎ rinomina
+- → sposta in
 - ✕ elimina (rosso hover)
 
 ### Favicon
-- Caricate da `https://www.google.com/s2/favicons?sz=64&domain=<host>` — fallback grigio se errore
+- Lette dalla cache favicon locale di Chrome: `chrome-extension://<id>/_favicon/?pageUrl=<url>&size=32` (permesso `favicon`). Nessuna richiesta di rete; siti mai visitati su questo device mostrano l'icona generica
 
 ---
 
-## 6. Stati visivi
+## 5. Stati visivi
 
 ### Drop target (drag&drop attivo)
 
 - **Cartella sidebar**: sfondo rosso pieno, ombra rossa
 - **Folder row in lista**: sfondo rosso soft + bordo sinistro rosso
+
+### Dialog
+
+`<dialog>` modale nativo al posto di `prompt/confirm/alert`: messaggio, input opzionale, bottoni Annulla / OK (OK lime, rosso per le conferme di eliminazione). `Enter` conferma, `Esc` annulla; mentre è aperto le scorciatoie globali sono disattivate.
+
+### Nodi protetti
+
+Root (Barra/Altri/Mobile) e preferiti/cartelle gestiti da policy aziendale (`unmodifiable`): niente bottoni rinomina/sposta/elimina, non trascinabili.
 
 ### Empty state
 
@@ -288,11 +260,11 @@ Lista vuota → testo centrato muted "Cartella vuota" o `Nessun risultato per "<
 
 ### Highlight ricerca
 
-Ogni token query → `<mark>` con sfondo giallo soft + testo giallo grassetto
+Ogni token query → `<mark>` con sfondo lime soft + testo lime grassetto
 
 ---
 
-## 7. Responsive / Accessibility
+## 6. Responsive / Accessibility
 
 - Layout fisso desktop-first (sidebar 300px + content fluido)
 - Scrollbar custom dark

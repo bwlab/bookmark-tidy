@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Endreça i gestiona les adreces d'interès de Chrome amb una interfície moderna. Segur per a la sincronització (chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Obre el Gestor d'adreces d'interès bwlab"
+  },
+  "pageTitle": {
+    "message": "Adreces d'interès · bwlab"
+  },
+  "brandTagline": {
+    "message": "Adreces d'interès"
+  },
+  "searchPlaceholder": {
+    "message": "Cerca adreces d'interès (prem /)"
+  },
+  "themeToggleTitle": {
+    "message": "Canvia el tema (fosc/clar)"
+  },
+  "viewsLabel": {
+    "message": "Vistes"
+  },
+  "presetAll": {
+    "message": "Totes"
+  },
+  "presetRecent": {
+    "message": "Recents 30d"
+  },
+  "presetOldest": {
+    "message": "100 més antigues"
+  },
+  "presetStray": {
+    "message": "Sense carpeta"
+  },
+  "foldersLabel": {
+    "message": "Carpetes"
+  },
+  "newFolderRootTitle": {
+    "message": "Carpeta nova a la Barra d'adreces d'interès"
+  },
+  "newFolderBtn": {
+    "message": "+ nova"
+  },
+  "sortLabel": {
+    "message": "Ordre"
+  },
+  "sortManual": {
+    "message": "Manual"
+  },
+  "sortTitle": {
+    "message": "Títol"
+  },
+  "sortDateDesc": {
+    "message": "Més recents primer"
+  },
+  "sortDateAsc": {
+    "message": "Més antigues primer"
+  },
+  "sortDomain": {
+    "message": "Domini"
+  },
+  "hintSearch": {
+    "message": "cerca"
+  },
+  "hintNav": {
+    "message": "navega"
+  },
+  "hintOpen": {
+    "message": "obre"
+  },
+  "hintNewTab": {
+    "message": "pestanya nova"
+  },
+  "hintRename": {
+    "message": "canvia el nom"
+  },
+  "hintDelete": {
+    "message": "suprimeix"
+  },
+  "hintReset": {
+    "message": "restableix"
+  },
+  "dateToday": {
+    "message": "avui"
+  },
+  "dateYesterday": {
+    "message": "ahir"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "setm"
+  },
+  "dateUnitMonth": {
+    "message": "m"
+  },
+  "dateUnitYear": {
+    "message": "a"
+  },
+  "newSubfolderTitle": {
+    "message": "Subcarpeta nova"
+  },
+  "renameTitleAttr": {
+    "message": "Canvia el nom"
+  },
+  "deleteTitleAttr": {
+    "message": "Suprimeix"
+  },
+  "folderNewNamePrompt": {
+    "message": "Nom de la subcarpeta nova:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nom nou de la carpeta:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Vols suprimir la carpeta buida \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Error: "
+  },
+  "rootNodeLabel": {
+    "message": "(arrel)"
+  },
+  "itemsCountSingular": {
+    "message": "adreça d'interès"
+  },
+  "itemsCountPlural": {
+    "message": "adreces d'interès"
+  },
+  "subfolderCountSingular": {
+    "message": "subcarpeta"
+  },
+  "subfolderCountPlural": {
+    "message": "subcarpetes"
+  },
+  "emptyFolderLabel": {
+    "message": "buida"
+  },
+  "noNameFolder": {
+    "message": "(sense nom)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Resultats per a \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Cap resultat per a \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Carpeta buida"
+  },
+  "openNewTabTitle": {
+    "message": "Obre en una pestanya nova"
+  },
+  "copyUrlTitle": {
+    "message": "Copia l'URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Canvia el nom (E)"
+  },
+  "moveToTitle": {
+    "message": "Mou a..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Suprimeix (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Les bookmarklets (URL javascript:) no es poden executar des d'aquí per restriccions de seguretat CSP. Copia l'URL i enganxa-la a la barra d'adreces."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copiada"
+  },
+  "renameTitlePrompt": {
+    "message": "Títol nou:"
+  },
+  "moveToPrompt": {
+    "message": "Mou a (camí com 'Feina/Servidor', separat per /):"
+  },
+  "moveIntoItselfError": {
+    "message": "No es pot moure una carpeta dins d'ella mateixa ni a una de les seves subcarpetes."
+  },
+  "itemDeleteConfirm": {
+    "message": "Vols suprimir \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Vols suprimir \"$TITLE$\" amb $COUNT$ adreces d'interès + $SUBCOUNT$ subcarpetes? No es pot desfer.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Nom de la carpeta nova (a la Barra d'adreces d'interès):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Adreces d'interès"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ carpetes",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Crèdits · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Crèdits"
+  },
+  "creditsBack": {
+    "message": "← Enrere"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Desenvolupat per "
+  },
+  "creditsIntroPost": {
+    "message": ", agència de desenvolupament web i comerç electrònic amb seu a Itàlia, especialitzada en PrestaShop i solucions web a mida."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Lloc web:"
+  },
+  "creditsSourceLabel": {
+    "message": "Codi font:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Llicència: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Aquesta extensió funciona completament al teu dispositiu. Llegeix i modifica les teves adreces d'interès només mitjançant l'API oficial chrome.bookmarks de Chrome — no es recull, transmet ni ven cap dada."
+  },
+  "dialogOk": {
+    "message": "D'acord"
+  },
+  "dialogCancel": {
+    "message": "Cancel·la"
+  },
+  "supportLabel": {
+    "message": "Convida'm a un cafè"
+  },
+  "supportTitle": {
+    "message": "T'agrada Bookmark Tidy? Dona suport al desenvolupament a Buy Me a Coffee"
+  }
+}

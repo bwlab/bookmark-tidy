@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#141418"/>
-      <stop offset="1" stop-color="#0d0d10"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="22" fill="url(#bg)"/>
-  <g transform="translate(22,22)">
-    <rect width="84" height="84" rx="10" fill="#B8FF3E"/>
-    <path d="M84 0 L84 84 L0 84 Z" fill="#0d0d10"/>
+  <!-- Bookmark Tidy — taglie grandi (128, 48). Nastro segnalibro lime con angolo piegato nero
+       (richiamo alla diagonale del marchio bwlab) e righe decrescenti = elenco messo in ordine.
+       Soggetto entro 96x96 centrali (linee guida Chrome Web Store), sfondo trasparente.
+       Per 32 px usare icon-small.svg, per 16 px icon-16.svg (a pixel). -->
+  <path d="M40 18 H88 Q96 18 96 26 V110 L64 86 L32 110 V26 Q32 18 40 18 Z"
+        fill="#B8FF3E" stroke="#0d0d10" stroke-width="6" stroke-linejoin="round" paint-order="stroke"/>
+  <path d="M58 18 H88 Q96 18 96 26 V56 Z" fill="#0d0d10"/>
+  <g stroke="#0d0d10" stroke-width="8" stroke-linecap="round">
+    <line x1="44" y1="52" x2="84" y2="52"/>
+    <line x1="44" y1="66" x2="74" y2="66"/>
+    <line x1="44" y1="80" x2="62" y2="80"/>
   </g>
 </svg>

@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "以現代化介面整理及管理 Chrome 書籤。同步安全（chrome.bookmarks API）。"
+  },
+  "commandOpenManager": {
+    "message": "開啟 bwlab 書籤管理員"
+  },
+  "pageTitle": {
+    "message": "書籤 · bwlab"
+  },
+  "brandTagline": {
+    "message": "書籤"
+  },
+  "searchPlaceholder": {
+    "message": "搜尋書籤（按 /）"
+  },
+  "themeToggleTitle": {
+    "message": "切換主題（深色/淺色）"
+  },
+  "viewsLabel": {
+    "message": "檢視"
+  },
+  "presetAll": {
+    "message": "全部"
+  },
+  "presetRecent": {
+    "message": "最近 30 天"
+  },
+  "presetOldest": {
+    "message": "最舊的 100 個"
+  },
+  "presetStray": {
+    "message": "未分類"
+  },
+  "foldersLabel": {
+    "message": "資料夾"
+  },
+  "newFolderRootTitle": {
+    "message": "在書籤列中新增資料夾"
+  },
+  "newFolderBtn": {
+    "message": "+ 新增"
+  },
+  "sortLabel": {
+    "message": "排序"
+  },
+  "sortManual": {
+    "message": "手動"
+  },
+  "sortTitle": {
+    "message": "標題"
+  },
+  "sortDateDesc": {
+    "message": "最新優先"
+  },
+  "sortDateAsc": {
+    "message": "最舊優先"
+  },
+  "sortDomain": {
+    "message": "網域"
+  },
+  "hintSearch": {
+    "message": "搜尋"
+  },
+  "hintNav": {
+    "message": "瀏覽"
+  },
+  "hintOpen": {
+    "message": "開啟"
+  },
+  "hintNewTab": {
+    "message": "新分頁"
+  },
+  "hintRename": {
+    "message": "重新命名"
+  },
+  "hintDelete": {
+    "message": "刪除"
+  },
+  "hintReset": {
+    "message": "重設"
+  },
+  "dateToday": {
+    "message": "今天"
+  },
+  "dateYesterday": {
+    "message": "昨天"
+  },
+  "dateUnitDay": {
+    "message": "天前"
+  },
+  "dateUnitWeek": {
+    "message": "週前"
+  },
+  "dateUnitMonth": {
+    "message": "個月前"
+  },
+  "dateUnitYear": {
+    "message": "年前"
+  },
+  "newSubfolderTitle": {
+    "message": "新增子資料夾"
+  },
+  "renameTitleAttr": {
+    "message": "重新命名"
+  },
+  "deleteTitleAttr": {
+    "message": "刪除"
+  },
+  "folderNewNamePrompt": {
+    "message": "新子資料夾名稱："
+  },
+  "folderRenamePrompt": {
+    "message": "新資料夾名稱："
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "要刪除空白資料夾「$TITLE$」嗎？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "錯誤："
+  },
+  "rootNodeLabel": {
+    "message": "（根目錄）"
+  },
+  "itemsCountSingular": {
+    "message": "個書籤"
+  },
+  "itemsCountPlural": {
+    "message": "個書籤"
+  },
+  "subfolderCountSingular": {
+    "message": "個子資料夾"
+  },
+  "subfolderCountPlural": {
+    "message": "個子資料夾"
+  },
+  "emptyFolderLabel": {
+    "message": "空白"
+  },
+  "noNameFolder": {
+    "message": "（未命名）"
+  },
+  "searchResultsFor": {
+    "message": "🔍「$QUERY$」的搜尋結果",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "找不到與「$QUERY$」相符的結果",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "空白資料夾"
+  },
+  "openNewTabTitle": {
+    "message": "在新分頁中開啟"
+  },
+  "copyUrlTitle": {
+    "message": "複製網址"
+  },
+  "renameShortcutTitle": {
+    "message": "重新命名 (E)"
+  },
+  "moveToTitle": {
+    "message": "移至..."
+  },
+  "deleteShortcutTitle": {
+    "message": "刪除 (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "由於 CSP 安全性限制，書籤小程式（javascript: 網址）無法在此執行。請複製網址並貼到網址列中。"
+  },
+  "urlCopiedFlash": {
+    "message": "已複製網址"
+  },
+  "renameTitlePrompt": {
+    "message": "新標題："
+  },
+  "moveToPrompt": {
+    "message": "移至（路徑如「工作/伺服器」，以 / 分隔）："
+  },
+  "moveIntoItselfError": {
+    "message": "無法將資料夾移至其本身或其子資料夾中。"
+  },
+  "itemDeleteConfirm": {
+    "message": "要刪除「$TITLE$」嗎？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "要刪除「$TITLE$」及其中的 $COUNT$ 個書籤和 $SUBCOUNT$ 個子資料夾嗎？此動作無法復原。",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "新資料夾名稱（位於書籤列）："
+  },
+  "bookmarksRootLabel": {
+    "message": "書籤"
+  },
+  "metaSummary": {
+    "message": "$URLS$ 個網址 · $FOLDERS$ 個資料夾",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "致謝 · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "致謝"
+  },
+  "creditsBack": {
+    "message": "← 返回"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "開發者："
+  },
+  "creditsIntroPost": {
+    "message": "，總部位於義大利的網站開發與電子商務公司，專精於 PrestaShop 及客製化網站解決方案。"
+  },
+  "creditsWebsiteLabel": {
+    "message": "網站："
+  },
+  "creditsSourceLabel": {
+    "message": "原始碼："
+  },
+  "creditsLicenseLabel": {
+    "message": "授權：MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "這個擴充功能完全在您的裝置上執行。它只會透過 Chrome 官方的 chrome.bookmarks API 讀取及修改您的書籤，不會收集、傳輸或出售任何資料。"
+  },
+  "dialogOk": {
+    "message": "確定"
+  },
+  "dialogCancel": {
+    "message": "取消"
+  },
+  "supportLabel": {
+    "message": "請我喝杯咖啡"
+  },
+  "supportTitle": {
+    "message": "喜歡 Bookmark Tidy 嗎？在 Buy Me a Coffee 上支持開發"
+  }
+}

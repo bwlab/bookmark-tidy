@@ -14,6 +14,9 @@
     </div>
     <input id="search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Cerca tra i preferiti  (premi /)" spellcheck="false">
     <div class="header-right">
+      <a class="support-btn" href="https://buymeacoffee.com/bwlab" target="_blank" rel="noopener" data-i18n-title="supportTitle" title="Ti piace Bookmark Tidy? Sostieni lo sviluppo su Buy Me a Coffee">
+        <span class="support-icon" aria-hidden="true">☕</span><span class="support-label" data-i18n="supportLabel">Offrimi un caffè</span>
+      </a>
       <button id="theme-toggle" class="theme-toggle" data-i18n-title="themeToggleTitle" title="Cambia tema (dark/light)">
         <span class="theme-icon-dark">🌙</span>
         <span class="theme-icon-light">☀</span>
@@ -27,7 +30,7 @@
       <div class="presets">
         <button class="preset" data-preset="all" data-i18n="presetAll">Tutti</button>
         <button class="preset" data-preset="recent" data-i18n="presetRecent">Recenti 30gg</button>
-        <button class="preset" data-preset="oldest" data-i18n="presetOldest">Piu' vecchi 100</button>
+        <button class="preset" data-preset="oldest" data-i18n="presetOldest">Più vecchi 100</button>
         <button class="preset" data-preset="stray" data-i18n="presetStray">Senza cartella</button>
       </div>
       <div class="section-title" style="display:flex;justify-content:space-between;align-items:center;padding-right:12px">
@@ -65,6 +68,16 @@
     <kbd>Del</kbd> <span data-i18n="hintDelete">elimina</span> ·
     <kbd>Esc</kbd> <span data-i18n="hintReset">reset</span>
   </footer>
+  <dialog id="dialog">
+    <form method="dialog">
+      <p id="dialog-msg"></p>
+      <input id="dialog-input" type="text" spellcheck="false">
+      <div class="dialog-actions">
+        <button type="button" id="dialog-cancel" class="act" data-i18n="dialogCancel">Annulla</button>
+        <button value="ok" id="dialog-ok" class="act primary" data-i18n="dialogOk">OK</button>
+      </div>
+    </form>
+  </dialog>
   <script src="i18n.js"></script>
   <script src="manager.js"></script>
 </body>

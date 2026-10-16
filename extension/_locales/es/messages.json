@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Limpia, deduplica y organiza tus marcadores de Chrome con una interfaz moderna. Compatible con sync (API chrome.bookmarks)."
+    "message": "Limpia y organiza tus marcadores de Chrome con una interfaz moderna. Compatible con sync (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Abrir el gestor de marcadores bwlab"
   },
   "pageTitle": {
     "message": "Marcadores · bwlab"
@@ -113,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Nuevo nombre de carpeta:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "¿Eliminar \"$TITLE$\" y $COUNT$ marcadores dentro? No se puede deshacer.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "¿Eliminar la carpeta vacía \"$TITLE$\"?",
     "placeholders": {
@@ -205,6 +197,9 @@
   "moveToPrompt": {
     "message": "Mover a (ruta tipo 'Trabajo/Servidor', separada por /):"
   },
+  "moveIntoItselfError": {
+    "message": "No se puede mover una carpeta dentro de sí misma ni a una de sus subcarpetas."
+  },
   "itemDeleteConfirm": {
     "message": "¿Eliminar \"$TITLE$\"?",
     "placeholders": {
@@ -273,5 +268,17 @@
   },
   "creditsPrivacyNote": {
     "message": "Esta extensión funciona completamente en tu dispositivo. Lee y modifica tus marcadores solo a través de la API oficial chrome.bookmarks de Chrome — no se recopilan, transmiten ni venden datos."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Cancelar"
+  },
+  "supportLabel": {
+    "message": "Invítame a un café"
+  },
+  "supportTitle": {
+    "message": "¿Te gusta Bookmark Tidy? Apoya su desarrollo en Buy Me a Coffee"
   }
 }

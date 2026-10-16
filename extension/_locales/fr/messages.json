@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Nettoyez, dédupliquez et gérez vos favoris Chrome avec une interface moderne. Compatible sync (API chrome.bookmarks)."
+    "message": "Nettoyez et gérez vos favoris Chrome avec une interface moderne. Compatible sync (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Ouvrir le gestionnaire de favoris bwlab"
   },
   "pageTitle": {
     "message": "Favoris · bwlab"
@@ -113,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Nouveau nom du dossier :"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "Supprimer \"$TITLE$\" et $COUNT$ favoris à l’intérieur ? Action irréversible.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Supprimer le dossier vide \"$TITLE$\" ?",
     "placeholders": {
@@ -205,6 +197,9 @@
   "moveToPrompt": {
     "message": "Déplacer vers (chemin type 'Travail/Serveur', séparé par /) :"
   },
+  "moveIntoItselfError": {
+    "message": "Impossible de déplacer un dossier dans lui-même ou dans l'un de ses sous-dossiers."
+  },
   "itemDeleteConfirm": {
     "message": "Supprimer \"$TITLE$\" ?",
     "placeholders": {
@@ -273,5 +268,17 @@
   },
   "creditsPrivacyNote": {
     "message": "Cette extension fonctionne entièrement sur votre appareil. Elle lit et modifie vos favoris uniquement via l'API officielle chrome.bookmarks de Chrome — aucune donnée n'est collectée, transmise ou vendue."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Annuler"
+  },
+  "supportLabel": {
+    "message": "Offrez-moi un café"
+  },
+  "supportTitle": {
+    "message": "Vous aimez Bookmark Tidy ? Soutenez son développement sur Buy Me a Coffee"
   }
 }

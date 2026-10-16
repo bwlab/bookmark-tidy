@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Chrome-Lesezeichen aufräumen, deduplizieren und verwalten mit einer modernen Oberfläche. Sync-sicher (chrome.bookmarks-API)."
+    "message": "Chrome-Lesezeichen aufräumen und verwalten mit einer modernen Oberfläche. Sync-sicher (chrome.bookmarks-API)."
+  },
+  "commandOpenManager": {
+    "message": "bwlab Lesezeichen-Manager öffnen"
   },
   "pageTitle": {
     "message": "Lesezeichen · bwlab"
@@ -113,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Neuer Ordnername:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "\"$TITLE$\" und $COUNT$ enthaltene Lesezeichen löschen? Nicht rückgängig zu machen.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Leeren Ordner \"$TITLE$\" löschen?",
     "placeholders": {
@@ -205,6 +197,9 @@
   "moveToPrompt": {
     "message": "Verschieben nach (Pfad wie 'Arbeit/Server', getrennt durch /):"
   },
+  "moveIntoItselfError": {
+    "message": "Ein Ordner kann nicht in sich selbst oder einen seiner Unterordner verschoben werden."
+  },
   "itemDeleteConfirm": {
     "message": "\"$TITLE$\" löschen?",
     "placeholders": {
@@ -273,5 +268,17 @@
   },
   "creditsPrivacyNote": {
     "message": "Diese Erweiterung läuft vollständig auf deinem Gerät. Sie liest und ändert deine Lesezeichen nur über die offizielle chrome.bookmarks-API von Chrome — es werden keine Daten gesammelt, übertragen oder verkauft."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Abbrechen"
+  },
+  "supportLabel": {
+    "message": "Spendier mir einen Kaffee"
+  },
+  "supportTitle": {
+    "message": "Gefällt dir Bookmark Tidy? Unterstütze die Entwicklung auf Buy Me a Coffee"
   }
 }

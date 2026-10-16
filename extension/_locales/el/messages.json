@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Τακτοποιήστε και διαχειριστείτε τους σελιδοδείκτες του Chrome με σύγχρονο περιβάλλον. Ασφαλές για συγχρονισμό (chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Άνοιγμα Διαχείρισης σελιδοδεικτών bwlab"
+  },
+  "pageTitle": {
+    "message": "Σελιδοδείκτες · bwlab"
+  },
+  "brandTagline": {
+    "message": "Σελιδοδείκτες"
+  },
+  "searchPlaceholder": {
+    "message": "Αναζήτηση σελιδοδεικτών (πατήστε /)"
+  },
+  "themeToggleTitle": {
+    "message": "Αλλαγή θέματος (σκούρο/φωτεινό)"
+  },
+  "viewsLabel": {
+    "message": "Προβολές"
+  },
+  "presetAll": {
+    "message": "Όλοι"
+  },
+  "presetRecent": {
+    "message": "Πρόσφατοι 30 ημ."
+  },
+  "presetOldest": {
+    "message": "100 παλαιότεροι"
+  },
+  "presetStray": {
+    "message": "Χωρίς φάκελο"
+  },
+  "foldersLabel": {
+    "message": "Φάκελοι"
+  },
+  "newFolderRootTitle": {
+    "message": "Νέος φάκελος στη Γραμμή σελιδοδεικτών"
+  },
+  "newFolderBtn": {
+    "message": "+ νέος"
+  },
+  "sortLabel": {
+    "message": "Ταξινόμηση"
+  },
+  "sortManual": {
+    "message": "Μη αυτόματη"
+  },
+  "sortTitle": {
+    "message": "Τίτλος"
+  },
+  "sortDateDesc": {
+    "message": "Νεότεροι πρώτα"
+  },
+  "sortDateAsc": {
+    "message": "Παλαιότεροι πρώτα"
+  },
+  "sortDomain": {
+    "message": "Τομέας"
+  },
+  "hintSearch": {
+    "message": "αναζήτηση"
+  },
+  "hintNav": {
+    "message": "πλοήγηση"
+  },
+  "hintOpen": {
+    "message": "άνοιγμα"
+  },
+  "hintNewTab": {
+    "message": "νέα καρτέλα"
+  },
+  "hintRename": {
+    "message": "μετονομασία"
+  },
+  "hintDelete": {
+    "message": "διαγραφή"
+  },
+  "hintReset": {
+    "message": "επαναφορά"
+  },
+  "dateToday": {
+    "message": "σήμερα"
+  },
+  "dateYesterday": {
+    "message": "χθες"
+  },
+  "dateUnitDay": {
+    "message": "ημ"
+  },
+  "dateUnitWeek": {
+    "message": "εβδ"
+  },
+  "dateUnitMonth": {
+    "message": "μήν"
+  },
+  "dateUnitYear": {
+    "message": "έτ"
+  },
+  "newSubfolderTitle": {
+    "message": "Νέος υποφάκελος"
+  },
+  "renameTitleAttr": {
+    "message": "Μετονομασία"
+  },
+  "deleteTitleAttr": {
+    "message": "Διαγραφή"
+  },
+  "folderNewNamePrompt": {
+    "message": "Όνομα νέου υποφακέλου:"
+  },
+  "folderRenamePrompt": {
+    "message": "Νέο όνομα φακέλου:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Διαγραφή του κενού φακέλου «$TITLE$»;",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Σφάλμα: "
+  },
+  "rootNodeLabel": {
+    "message": "(ρίζα)"
+  },
+  "itemsCountSingular": {
+    "message": "σελιδοδείκτης"
+  },
+  "itemsCountPlural": {
+    "message": "σελιδοδείκτες"
+  },
+  "subfolderCountSingular": {
+    "message": "υποφάκελος"
+  },
+  "subfolderCountPlural": {
+    "message": "υποφάκελοι"
+  },
+  "emptyFolderLabel": {
+    "message": "κενός"
+  },
+  "noNameFolder": {
+    "message": "(χωρίς όνομα)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Αποτελέσματα για «$QUERY$»",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Κανένα αποτέλεσμα για «$QUERY$»",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Κενός φάκελος"
+  },
+  "openNewTabTitle": {
+    "message": "Άνοιγμα σε νέα καρτέλα"
+  },
+  "copyUrlTitle": {
+    "message": "Αντιγραφή URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Μετονομασία (E)"
+  },
+  "moveToTitle": {
+    "message": "Μετακίνηση σε..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Διαγραφή (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Τα bookmarklet (URL javascript:) δεν μπορούν να εκτελεστούν από εδώ λόγω περιορισμών ασφαλείας CSP. Αντιγράψτε το URL και επικολλήστε το στη γραμμή διευθύνσεων."
+  },
+  "urlCopiedFlash": {
+    "message": "Το URL αντιγράφηκε"
+  },
+  "renameTitlePrompt": {
+    "message": "Νέος τίτλος:"
+  },
+  "moveToPrompt": {
+    "message": "Μετακίνηση σε (διαδρομή όπως 'Εργασία/Server', με διαχωριστικό /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Δεν είναι δυνατή η μετακίνηση ενός φακέλου μέσα στον εαυτό του ή σε κάποιον υποφάκελό του."
+  },
+  "itemDeleteConfirm": {
+    "message": "Διαγραφή του «$TITLE$»;",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Διαγραφή του «$TITLE$» με $COUNT$ σελιδοδείκτες + $SUBCOUNT$ υποφακέλους; Η ενέργεια δεν αναιρείται.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Όνομα νέου φακέλου (στη Γραμμή σελιδοδεικτών):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Σελιδοδείκτες"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ φάκελοι",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Πληροφορίες · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Πληροφορίες"
+  },
+  "creditsBack": {
+    "message": "← Πίσω"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Αναπτύχθηκε από την "
+  },
+  "creditsIntroPost": {
+    "message": ", ιταλική εταιρεία ανάπτυξης ιστού και ηλεκτρονικού εμπορίου, εξειδικευμένη στο PrestaShop και σε εξατομικευμένες λύσεις ιστού."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Ιστότοπος:"
+  },
+  "creditsSourceLabel": {
+    "message": "Πηγαίος κώδικας:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Άδεια: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Αυτή η επέκταση λειτουργεί εξ ολοκλήρου στη συσκευή σας. Διαβάζει και τροποποιεί τους σελιδοδείκτες σας μόνο μέσω του επίσημου API chrome.bookmarks του Chrome — κανένα δεδομένο δεν συλλέγεται, δεν μεταδίδεται και δεν πωλείται."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Ακύρωση"
+  },
+  "supportLabel": {
+    "message": "Κέρασέ με έναν καφέ"
+  },
+  "supportTitle": {
+    "message": "Σας αρέσει το Bookmark Tidy; Υποστηρίξτε την ανάπτυξη στο Buy Me a Coffee"
+  }
+}

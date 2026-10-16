@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "__MSG_extDescription__",
   "default_locale": "it",
   "author": "bwlab",
   "homepage_url": "https://github.com/bwlab/bookmark-tidy",
-  "permissions": ["bookmarks", "tabs"],
+  "permissions": ["bookmarks", "tabs", "favicon"],
   "icons": {
     "16":  "icons/icon-16.png",
     "32":  "icons/icon-32.png",
@@ -27,7 +27,7 @@
   "commands": {
     "open-manager": {
       "suggested_key": { "default": "Alt+Shift+B" },
-      "description": "Apri Bookmark Manager bwlab"
+      "description": "__MSG_commandOpenManager__"
     }
   },
   "background": {

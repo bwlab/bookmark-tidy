@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Riordina, dedup e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API)."
+    "message": "Riordina e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Apri il Bookmark Manager bwlab"
   },
   "pageTitle": {
     "message": "Preferiti · bwlab"
@@ -27,7 +30,7 @@
     "message": "Recenti 30gg"
   },
   "presetOldest": {
-    "message": "Piu' vecchi 100"
+    "message": "Più vecchi 100"
   },
   "presetStray": {
     "message": "Senza cartella"
@@ -113,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Nuovo nome cartella:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "Eliminare \"$TITLE$\" e $COUNT$ preferiti dentro? Irreversibile.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Eliminare cartella vuota \"$TITLE$\"?",
     "placeholders": {
@@ -205,6 +197,9 @@
   "moveToPrompt": {
     "message": "Sposta in (path tipo '01 Lavoro/Server', separato da /):"
   },
+  "moveIntoItselfError": {
+    "message": "Impossibile spostare una cartella dentro sé stessa o in una sua sotto-cartella."
+  },
   "itemDeleteConfirm": {
     "message": "Eliminare \"$TITLE$\" ?",
     "placeholders": {
@@ -273,5 +268,17 @@
   },
   "creditsPrivacyNote": {
     "message": "Questa estensione funziona interamente sul tuo dispositivo. Legge e modifica i tuoi preferiti solo tramite l'API ufficiale chrome.bookmarks — nessun dato viene raccolto, trasmesso o venduto."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Annulla"
+  },
+  "supportLabel": {
+    "message": "Offrimi un caffè"
+  },
+  "supportTitle": {
+    "message": "Ti piace Bookmark Tidy? Sostieni lo sviluppo su Buy Me a Coffee"
   }
 }

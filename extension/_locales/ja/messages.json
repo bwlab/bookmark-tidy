@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "モダンなインターフェースで Chrome のブックマークを整理・管理します。同期にも安全（chrome.bookmarks API）。"
+  },
+  "commandOpenManager": {
+    "message": "bwlab ブックマーク マネージャを開く"
+  },
+  "pageTitle": {
+    "message": "ブックマーク · bwlab"
+  },
+  "brandTagline": {
+    "message": "ブックマーク"
+  },
+  "searchPlaceholder": {
+    "message": "ブックマークを検索（/ キー）"
+  },
+  "themeToggleTitle": {
+    "message": "テーマを切り替え（ダーク/ライト）"
+  },
+  "viewsLabel": {
+    "message": "表示"
+  },
+  "presetAll": {
+    "message": "すべて"
+  },
+  "presetRecent": {
+    "message": "最近 30 日"
+  },
+  "presetOldest": {
+    "message": "古い順 100 件"
+  },
+  "presetStray": {
+    "message": "フォルダなし"
+  },
+  "foldersLabel": {
+    "message": "フォルダ"
+  },
+  "newFolderRootTitle": {
+    "message": "ブックマーク バーに新しいフォルダを作成"
+  },
+  "newFolderBtn": {
+    "message": "+ 新規"
+  },
+  "sortLabel": {
+    "message": "並べ替え"
+  },
+  "sortManual": {
+    "message": "手動"
+  },
+  "sortTitle": {
+    "message": "タイトル"
+  },
+  "sortDateDesc": {
+    "message": "新しい順"
+  },
+  "sortDateAsc": {
+    "message": "古い順"
+  },
+  "sortDomain": {
+    "message": "ドメイン"
+  },
+  "hintSearch": {
+    "message": "検索"
+  },
+  "hintNav": {
+    "message": "移動"
+  },
+  "hintOpen": {
+    "message": "開く"
+  },
+  "hintNewTab": {
+    "message": "新しいタブ"
+  },
+  "hintRename": {
+    "message": "名前を変更"
+  },
+  "hintDelete": {
+    "message": "削除"
+  },
+  "hintReset": {
+    "message": "リセット"
+  },
+  "dateToday": {
+    "message": "今日"
+  },
+  "dateYesterday": {
+    "message": "昨日"
+  },
+  "dateUnitDay": {
+    "message": "日前"
+  },
+  "dateUnitWeek": {
+    "message": "週間前"
+  },
+  "dateUnitMonth": {
+    "message": "か月前"
+  },
+  "dateUnitYear": {
+    "message": "年前"
+  },
+  "newSubfolderTitle": {
+    "message": "新しいサブフォルダ"
+  },
+  "renameTitleAttr": {
+    "message": "名前を変更"
+  },
+  "deleteTitleAttr": {
+    "message": "削除"
+  },
+  "folderNewNamePrompt": {
+    "message": "新しいサブフォルダの名前:"
+  },
+  "folderRenamePrompt": {
+    "message": "新しいフォルダ名:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "空のフォルダ「$TITLE$」を削除しますか？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "エラー: "
+  },
+  "rootNodeLabel": {
+    "message": "（ルート）"
+  },
+  "itemsCountSingular": {
+    "message": "件のブックマーク"
+  },
+  "itemsCountPlural": {
+    "message": "件のブックマーク"
+  },
+  "subfolderCountSingular": {
+    "message": "個のサブフォルダ"
+  },
+  "subfolderCountPlural": {
+    "message": "個のサブフォルダ"
+  },
+  "emptyFolderLabel": {
+    "message": "空"
+  },
+  "noNameFolder": {
+    "message": "（名前なし）"
+  },
+  "searchResultsFor": {
+    "message": "🔍「$QUERY$」の検索結果",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "「$QUERY$」に一致する結果はありません",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "空のフォルダ"
+  },
+  "openNewTabTitle": {
+    "message": "新しいタブで開く"
+  },
+  "copyUrlTitle": {
+    "message": "URL をコピー"
+  },
+  "renameShortcutTitle": {
+    "message": "名前を変更 (E)"
+  },
+  "moveToTitle": {
+    "message": "移動..."
+  },
+  "deleteShortcutTitle": {
+    "message": "削除 (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "ブックマークレット（javascript: URL）は CSP のセキュリティ制限によりここからは実行できません。URL をコピーしてアドレスバーに貼り付けてください。"
+  },
+  "urlCopiedFlash": {
+    "message": "URL をコピーしました"
+  },
+  "renameTitlePrompt": {
+    "message": "新しいタイトル:"
+  },
+  "moveToPrompt": {
+    "message": "移動先（「仕事/サーバー」のように / で区切ったパス）:"
+  },
+  "moveIntoItselfError": {
+    "message": "フォルダをそのフォルダ自身やそのサブフォルダ内に移動することはできません。"
+  },
+  "itemDeleteConfirm": {
+    "message": "「$TITLE$」を削除しますか？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "「$TITLE$」と、その中の $COUNT$ 件のブックマーク・$SUBCOUNT$ 個のサブフォルダを削除しますか？元に戻すことはできません。",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "新しいフォルダの名前（ブックマーク バー内）:"
+  },
+  "bookmarksRootLabel": {
+    "message": "ブックマーク"
+  },
+  "metaSummary": {
+    "message": "URL $URLS$ 件 · フォルダ $FOLDERS$ 個",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "クレジット · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "クレジット"
+  },
+  "creditsBack": {
+    "message": "← 戻る"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "開発: "
+  },
+  "creditsIntroPost": {
+    "message": "（イタリアを拠点とするウェブ開発・EC エージェンシー。PrestaShop とオーダーメイドのウェブソリューションを専門としています）"
+  },
+  "creditsWebsiteLabel": {
+    "message": "ウェブサイト:"
+  },
+  "creditsSourceLabel": {
+    "message": "ソースコード:"
+  },
+  "creditsLicenseLabel": {
+    "message": "ライセンス: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "この拡張機能はすべてお使いのデバイス上で動作します。ブックマークの読み取りと変更は Chrome 公式の chrome.bookmarks API を通じてのみ行われ、データの収集・送信・販売は一切行いません。"
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "キャンセル"
+  },
+  "supportLabel": {
+    "message": "コーヒーをおごる"
+  },
+  "supportTitle": {
+    "message": "Bookmark Tidy が気に入ったら、Buy Me a Coffee で開発を応援してください"
+  }
+}

@@ -5,6 +5,7 @@ Estensione Chrome MV3 per riordinare, ristrutturare e gestire i preferiti via AP
 ## Features
 
 - **Bookmark Manager**: pagina sostitutiva di `chrome://bookmarks` (override) con UX moderna, ricerca istantanea, drag & drop, gestione cartelle, dark/light theme
+- **19 lingue**: italiano, inglese, spagnolo, francese, tedesco, portoghese (BR/PT), olandese, catalano, svedese, danese, norvegese, finlandese, greco, giapponese, cinese (semplificato/tradizionale), hindi, russo
 - **Design System bwlab v2**: Inter Tight, dark-first
 
 ## Installazione
@@ -32,7 +33,7 @@ Pacchettizzare per Chrome Web Store:
 1. Crea account developer su https://chrome.google.com/webstore/devconsole/ (fee $5 una tantum)
 2. Carica `dist/bookmark-tidy-bwlab-vX.Y.Z.zip`
 3. Compila Store Listing: nome, descrizione, screenshot (1280×800 o 640×400), icone, categoria "Productivity"
-4. Privacy practices: dichiara i permessi `bookmarks` (gestione preferiti utente) e `tabs` (apertura manager). Linka [PRIVACY.md](PRIVACY.md)
+4. Privacy practices: dichiara i permessi `bookmarks` (gestione preferiti utente), `tabs` (apertura manager) e `favicon` (icone siti dalla cache locale). Linka [PRIVACY.md](PRIVACY.md)
 5. Invia a review (~1-3 giorni)
 
 ## Privacy

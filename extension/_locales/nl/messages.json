@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Orden en beheer je Chrome-bladwijzers met een moderne interface. Sync-veilig (chrome.bookmarks-API)."
+  },
+  "commandOpenManager": {
+    "message": "bwlab Bladwijzerbeheer openen"
+  },
+  "pageTitle": {
+    "message": "Bladwijzers · bwlab"
+  },
+  "brandTagline": {
+    "message": "Bladwijzers"
+  },
+  "searchPlaceholder": {
+    "message": "Bladwijzers zoeken (druk op /)"
+  },
+  "themeToggleTitle": {
+    "message": "Thema wisselen (donker/licht)"
+  },
+  "viewsLabel": {
+    "message": "Weergaven"
+  },
+  "presetAll": {
+    "message": "Alle"
+  },
+  "presetRecent": {
+    "message": "Recent 30d"
+  },
+  "presetOldest": {
+    "message": "Oudste 100"
+  },
+  "presetStray": {
+    "message": "Zonder map"
+  },
+  "foldersLabel": {
+    "message": "Mappen"
+  },
+  "newFolderRootTitle": {
+    "message": "Nieuwe map in Bladwijzerbalk"
+  },
+  "newFolderBtn": {
+    "message": "+ nieuw"
+  },
+  "sortLabel": {
+    "message": "Sorteren"
+  },
+  "sortManual": {
+    "message": "Handmatig"
+  },
+  "sortTitle": {
+    "message": "Titel"
+  },
+  "sortDateDesc": {
+    "message": "Nieuwste eerst"
+  },
+  "sortDateAsc": {
+    "message": "Oudste eerst"
+  },
+  "sortDomain": {
+    "message": "Domein"
+  },
+  "hintSearch": {
+    "message": "zoeken"
+  },
+  "hintNav": {
+    "message": "navigeren"
+  },
+  "hintOpen": {
+    "message": "openen"
+  },
+  "hintNewTab": {
+    "message": "nieuw tabblad"
+  },
+  "hintRename": {
+    "message": "hernoemen"
+  },
+  "hintDelete": {
+    "message": "verwijderen"
+  },
+  "hintReset": {
+    "message": "resetten"
+  },
+  "dateToday": {
+    "message": "vandaag"
+  },
+  "dateYesterday": {
+    "message": "gisteren"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "w"
+  },
+  "dateUnitMonth": {
+    "message": "mnd"
+  },
+  "dateUnitYear": {
+    "message": "j"
+  },
+  "newSubfolderTitle": {
+    "message": "Nieuwe submap"
+  },
+  "renameTitleAttr": {
+    "message": "Hernoemen"
+  },
+  "deleteTitleAttr": {
+    "message": "Verwijderen"
+  },
+  "folderNewNamePrompt": {
+    "message": "Naam nieuwe submap:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nieuwe mapnaam:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Lege map \"$TITLE$\" verwijderen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Fout: "
+  },
+  "rootNodeLabel": {
+    "message": "(hoofdmap)"
+  },
+  "itemsCountSingular": {
+    "message": "bladwijzer"
+  },
+  "itemsCountPlural": {
+    "message": "bladwijzers"
+  },
+  "subfolderCountSingular": {
+    "message": "submap"
+  },
+  "subfolderCountPlural": {
+    "message": "submappen"
+  },
+  "emptyFolderLabel": {
+    "message": "leeg"
+  },
+  "noNameFolder": {
+    "message": "(naamloos)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Resultaten voor \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Geen resultaten voor \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Lege map"
+  },
+  "openNewTabTitle": {
+    "message": "Openen in nieuw tabblad"
+  },
+  "copyUrlTitle": {
+    "message": "URL kopiëren"
+  },
+  "renameShortcutTitle": {
+    "message": "Hernoemen (E)"
+  },
+  "moveToTitle": {
+    "message": "Verplaatsen naar..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Verwijderen (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklets (javascript:-URL's) kunnen hier niet worden uitgevoerd vanwege CSP-beveiligingsbeperkingen. Kopieer de URL en plak hem in de adresbalk."
+  },
+  "urlCopiedFlash": {
+    "message": "URL gekopieerd"
+  },
+  "renameTitlePrompt": {
+    "message": "Nieuwe titel:"
+  },
+  "moveToPrompt": {
+    "message": "Verplaatsen naar (pad zoals 'Werk/Server', gescheiden door /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Een map kan niet naar zichzelf of naar een van zijn submappen worden verplaatst."
+  },
+  "itemDeleteConfirm": {
+    "message": "\"$TITLE$\" verwijderen?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "\"$TITLE$\" met $COUNT$ bladwijzers + $SUBCOUNT$ submappen verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Naam nieuwe map (in Bladwijzerbalk):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Bladwijzers"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL's · $FOLDERS$ mappen",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Credits · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Credits"
+  },
+  "creditsBack": {
+    "message": "← Terug"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Ontwikkeld door "
+  },
+  "creditsIntroPost": {
+    "message": ", een Italiaans bureau voor webontwikkeling en e-commerce, gespecialiseerd in PrestaShop en maatwerk weboplossingen."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Website:"
+  },
+  "creditsSourceLabel": {
+    "message": "Broncode:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licentie: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Deze extensie werkt volledig op je apparaat. Ze leest en wijzigt je bladwijzers alleen via de officiële chrome.bookmarks-API van Chrome — er worden geen gegevens verzameld, verzonden of verkocht."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Annuleren"
+  },
+  "supportLabel": {
+    "message": "Trakteer me op koffie"
+  },
+  "supportTitle": {
+    "message": "Vind je Bookmark Tidy handig? Steun de ontwikkeling via Buy Me a Coffee"
+  }
+}

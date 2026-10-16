@@ -10,10 +10,13 @@
     .credits { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
     .credits h1 { font-size: 1.5rem; color: var(--fg-1); margin: 0 0 8px; }
     .credits p { color: var(--fg-3); line-height: 1.6; }
-    .credits a { color: var(--accent-a); text-decoration: none; }
+    .credits a { color: var(--accent-a-text); text-decoration: none; }
     .credits a:hover { text-decoration: underline; }
     .credits .back { display: inline-block; margin-bottom: 24px; color: var(--fg-4); }
     .credits ul { color: var(--fg-3); line-height: 1.8; padding-left: 20px; }
+    .credits .support-btn, .credits .support-btn:hover { color: var(--support-fg); text-decoration: none; width: auto; padding: 0 16px; }
+    .credits .support-label { display: inline; }
+    .credits .support { margin: 20px 0; }
   </style>
 </head>
 <body>
@@ -29,6 +32,11 @@
       <li><span data-i18n="creditsSourceLabel">Source code:</span> <a href="https://github.com/bwlab/bookmark-tidy" target="_blank" rel="noopener">github.com/bwlab/bookmark-tidy</a></li>
       <li data-i18n="creditsLicenseLabel">License: MIT</li>
     </ul>
+    <p class="support">
+      <a class="support-btn" href="https://buymeacoffee.com/bwlab" target="_blank" rel="noopener" data-i18n-title="supportTitle" title="Ti piace Bookmark Tidy? Sostieni lo sviluppo su Buy Me a Coffee">
+        <span class="support-icon" aria-hidden="true">☕</span><span class="support-label" data-i18n="supportLabel">Offrimi un caffè</span>
+      </a>
+    </p>
     <p data-i18n="creditsPrivacyNote">This extension runs entirely on your device. It reads and modifies your bookmarks only through Chrome's official <code>chrome.bookmarks</code> API — no data is collected, transmitted, or sold.</p>
   </div>
   <script src="i18n.js"></script>

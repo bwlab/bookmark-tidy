@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Städa upp och hantera dina Chrome-bokmärken med ett modernt gränssnitt. Synksäkert (chrome.bookmarks-API)."
+  },
+  "commandOpenManager": {
+    "message": "Öppna bwlab Bokmärkeshanterare"
+  },
+  "pageTitle": {
+    "message": "Bokmärken · bwlab"
+  },
+  "brandTagline": {
+    "message": "Bokmärken"
+  },
+  "searchPlaceholder": {
+    "message": "Sök bland bokmärken (tryck /)"
+  },
+  "themeToggleTitle": {
+    "message": "Byt tema (mörkt/ljust)"
+  },
+  "viewsLabel": {
+    "message": "Vyer"
+  },
+  "presetAll": {
+    "message": "Alla"
+  },
+  "presetRecent": {
+    "message": "Senaste 30 d"
+  },
+  "presetOldest": {
+    "message": "Äldsta 100"
+  },
+  "presetStray": {
+    "message": "Utan mapp"
+  },
+  "foldersLabel": {
+    "message": "Mappar"
+  },
+  "newFolderRootTitle": {
+    "message": "Ny mapp i Bokmärkesfältet"
+  },
+  "newFolderBtn": {
+    "message": "+ ny"
+  },
+  "sortLabel": {
+    "message": "Sortera"
+  },
+  "sortManual": {
+    "message": "Manuellt"
+  },
+  "sortTitle": {
+    "message": "Titel"
+  },
+  "sortDateDesc": {
+    "message": "Nyaste först"
+  },
+  "sortDateAsc": {
+    "message": "Äldsta först"
+  },
+  "sortDomain": {
+    "message": "Domän"
+  },
+  "hintSearch": {
+    "message": "sök"
+  },
+  "hintNav": {
+    "message": "navigera"
+  },
+  "hintOpen": {
+    "message": "öppna"
+  },
+  "hintNewTab": {
+    "message": "ny flik"
+  },
+  "hintRename": {
+    "message": "byt namn"
+  },
+  "hintDelete": {
+    "message": "ta bort"
+  },
+  "hintReset": {
+    "message": "återställ"
+  },
+  "dateToday": {
+    "message": "i dag"
+  },
+  "dateYesterday": {
+    "message": "i går"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "v"
+  },
+  "dateUnitMonth": {
+    "message": "mån"
+  },
+  "dateUnitYear": {
+    "message": "år"
+  },
+  "newSubfolderTitle": {
+    "message": "Ny undermapp"
+  },
+  "renameTitleAttr": {
+    "message": "Byt namn"
+  },
+  "deleteTitleAttr": {
+    "message": "Ta bort"
+  },
+  "folderNewNamePrompt": {
+    "message": "Namn på ny undermapp:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nytt mappnamn:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Ta bort den tomma mappen \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Fel: "
+  },
+  "rootNodeLabel": {
+    "message": "(rot)"
+  },
+  "itemsCountSingular": {
+    "message": "bokmärke"
+  },
+  "itemsCountPlural": {
+    "message": "bokmärken"
+  },
+  "subfolderCountSingular": {
+    "message": "undermapp"
+  },
+  "subfolderCountPlural": {
+    "message": "undermappar"
+  },
+  "emptyFolderLabel": {
+    "message": "tom"
+  },
+  "noNameFolder": {
+    "message": "(namnlös)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Resultat för \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Inga resultat för \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Tom mapp"
+  },
+  "openNewTabTitle": {
+    "message": "Öppna i ny flik"
+  },
+  "copyUrlTitle": {
+    "message": "Kopiera URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Byt namn (E)"
+  },
+  "moveToTitle": {
+    "message": "Flytta till..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Ta bort (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklets (javascript:-URL:er) kan inte köras härifrån på grund av CSP-säkerhetsbegränsningar. Kopiera URL:en och klistra in den i adressfältet."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopierad"
+  },
+  "renameTitlePrompt": {
+    "message": "Ny titel:"
+  },
+  "moveToPrompt": {
+    "message": "Flytta till (sökväg som 'Jobb/Server', separerad med /):"
+  },
+  "moveIntoItselfError": {
+    "message": "En mapp kan inte flyttas in i sig själv eller i någon av sina undermappar."
+  },
+  "itemDeleteConfirm": {
+    "message": "Ta bort \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Ta bort \"$TITLE$\" med $COUNT$ bokmärken + $SUBCOUNT$ undermappar? Det går inte att ångra.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Namn på ny mapp (i Bokmärkesfältet):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Bokmärken"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL:er · $FOLDERS$ mappar",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Om · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Om"
+  },
+  "creditsBack": {
+    "message": "← Tillbaka"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Utvecklat av "
+  },
+  "creditsIntroPost": {
+    "message": ", en italiensk byrå för webbutveckling och e-handel, specialiserad på PrestaShop och skräddarsydda webblösningar."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Webbplats:"
+  },
+  "creditsSourceLabel": {
+    "message": "Källkod:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licens: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Det här tillägget körs helt på din enhet. Det läser och ändrar dina bokmärken endast via Chromes officiella chrome.bookmarks-API — inga data samlas in, överförs eller säljs."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Avbryt"
+  },
+  "supportLabel": {
+    "message": "Bjud mig på kaffe"
+  },
+  "supportTitle": {
+    "message": "Gillar du Bookmark Tidy? Stöd utvecklingen på Buy Me a Coffee"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Organize e gira os seus marcadores do Chrome com uma interface moderna. Compatível com sincronização (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Abrir o Gestor de marcadores bwlab"
+  },
+  "pageTitle": {
+    "message": "Marcadores · bwlab"
+  },
+  "brandTagline": {
+    "message": "Marcadores"
+  },
+  "searchPlaceholder": {
+    "message": "Pesquisar marcadores (prima /)"
+  },
+  "themeToggleTitle": {
+    "message": "Mudar tema (escuro/claro)"
+  },
+  "viewsLabel": {
+    "message": "Vistas"
+  },
+  "presetAll": {
+    "message": "Todos"
+  },
+  "presetRecent": {
+    "message": "Recentes 30d"
+  },
+  "presetOldest": {
+    "message": "100 mais antigos"
+  },
+  "presetStray": {
+    "message": "Sem pasta"
+  },
+  "foldersLabel": {
+    "message": "Pastas"
+  },
+  "newFolderRootTitle": {
+    "message": "Nova pasta na Barra de marcadores"
+  },
+  "newFolderBtn": {
+    "message": "+ nova"
+  },
+  "sortLabel": {
+    "message": "Ordem"
+  },
+  "sortManual": {
+    "message": "Manual"
+  },
+  "sortTitle": {
+    "message": "Título"
+  },
+  "sortDateDesc": {
+    "message": "Mais recentes primeiro"
+  },
+  "sortDateAsc": {
+    "message": "Mais antigos primeiro"
+  },
+  "sortDomain": {
+    "message": "Domínio"
+  },
+  "hintSearch": {
+    "message": "pesquisar"
+  },
+  "hintNav": {
+    "message": "navegar"
+  },
+  "hintOpen": {
+    "message": "abrir"
+  },
+  "hintNewTab": {
+    "message": "novo separador"
+  },
+  "hintRename": {
+    "message": "mudar o nome"
+  },
+  "hintDelete": {
+    "message": "eliminar"
+  },
+  "hintReset": {
+    "message": "repor"
+  },
+  "dateToday": {
+    "message": "hoje"
+  },
+  "dateYesterday": {
+    "message": "ontem"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "sem"
+  },
+  "dateUnitMonth": {
+    "message": "m"
+  },
+  "dateUnitYear": {
+    "message": "a"
+  },
+  "newSubfolderTitle": {
+    "message": "Nova subpasta"
+  },
+  "renameTitleAttr": {
+    "message": "Mudar o nome"
+  },
+  "deleteTitleAttr": {
+    "message": "Eliminar"
+  },
+  "folderNewNamePrompt": {
+    "message": "Nome da nova subpasta:"
+  },
+  "folderRenamePrompt": {
+    "message": "Novo nome da pasta:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Eliminar a pasta vazia \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Erro: "
+  },
+  "rootNodeLabel": {
+    "message": "(raiz)"
+  },
+  "itemsCountSingular": {
+    "message": "marcador"
+  },
+  "itemsCountPlural": {
+    "message": "marcadores"
+  },
+  "subfolderCountSingular": {
+    "message": "subpasta"
+  },
+  "subfolderCountPlural": {
+    "message": "subpastas"
+  },
+  "emptyFolderLabel": {
+    "message": "vazia"
+  },
+  "noNameFolder": {
+    "message": "(sem nome)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Resultados para \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Nenhum resultado para \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Pasta vazia"
+  },
+  "openNewTabTitle": {
+    "message": "Abrir num novo separador"
+  },
+  "copyUrlTitle": {
+    "message": "Copiar URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Mudar o nome (E)"
+  },
+  "moveToTitle": {
+    "message": "Mover para..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Eliminar (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Os bookmarklets (URLs javascript:) não podem ser executados aqui devido às restrições de segurança CSP. Copie o URL e cole-o na barra de endereço."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copiado"
+  },
+  "renameTitlePrompt": {
+    "message": "Novo título:"
+  },
+  "moveToPrompt": {
+    "message": "Mover para (caminho como 'Trabalho/Servidor', separado por /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Não é possível mover uma pasta para dentro de si própria ou de uma das suas subpastas."
+  },
+  "itemDeleteConfirm": {
+    "message": "Eliminar \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Eliminar \"$TITLE$\" com $COUNT$ marcadores + $SUBCOUNT$ subpastas? Esta ação não pode ser anulada.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Nome da nova pasta (na Barra de marcadores):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Marcadores"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URLs · $FOLDERS$ pastas",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Créditos · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Créditos"
+  },
+  "creditsBack": {
+    "message": "← Voltar"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Desenvolvido por "
+  },
+  "creditsIntroPost": {
+    "message": ", agência de desenvolvimento web e e-commerce sediada em Itália, especializada em PrestaShop e soluções web à medida."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Website:"
+  },
+  "creditsSourceLabel": {
+    "message": "Código-fonte:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licença: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Esta extensão funciona inteiramente no seu dispositivo. Lê e modifica os seus marcadores apenas através da API oficial chrome.bookmarks do Chrome — nenhum dado é recolhido, transmitido ou vendido."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Cancelar"
+  },
+  "supportLabel": {
+    "message": "Ofereça-me um café"
+  },
+  "supportTitle": {
+    "message": "Gosta do Bookmark Tidy? Apoie o desenvolvimento no Buy Me a Coffee"
+  }
+}

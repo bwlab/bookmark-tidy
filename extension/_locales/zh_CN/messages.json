@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "用现代化界面整理和管理 Chrome 书签。同步安全（chrome.bookmarks API）。"
+  },
+  "commandOpenManager": {
+    "message": "打开 bwlab 书签管理器"
+  },
+  "pageTitle": {
+    "message": "书签 · bwlab"
+  },
+  "brandTagline": {
+    "message": "书签"
+  },
+  "searchPlaceholder": {
+    "message": "搜索书签（按 /）"
+  },
+  "themeToggleTitle": {
+    "message": "切换主题（深色/浅色）"
+  },
+  "viewsLabel": {
+    "message": "视图"
+  },
+  "presetAll": {
+    "message": "全部"
+  },
+  "presetRecent": {
+    "message": "最近 30 天"
+  },
+  "presetOldest": {
+    "message": "最早的 100 个"
+  },
+  "presetStray": {
+    "message": "未归类"
+  },
+  "foldersLabel": {
+    "message": "文件夹"
+  },
+  "newFolderRootTitle": {
+    "message": "在书签栏中新建文件夹"
+  },
+  "newFolderBtn": {
+    "message": "+ 新建"
+  },
+  "sortLabel": {
+    "message": "排序"
+  },
+  "sortManual": {
+    "message": "手动"
+  },
+  "sortTitle": {
+    "message": "标题"
+  },
+  "sortDateDesc": {
+    "message": "最新优先"
+  },
+  "sortDateAsc": {
+    "message": "最早优先"
+  },
+  "sortDomain": {
+    "message": "域名"
+  },
+  "hintSearch": {
+    "message": "搜索"
+  },
+  "hintNav": {
+    "message": "导航"
+  },
+  "hintOpen": {
+    "message": "打开"
+  },
+  "hintNewTab": {
+    "message": "新标签页"
+  },
+  "hintRename": {
+    "message": "重命名"
+  },
+  "hintDelete": {
+    "message": "删除"
+  },
+  "hintReset": {
+    "message": "重置"
+  },
+  "dateToday": {
+    "message": "今天"
+  },
+  "dateYesterday": {
+    "message": "昨天"
+  },
+  "dateUnitDay": {
+    "message": "天前"
+  },
+  "dateUnitWeek": {
+    "message": "周前"
+  },
+  "dateUnitMonth": {
+    "message": "个月前"
+  },
+  "dateUnitYear": {
+    "message": "年前"
+  },
+  "newSubfolderTitle": {
+    "message": "新建子文件夹"
+  },
+  "renameTitleAttr": {
+    "message": "重命名"
+  },
+  "deleteTitleAttr": {
+    "message": "删除"
+  },
+  "folderNewNamePrompt": {
+    "message": "新子文件夹名称："
+  },
+  "folderRenamePrompt": {
+    "message": "新文件夹名称："
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "删除空文件夹“$TITLE$”？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "错误："
+  },
+  "rootNodeLabel": {
+    "message": "（根）"
+  },
+  "itemsCountSingular": {
+    "message": "个书签"
+  },
+  "itemsCountPlural": {
+    "message": "个书签"
+  },
+  "subfolderCountSingular": {
+    "message": "个子文件夹"
+  },
+  "subfolderCountPlural": {
+    "message": "个子文件夹"
+  },
+  "emptyFolderLabel": {
+    "message": "空"
+  },
+  "noNameFolder": {
+    "message": "（未命名）"
+  },
+  "searchResultsFor": {
+    "message": "🔍 “$QUERY$”的搜索结果",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "没有与“$QUERY$”匹配的结果",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "空文件夹"
+  },
+  "openNewTabTitle": {
+    "message": "在新标签页中打开"
+  },
+  "copyUrlTitle": {
+    "message": "复制网址"
+  },
+  "renameShortcutTitle": {
+    "message": "重命名 (E)"
+  },
+  "moveToTitle": {
+    "message": "移至..."
+  },
+  "deleteShortcutTitle": {
+    "message": "删除 (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "由于 CSP 安全限制，书签小程序（javascript: 网址）无法在此运行。请复制网址并粘贴到地址栏中。"
+  },
+  "urlCopiedFlash": {
+    "message": "网址已复制"
+  },
+  "renameTitlePrompt": {
+    "message": "新标题："
+  },
+  "moveToPrompt": {
+    "message": "移至（路径如“工作/服务器”，用 / 分隔）："
+  },
+  "moveIntoItselfError": {
+    "message": "无法将文件夹移到其自身或其子文件夹中。"
+  },
+  "itemDeleteConfirm": {
+    "message": "删除“$TITLE$”？",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "删除“$TITLE$”及其中的 $COUNT$ 个书签和 $SUBCOUNT$ 个子文件夹？此操作无法撤消。",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "新文件夹名称（位于书签栏）："
+  },
+  "bookmarksRootLabel": {
+    "message": "书签"
+  },
+  "metaSummary": {
+    "message": "$URLS$ 个网址 · $FOLDERS$ 个文件夹",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "致谢 · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "致谢"
+  },
+  "creditsBack": {
+    "message": "← 返回"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "开发者："
+  },
+  "creditsIntroPost": {
+    "message": "，一家总部位于意大利的网站开发与电子商务公司，专注于 PrestaShop 和定制网站解决方案。"
+  },
+  "creditsWebsiteLabel": {
+    "message": "网站："
+  },
+  "creditsSourceLabel": {
+    "message": "源代码："
+  },
+  "creditsLicenseLabel": {
+    "message": "许可：MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "此扩展程序完全在您的设备上运行。它仅通过 Chrome 官方的 chrome.bookmarks API 读取和修改您的书签——不会收集、传输或出售任何数据。"
+  },
+  "dialogOk": {
+    "message": "确定"
+  },
+  "dialogCancel": {
+    "message": "取消"
+  },
+  "supportLabel": {
+    "message": "请我喝杯咖啡"
+  },
+  "supportTitle": {
+    "message": "喜欢 Bookmark Tidy？在 Buy Me a Coffee 上支持开发"
+  }
+}

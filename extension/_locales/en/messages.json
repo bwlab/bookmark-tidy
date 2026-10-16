@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Clean up, deduplicate and manage your Chrome bookmarks with a modern interface. Sync-safe (chrome.bookmarks API)."
+    "message": "Clean up and manage your Chrome bookmarks with a modern interface. Sync-safe (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Open bwlab Bookmark Manager"
   },
   "pageTitle": {
     "message": "Bookmarks · bwlab"
@@ -113,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "New folder name:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "Delete \"$TITLE$\" and $COUNT$ bookmarks inside? This cannot be undone.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Delete empty folder \"$TITLE$\"?",
     "placeholders": {
@@ -205,6 +197,9 @@
   "moveToPrompt": {
     "message": "Move to (path like 'Work/Server', separated by /):"
   },
+  "moveIntoItselfError": {
+    "message": "A folder can't be moved into itself or one of its subfolders."
+  },
   "itemDeleteConfirm": {
     "message": "Delete \"$TITLE$\"?",
     "placeholders": {
@@ -273,5 +268,17 @@
   },
   "creditsPrivacyNote": {
     "message": "This extension runs entirely on your device. It reads and modifies your bookmarks only through Chrome's official chrome.bookmarks API — no data is collected, transmitted, or sold."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Cancel"
+  },
+  "supportLabel": {
+    "message": "Buy me a coffee"
+  },
+  "supportTitle": {
+    "message": "Enjoying Bookmark Tidy? Support development on Buy Me a Coffee"
   }
 }

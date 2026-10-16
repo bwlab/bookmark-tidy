@@ -27,9 +27,15 @@
   --accent-a: var(--heritage-a);
   --accent-a-hover: var(--heritage-a-hover);
   --accent-a-weak: var(--heritage-a-weak);
+  --accent-a-text: var(--heritage-a);     /* accent usato come colore del testo */
   --accent-b: var(--heritage-b);
   --accent-b-hover: var(--heritage-b-hover);
   --accent-b-weak: var(--heritage-b-weak);
+
+  /* Pulsante supporto (giallo Buy Me a Coffee, uguale nei due temi) */
+  --support-bg: #FFDD00;
+  --support-bg-hover: #FFE53B;
+  --support-fg: #0d0d10;
 
   /* Semantic states */
   --state-success: #30D158;
@@ -88,6 +94,8 @@
   --border-1: rgba(0, 0, 0, 0.08);
   --border-2: rgba(0, 0, 0, 0.14);
   --border-3: rgba(0, 0, 0, 0.28);
+  /* lime su bianco ha contrasto 1.2:1 → testo accent in verde scuro (6.3-6.8:1, WCAG AA) */
+  --accent-a-text: #3D6600;
   --shadow-1: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
 }
 
@@ -146,7 +154,7 @@ header {
   text-transform: uppercase;
 }
 .credits-link:hover {
-  color: var(--accent-a);
+  color: var(--accent-a-text);
   text-decoration: underline;
 }
 
@@ -171,6 +179,31 @@ header {
 
 .header-right { display: flex; align-items: center; gap: 14px; }
 
+/* Pulsante "Offrimi un caffè": colore pieno per restare ben visibile in entrambi i temi */
+.support-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 42px; padding: 0 16px;
+  background: var(--support-bg);
+  color: var(--support-fg);
+  border-radius: var(--r-pill);
+  font-weight: 700; font-size: var(--fs-sm);
+  text-decoration: none; white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(255, 221, 0, 0.35);
+  transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+.support-btn:hover {
+  background: var(--support-bg-hover);
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(255, 221, 0, 0.5);
+}
+.support-btn:focus-visible { outline: 2px solid var(--accent-a); outline-offset: 2px; }
+.support-icon { font-size: 18px; line-height: 1; }
+/* schermi stretti: solo l'icona, il testo resta nel tooltip */
+@media (max-width: 1100px) {
+  .support-btn { width: 42px; padding: 0; justify-content: center; }
+  .support-label { display: none; }
+}
+
 .theme-toggle {
   width: 42px; height: 42px;
   background: var(--surface-2);
@@ -185,7 +218,7 @@ header {
 }
 .theme-toggle:hover {
   border-color: var(--accent-a);
-  color: var(--accent-a);
+  color: var(--accent-a-text);
   transform: scale(1.05);
 }
 .theme-icon-dark, .theme-icon-light { line-height: 1; }
@@ -311,7 +344,7 @@ aside {
   display: inline-flex; align-items: center; justify-content: center;
   transition: all var(--dur-fast);
 }
-.folder-act:hover { background: var(--surface-0); color: var(--accent-a); }
+.folder-act:hover { background: var(--surface-0); color: var(--accent-a-text); }
 .folder-act.danger:hover { color: var(--accent-b); background: var(--accent-b-weak); }
 
 /* ========== CONTENT ========== */
@@ -391,6 +424,9 @@ aside {
   cursor: pointer;
   border-left: 3px solid transparent;
   transition: background var(--dur-fast);
+  /* layout/paint solo delle righe visibili: liste da migliaia di item restano fluide */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 77px;
 }
 .item:hover { background: var(--surface-1); }
 .item.selected {
@@ -432,7 +468,7 @@ aside {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   transition: color var(--dur-fast);
 }
-.item .title:hover { color: var(--accent-a); }
+.item .title:hover { color: var(--accent-a-text); }
 .item .title.jsurl { color: var(--accent-b); }
 
 .item .subline {
@@ -477,7 +513,7 @@ aside {
 }
 .act:hover {
   background: var(--accent-a-weak);
-  color: var(--accent-a);
+  color: var(--accent-a-text);
   border-color: var(--accent-a);
   transform: translateY(-1px);
 }
@@ -487,14 +523,46 @@ aside {
   border-color: var(--accent-b);
 }
 
-/* Search highlight — heritage yellow */
+/* Search highlight — accent lime (testo scuro nel tema chiaro) */
 mark {
   background: var(--accent-a-weak);
-  color: var(--accent-a);
+  color: var(--accent-a-text);
   font-weight: 700;
   padding: 0 2px;
   border-radius: 2px;
 }
+
+/* ========== DIALOG (prompt/confirm/alert) ========== */
+#dialog {
+  margin: auto;
+  width: min(480px, calc(100vw - 32px));
+  background: var(--surface-1);
+  color: var(--fg-2);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-1);
+  padding: 20px;
+}
+#dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+#dialog-msg { color: var(--fg-1); white-space: pre-line; overflow-wrap: anywhere; margin-bottom: 14px; }
+#dialog-input {
+  width: 100%;
+  background: var(--surface-2);
+  color: var(--fg-1);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  font: inherit;
+  outline: none;
+  margin-bottom: 14px;
+}
+#dialog-input:focus { border-color: var(--accent-a); box-shadow: 0 0 0 3px var(--accent-a-weak); }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.dialog-actions .act { font-size: var(--fs-base); font-weight: 600; }
+.act.primary { background: var(--accent-a); color: var(--bw-ink-900); border-color: var(--accent-a); }
+.act.primary:hover { background: var(--accent-a-hover); color: var(--bw-ink-900); }
+.act.primary.danger { background: var(--accent-b); color: var(--bw-white); border-color: var(--accent-b); }
+.act.primary.danger:hover { background: var(--accent-b-hover); color: var(--bw-white); }
 
 /* ========== FOOTER HINT ========== */
 #hint {

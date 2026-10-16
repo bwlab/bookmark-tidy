@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Järjestä ja hallinnoi Chromen kirjanmerkkejä modernilla käyttöliittymällä. Synkronointiturvallinen (chrome.bookmarks-API)."
+  },
+  "commandOpenManager": {
+    "message": "Avaa bwlab-kirjanmerkkien hallinta"
+  },
+  "pageTitle": {
+    "message": "Kirjanmerkit · bwlab"
+  },
+  "brandTagline": {
+    "message": "Kirjanmerkit"
+  },
+  "searchPlaceholder": {
+    "message": "Hae kirjanmerkeistä (paina /)"
+  },
+  "themeToggleTitle": {
+    "message": "Vaihda teemaa (tumma/vaalea)"
+  },
+  "viewsLabel": {
+    "message": "Näkymät"
+  },
+  "presetAll": {
+    "message": "Kaikki"
+  },
+  "presetRecent": {
+    "message": "Viimeiset 30 pv"
+  },
+  "presetOldest": {
+    "message": "100 vanhinta"
+  },
+  "presetStray": {
+    "message": "Ei kansiota"
+  },
+  "foldersLabel": {
+    "message": "Kansiot"
+  },
+  "newFolderRootTitle": {
+    "message": "Uusi kansio Kirjanmerkkipalkkiin"
+  },
+  "newFolderBtn": {
+    "message": "+ uusi"
+  },
+  "sortLabel": {
+    "message": "Järjestys"
+  },
+  "sortManual": {
+    "message": "Manuaalinen"
+  },
+  "sortTitle": {
+    "message": "Otsikko"
+  },
+  "sortDateDesc": {
+    "message": "Uusimmat ensin"
+  },
+  "sortDateAsc": {
+    "message": "Vanhimmat ensin"
+  },
+  "sortDomain": {
+    "message": "Verkkotunnus"
+  },
+  "hintSearch": {
+    "message": "hae"
+  },
+  "hintNav": {
+    "message": "liiku"
+  },
+  "hintOpen": {
+    "message": "avaa"
+  },
+  "hintNewTab": {
+    "message": "uusi välilehti"
+  },
+  "hintRename": {
+    "message": "nimeä uudelleen"
+  },
+  "hintDelete": {
+    "message": "poista"
+  },
+  "hintReset": {
+    "message": "palauta"
+  },
+  "dateToday": {
+    "message": "tänään"
+  },
+  "dateYesterday": {
+    "message": "eilen"
+  },
+  "dateUnitDay": {
+    "message": "pv"
+  },
+  "dateUnitWeek": {
+    "message": "vk"
+  },
+  "dateUnitMonth": {
+    "message": "kk"
+  },
+  "dateUnitYear": {
+    "message": "v"
+  },
+  "newSubfolderTitle": {
+    "message": "Uusi alikansio"
+  },
+  "renameTitleAttr": {
+    "message": "Nimeä uudelleen"
+  },
+  "deleteTitleAttr": {
+    "message": "Poista"
+  },
+  "folderNewNamePrompt": {
+    "message": "Uuden alikansion nimi:"
+  },
+  "folderRenamePrompt": {
+    "message": "Kansion uusi nimi:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Poistetaanko tyhjä kansio \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Virhe: "
+  },
+  "rootNodeLabel": {
+    "message": "(juuri)"
+  },
+  "itemsCountSingular": {
+    "message": "kirjanmerkki"
+  },
+  "itemsCountPlural": {
+    "message": "kirjanmerkkiä"
+  },
+  "subfolderCountSingular": {
+    "message": "alikansio"
+  },
+  "subfolderCountPlural": {
+    "message": "alikansiota"
+  },
+  "emptyFolderLabel": {
+    "message": "tyhjä"
+  },
+  "noNameFolder": {
+    "message": "(nimetön)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Tulokset haulle \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Ei tuloksia haulle \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Tyhjä kansio"
+  },
+  "openNewTabTitle": {
+    "message": "Avaa uudessa välilehdessä"
+  },
+  "copyUrlTitle": {
+    "message": "Kopioi URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Nimeä uudelleen (E)"
+  },
+  "moveToTitle": {
+    "message": "Siirrä kohteeseen..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Poista (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Kirjanmerkkisovelmia (javascript:-URL-osoitteita) ei voi suorittaa täältä CSP-tietoturvarajoitusten vuoksi. Kopioi URL ja liitä se osoitepalkkiin."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopioitu"
+  },
+  "renameTitlePrompt": {
+    "message": "Uusi otsikko:"
+  },
+  "moveToPrompt": {
+    "message": "Siirrä kohteeseen (polku kuten 'Työ/Palvelin', erottimena /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Kansiota ei voi siirtää itseensä tai mihinkään sen alikansioista."
+  },
+  "itemDeleteConfirm": {
+    "message": "Poistetaanko \"$TITLE$\"?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Poistetaanko \"$TITLE$\"? Kirjanmerkkejä: $COUNT$, alikansioita: $SUBCOUNT$. Toimintoa ei voi kumota.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Uuden kansion nimi (Kirjanmerkkipalkkiin):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Kirjanmerkit"
+  },
+  "metaSummary": {
+    "message": "URL-osoitteita: $URLS$ · kansioita: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Tietoja · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Tietoja"
+  },
+  "creditsBack": {
+    "message": "← Takaisin"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Kehittänyt "
+  },
+  "creditsIntroPost": {
+    "message": ", italialainen verkkokehityksen ja verkkokaupan toimisto, joka on erikoistunut PrestaShopiin ja räätälöityihin verkkoratkaisuihin."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Verkkosivusto:"
+  },
+  "creditsSourceLabel": {
+    "message": "Lähdekoodi:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Lisenssi: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Tämä laajennus toimii kokonaan laitteellasi. Se lukee ja muokkaa kirjanmerkkejäsi vain Chromen virallisen chrome.bookmarks-API:n kautta — tietoja ei kerätä, siirretä eikä myydä."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Peruuta"
+  },
+  "supportLabel": {
+    "message": "Tarjoa minulle kahvi"
+  },
+  "supportTitle": {
+    "message": "Pidätkö Bookmark Tidystä? Tue kehitystä Buy Me a Coffee -palvelussa"
+  }
+}
