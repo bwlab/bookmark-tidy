@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Limpia, deduplica y organiza tus marcadores de Chrome con una interfaz moderna. Compatible con sync (API chrome.bookmarks)."
+    "message": "Limpia y organiza tus marcadores de Chrome con una interfaz moderna. Compatible con sync (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Abrir el gestor de marcadores bwlab"
   },
   "pageTitle": {
     "message": "Marcadores · bwlab"

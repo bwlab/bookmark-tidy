@@ -27,7 +27,7 @@
   "commands": {
     "open-manager": {
       "suggested_key": { "default": "Alt+Shift+B" },
-      "description": "Apri Bookmark Manager bwlab"
+      "description": "__MSG_commandOpenManager__"
     }
   },
   "background": {

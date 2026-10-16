@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Riordina, dedup e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API)."
+    "message": "Riordina e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Apri il Bookmark Manager bwlab"
   },
   "pageTitle": {
     "message": "Preferiti · bwlab"

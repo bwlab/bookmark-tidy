@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Chrome-Lesezeichen aufräumen, deduplizieren und verwalten mit einer modernen Oberfläche. Sync-sicher (chrome.bookmarks-API)."
+    "message": "Chrome-Lesezeichen aufräumen und verwalten mit einer modernen Oberfläche. Sync-sicher (chrome.bookmarks-API)."
+  },
+  "commandOpenManager": {
+    "message": "bwlab Lesezeichen-Manager öffnen"
   },
   "pageTitle": {
     "message": "Lesezeichen · bwlab"

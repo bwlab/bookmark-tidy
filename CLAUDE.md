@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Cosa è
 
-Estensione Chrome MV3 (vanilla JS, niente bundler) per riordinare, deduplicare e gestire preferiti Chrome. Una sola UI:
+Estensione Chrome MV3 (vanilla JS, niente bundler) per riordinare e gestire preferiti Chrome. Una sola UI:
 
 - **Manager** (override `chrome://bookmarks`, apribile anche da icona toolbar o `Alt+Shift+B`): page application con sidebar albero, lista item, ricerca istantanea, drag&drop, gestione cartelle
 

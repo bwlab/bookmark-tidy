@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Nettoyez, dédupliquez et gérez vos favoris Chrome avec une interface moderne. Compatible sync (API chrome.bookmarks)."
+    "message": "Nettoyez et gérez vos favoris Chrome avec une interface moderne. Compatible sync (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Ouvrir le gestionnaire de favoris bwlab"
   },
   "pageTitle": {
     "message": "Favoris · bwlab"

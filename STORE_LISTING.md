@@ -8,7 +8,7 @@ Da incollare nelle rispettive localizzazioni della Developer Console
 ## English (en)
 
 **Short description** (≤132 chars)
-Clean up, deduplicate and organize your Chrome bookmarks with a fast, modern interface. 100% local, sync-safe.
+Clean up and organize your Chrome bookmarks with a fast, modern interface. 100% local, sync-safe.
 
 **Detailed description**
 Bookmark Tidy bwlab helps you take control of a messy bookmarks bar.
@@ -29,7 +29,7 @@ Open source (MIT license): github.com/bwlab/bookmark-tidy
 ## Italiano (it)
 
 **Descrizione breve** (≤132 caratteri)
-Riordina, deduplica e organizza i preferiti Chrome con un'interfaccia moderna e veloce. 100% locale, sync-safe.
+Riordina e organizza i preferiti Chrome con un'interfaccia moderna e veloce. 100% locale, sync-safe.
 
 **Descrizione estesa**
 Bookmark Tidy bwlab ti aiuta a rimettere ordine in una barra dei preferiti caotica.
@@ -50,7 +50,7 @@ Open source (licenza MIT): github.com/bwlab/bookmark-tidy
 ## Español (es)
 
 **Descripción breve** (≤132 caracteres)
-Limpia, deduplica y organiza tus marcadores de Chrome con una interfaz moderna y rápida. 100% local, compatible con sync.
+Limpia y organiza tus marcadores de Chrome con una interfaz moderna y rápida. 100% local, compatible con sync.
 
 **Descripción detallada**
 Bookmark Tidy bwlab te ayuda a poner orden en una barra de marcadores caótica.
@@ -71,7 +71,7 @@ Código abierto (licencia MIT): github.com/bwlab/bookmark-tidy
 ## Français (fr)
 
 **Description courte** (≤132 caractères)
-Nettoyez, dédupliquez et organisez vos favoris Chrome avec une interface moderne et rapide. 100% local, compatible sync.
+Nettoyez et organisez vos favoris Chrome avec une interface moderne et rapide. 100% local, compatible sync.
 
 **Description détaillée**
 Bookmark Tidy bwlab vous aide à remettre de l'ordre dans une barre de favoris chaotique.
@@ -92,7 +92,7 @@ Open source (licence MIT) : github.com/bwlab/bookmark-tidy
 ## Deutsch (de)
 
 **Kurzbeschreibung** (≤132 Zeichen)
-Chrome-Lesezeichen aufräumen, deduplizieren und organisieren mit einer modernen, schnellen Oberfläche. 100% lokal, sync-sicher.
+Chrome-Lesezeichen aufräumen und organisieren mit einer modernen, schnellen Oberfläche. 100% lokal, sync-sicher.
 
 **Ausführliche Beschreibung**
 Bookmark Tidy bwlab hilft dir, Ordnung in eine chaotische Lesezeichenleiste zu bringen.

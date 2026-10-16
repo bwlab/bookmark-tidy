@@ -3,7 +3,10 @@
     "message": "Bookmark Tidy bwlab"
   },
   "extDescription": {
-    "message": "Clean up, deduplicate and manage your Chrome bookmarks with a modern interface. Sync-safe (chrome.bookmarks API)."
+    "message": "Clean up and manage your Chrome bookmarks with a modern interface. Sync-safe (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Open bwlab Bookmark Manager"
   },
   "pageTitle": {
     "message": "Bookmarks · bwlab"
