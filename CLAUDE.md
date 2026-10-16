@@ -61,7 +61,7 @@ Mutazioni via `mutate(fn)`: esegue, mostra l'errore nel dialog, poi `refresh()`.
 
 ## Design System v2 (riferimento)
 
-Token CSS in `manager.css :root` derivati da `design-tokens.css` del sito bwlab (`/media/extra/Progetti/astrojs-primereact/CascadeProjects/windsurf-project/astro-primereact/src/styles/design-tokens.css`). `--heritage-a` è impostato su lime bwlab (`#B8FF3E`, dal palette Lab dei design-tokens) invece del giallo originale; `--heritage-b` (rosso) resta per gli stati di errore. Per nuovi componenti: usare variabili `--surface-*`, `--fg-*`, `--accent-a/b`, `--accent-a-weak`, font `var(--font-sans)` Inter Tight, mai colori hard-coded.
+Token CSS in `manager.css :root` derivati da `design-tokens.css` del sito bwlab (`/media/extra/Progetti/astrojs-primereact/CascadeProjects/windsurf-project/astro-primereact/src/styles/design-tokens.css`). `--heritage-a` è impostato su lime bwlab (`#B8FF3E`, dal palette Lab dei design-tokens) invece del giallo originale; `--heritage-b` (rosso) resta per gli stati di errore. Per nuovi componenti: usare variabili `--surface-*`, `--fg-*`, `--accent-a/b`, `--accent-a-weak`, **`--accent-a-text` per testo in colore accent** (lime nel tema scuro, `#3D6600` nel chiaro: il lime su bianco ha contrasto 1.2:1; `--accent-a` solo per bordi/sfondi), font `var(--font-sans)` Inter Tight, mai colori hard-coded.
 
 ## Repo
 
