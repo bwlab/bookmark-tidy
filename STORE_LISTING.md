@@ -24,6 +24,8 @@ Everything runs locally on your device through Chrome's official `chrome.bookmar
 
 Open source (MIT license): github.com/bwlab/bookmark-tidy
 
+☕ If you find Bookmark Tidy useful, you can buy me a coffee: buymeacoffee.com/bwlab
+
 ---
 
 ## Italiano (it)
@@ -44,6 +46,8 @@ PRIVACY
 Tutto funziona in locale sul tuo dispositivo tramite l'API ufficiale `chrome.bookmarks` di Chrome. Nessun dato viene raccolto, trasmesso o venduto. Se hai Chrome Sync attivo, le modifiche si sincronizzano tramite l'infrastruttura di Google — mai tramite server di terze parti.
 
 Open source (licenza MIT): github.com/bwlab/bookmark-tidy
+
+☕ Se Bookmark Tidy ti è utile, puoi offrirmi un caffè: buymeacoffee.com/bwlab
 
 ---
 
@@ -66,6 +70,8 @@ Todo funciona de forma local en tu dispositivo mediante la API oficial `chrome.b
 
 Código abierto (licencia MIT): github.com/bwlab/bookmark-tidy
 
+☕ Si Bookmark Tidy te resulta útil, puedes invitarme a un café: buymeacoffee.com/bwlab
+
 ---
 
 ## Français (fr)
@@ -86,6 +92,8 @@ CONFIDENTIALITÉ
 Tout fonctionne localement sur votre appareil via l'API officielle `chrome.bookmarks` de Chrome. Aucune donnée n'est collectée, transmise ou vendue. Si la synchronisation Chrome est activée, les modifications se synchronisent via l'infrastructure de Google, jamais via des serveurs tiers.
 
 Open source (licence MIT) : github.com/bwlab/bookmark-tidy
+
+☕ Si Bookmark Tidy vous est utile, vous pouvez m'offrir un café : buymeacoffee.com/bwlab
 
 ---
 
@@ -108,6 +116,8 @@ Alles läuft lokal auf deinem Gerät über die offizielle `chrome.bookmarks`-API
 
 Open Source (MIT-Lizenz): github.com/bwlab/bookmark-tidy
 
+☕ Wenn dir Bookmark Tidy hilft, kannst du mir einen Kaffee spendieren: buymeacoffee.com/bwlab
+
 ---
 
 ## Português (Brasil) (pt_BR)
@@ -128,6 +138,8 @@ PRIVACIDADE
 Tudo funciona localmente no seu dispositivo por meio da API oficial `chrome.bookmarks` do Chrome. Nenhum dado é coletado, transmitido ou vendido. Se a sincronização do Chrome estiver ativada, as alterações são sincronizadas pela infraestrutura do Google — nunca por servidores de terceiros.
 
 Código aberto (licença MIT): github.com/bwlab/bookmark-tidy
+
+☕ Se o Bookmark Tidy for útil para você, pode me pagar um café: buymeacoffee.com/bwlab
 
 ---
 
@@ -150,6 +162,8 @@ Tudo funciona localmente no seu dispositivo através da API oficial `chrome.book
 
 Código aberto (licença MIT): github.com/bwlab/bookmark-tidy
 
+☕ Se o Bookmark Tidy lhe for útil, pode oferecer-me um café: buymeacoffee.com/bwlab
+
 ---
 
 ## Nederlands (nl)
@@ -170,6 +184,8 @@ PRIVACY
 Alles draait lokaal op je apparaat via de officiële `chrome.bookmarks`-API van Chrome. Er worden geen gegevens verzameld, verzonden of verkocht. Als Chrome Sync aanstaat, worden wijzigingen gesynchroniseerd via de infrastructuur van Google — nooit via servers van derden.
 
 Open source (MIT-licentie): github.com/bwlab/bookmark-tidy
+
+☕ Vind je Bookmark Tidy handig? Trakteer me dan op een kop koffie: buymeacoffee.com/bwlab
 
 ---
 
@@ -192,6 +208,8 @@ Tot funciona localment al teu dispositiu mitjançant l'API oficial `chrome.bookm
 
 Codi obert (llicència MIT): github.com/bwlab/bookmark-tidy
 
+☕ Si Bookmark Tidy et resulta útil, pots convidar-me a un cafè: buymeacoffee.com/bwlab
+
 ---
 
 ## Svenska (sv)
@@ -212,6 +230,8 @@ INTEGRITET
 Allt körs lokalt på din enhet via Chromes officiella `chrome.bookmarks`-API. Inga data samlas in, överförs eller säljs. Om Chrome-synkronisering är på synkroniseras ändringarna via Googles egen infrastruktur — aldrig via tredjepartsservrar.
 
 Öppen källkod (MIT-licens): github.com/bwlab/bookmark-tidy
+
+☕ Om du tycker att Bookmark Tidy är användbart kan du bjuda mig på en kaffe: buymeacoffee.com/bwlab
 
 ---
 
@@ -234,6 +254,8 @@ Alt kører lokalt på din enhed via Chromes officielle `chrome.bookmarks`-API. I
 
 Open source (MIT-licens): github.com/bwlab/bookmark-tidy
 
+☕ Hvis du har glæde af Bookmark Tidy, kan du give mig en kop kaffe: buymeacoffee.com/bwlab
+
 ---
 
 ## Norsk (no)
@@ -254,6 +276,8 @@ PERSONVERN
 Alt kjører lokalt på enheten din via Chromes offisielle `chrome.bookmarks`-API. Ingen data samles inn, overføres eller selges. Hvis Chrome-synkronisering er slått på, synkroniseres endringene via Googles egen infrastruktur — aldri via tredjepartsservere.
 
 Åpen kildekode (MIT-lisens): github.com/bwlab/bookmark-tidy
+
+☕ Hvis du har nytte av Bookmark Tidy, kan du spandere en kaffe på meg: buymeacoffee.com/bwlab
 
 ---
 
@@ -276,6 +300,8 @@ Kaikki toimii paikallisesti laitteellasi Chromen virallisen `chrome.bookmarks`-A
 
 Avoin lähdekoodi (MIT-lisenssi): github.com/bwlab/bookmark-tidy
 
+☕ Jos Bookmark Tidy on sinulle hyödyllinen, voit tarjota minulle kahvin: buymeacoffee.com/bwlab
+
 ---
 
 ## Ελληνικά (el)
@@ -296,6 +322,8 @@ Avoin lähdekoodi (MIT-lisenssi): github.com/bwlab/bookmark-tidy
 Όλα λειτουργούν τοπικά στη συσκευή σας μέσω του επίσημου API `chrome.bookmarks` του Chrome. Κανένα δεδομένο δεν συλλέγεται, δεν μεταδίδεται και δεν πωλείται. Αν ο συγχρονισμός του Chrome είναι ενεργός, οι αλλαγές συγχρονίζονται μέσω της υποδομής της Google — ποτέ μέσω διακομιστών τρίτων.
 
 Ανοιχτός κώδικας (άδεια MIT): github.com/bwlab/bookmark-tidy
+
+☕ Αν το Bookmark Tidy σάς φαίνεται χρήσιμο, μπορείτε να με κεράσετε έναν καφέ: buymeacoffee.com/bwlab
 
 ---
 
@@ -318,6 +346,8 @@ Bookmark Tidy bwlab は、散らかったブックマーク バーの整理を�
 
 オープンソース（MIT ライセンス）: github.com/bwlab/bookmark-tidy
 
+☕ Bookmark Tidy がお役に立ったら、コーヒーをおごっていただけるとうれしいです: buymeacoffee.com/bwlab
+
 ---
 
 ## 简体中文 (zh_CN)
@@ -338,6 +368,8 @@ Bookmark Tidy bwlab 帮您整理杂乱的书签栏。
 所有操作都通过 Chrome 官方的 `chrome.bookmarks` API 在您的设备上本地完成。不会收集、传输或出售任何数据。如果启用了 Chrome 同步，更改将通过 Google 自身的基础设施同步——绝不经过第三方服务器。
 
 开源（MIT 许可）: github.com/bwlab/bookmark-tidy
+
+☕ 如果 Bookmark Tidy 对您有帮助，欢迎请我喝杯咖啡：buymeacoffee.com/bwlab
 
 ---
 
@@ -360,6 +392,8 @@ Bookmark Tidy bwlab 協助您整理雜亂的書籤列。
 
 開放原始碼（MIT 授權）: github.com/bwlab/bookmark-tidy
 
+☕ 如果 Bookmark Tidy 對您有幫助，歡迎請我喝杯咖啡：buymeacoffee.com/bwlab
+
 ---
 
 ## हिन्दी (hi)
@@ -381,6 +415,8 @@ Bookmark Tidy bwlab आपके बिखरे हुए बुकमार्
 
 ओपन सोर्स (MIT लाइसेंस): github.com/bwlab/bookmark-tidy
 
+☕ अगर Bookmark Tidy आपके काम आया हो, तो आप मुझे एक कॉफ़ी पिला सकते हैं: buymeacoffee.com/bwlab
+
 ---
 
 ## Русский (ru)
@@ -401,3 +437,5 @@ Bookmark Tidy bwlab поможет навести порядок на захла
 Всё работает локально на вашем устройстве через официальный API `chrome.bookmarks` браузера Chrome. Никакие данные не собираются, не передаются и не продаются. Если включена синхронизация Chrome, изменения синхронизируются через инфраструктуру Google — и никогда через сторонние серверы.
 
 Открытый исходный код (лицензия MIT): github.com/bwlab/bookmark-tidy
+
+☕ Если Bookmark Tidy вам пригодился, можете угостить меня кофе: buymeacoffee.com/bwlab
