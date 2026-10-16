@@ -177,6 +177,7 @@ Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓
 3. **Click crumb breadcrumb** → torna a livello superiore
 4. **Click bottone preset** (Tutti/Recenti/...) → sidebar deselezionata, lista mostra preset, breadcrumb mostra `⚑ <nome>`
 5. **Tipizza nella ricerca** → tutto si resetta, lista mostra match cross-folder con highlight lime + chip cartella
+6. **Svuota la ricerca** (Backspace o `Esc` nel campo) → torna alla vista attiva prima della ricerca (cartella o preset); se la cartella nel frattempo è stata eliminata, torna alla Barra
 
 ### Operazioni su item
 

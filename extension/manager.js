@@ -28,6 +28,7 @@ const state = {
   query: "",
   sort: "manual",
   preset: null,
+  beforeSearch: null,        // vista attiva prima della ricerca {folderId, preset}: ripristinata a ricerca svuotata
   expanded: new Set(),
 };
 
@@ -603,6 +604,25 @@ function selectPreset(name) {
   renderList();
 }
 
+// Imposta la query. Entrando in ricerca memorizza la vista corrente (cartella o preset);
+// a ricerca svuotata la ripristina invece di lasciare una lista vuota.
+function setQuery(q) {
+  if (q === state.query) return;
+  if (q) {
+    if (!state.query) state.beforeSearch = { folderId: state.selectedFolderId, preset: state.preset };
+    state.query = q;
+    state.preset = null; state.selectedFolderId = null; state.selectedItemId = null;
+    el.presets.forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".node.active").forEach(n => n.classList.remove("active"));
+    renderList();
+    return;
+  }
+  const prev = state.beforeSearch;
+  state.beforeSearch = null;
+  if (prev?.preset) selectPreset(prev.preset);
+  else selectFolder(state.folders.has(prev?.folderId) ? prev.folderId : state.barId);
+}
+
 // ---- refresh ----
 async function refresh() {
   await loadTree();
@@ -621,7 +641,7 @@ document.addEventListener("keydown", (e) => {
   const isInput = e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA";
   if (isInput) {
     if (e.key === "Escape") {
-      el.search.value = ""; state.query = ""; renderList(); el.search.blur();
+      el.search.value = ""; setQuery(""); el.search.blur();
     }
     return;
   }
@@ -664,15 +684,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 // ---- search input ----
-el.search.addEventListener("input", debounce((e) => {
-  state.query = e.target.value.trim();
-  if (state.query) {
-    state.preset = null; state.selectedFolderId = null;
-    el.presets.forEach(b => b.classList.remove("active"));
-    document.querySelectorAll(".node.active").forEach(n => n.classList.remove("active"));
-  }
-  renderList();
-}, 120));
+el.search.addEventListener("input", debounce((e) => setQuery(e.target.value.trim()), 120));
 
 // ---- sort ----
 el.sort.addEventListener("change", (e) => { state.sort = e.target.value; renderList(); });
