@@ -1,0 +1,275 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "आधुनिक इंटरफ़ेस के साथ अपने Chrome बुकमार्क व्यवस्थित और प्रबंधित करें। सिंक-सुरक्षित (chrome.bookmarks API)।"
+  },
+  "commandOpenManager": {
+    "message": "bwlab बुकमार्क मैनेजर खोलें"
+  },
+  "pageTitle": {
+    "message": "बुकमार्क · bwlab"
+  },
+  "brandTagline": {
+    "message": "बुकमार्क"
+  },
+  "searchPlaceholder": {
+    "message": "बुकमार्क खोजें (/ दबाएं)"
+  },
+  "themeToggleTitle": {
+    "message": "थीम बदलें (डार्क/लाइट)"
+  },
+  "viewsLabel": {
+    "message": "व्यू"
+  },
+  "presetAll": {
+    "message": "सभी"
+  },
+  "presetRecent": {
+    "message": "हाल के 30 दिन"
+  },
+  "presetOldest": {
+    "message": "सबसे पुराने 100"
+  },
+  "presetStray": {
+    "message": "बिना फ़ोल्डर"
+  },
+  "foldersLabel": {
+    "message": "फ़ोल्डर"
+  },
+  "newFolderRootTitle": {
+    "message": "बुकमार्क बार में नया फ़ोल्डर"
+  },
+  "newFolderBtn": {
+    "message": "+ नया"
+  },
+  "sortLabel": {
+    "message": "क्रम"
+  },
+  "sortManual": {
+    "message": "मैन्युअल"
+  },
+  "sortTitle": {
+    "message": "शीर्षक"
+  },
+  "sortDateDesc": {
+    "message": "नए पहले"
+  },
+  "sortDateAsc": {
+    "message": "पुराने पहले"
+  },
+  "sortDomain": {
+    "message": "डोमेन"
+  },
+  "hintSearch": {
+    "message": "खोजें"
+  },
+  "hintNav": {
+    "message": "नेविगेट करें"
+  },
+  "hintOpen": {
+    "message": "खोलें"
+  },
+  "hintNewTab": {
+    "message": "नया टैब"
+  },
+  "hintRename": {
+    "message": "नाम बदलें"
+  },
+  "hintDelete": {
+    "message": "मिटाएं"
+  },
+  "hintReset": {
+    "message": "रीसेट"
+  },
+  "dateToday": {
+    "message": "आज"
+  },
+  "dateYesterday": {
+    "message": "कल"
+  },
+  "dateUnitDay": {
+    "message": " दिन"
+  },
+  "dateUnitWeek": {
+    "message": " सप्ताह"
+  },
+  "dateUnitMonth": {
+    "message": " माह"
+  },
+  "dateUnitYear": {
+    "message": " वर्ष"
+  },
+  "newSubfolderTitle": {
+    "message": "नया सबफ़ोल्डर"
+  },
+  "renameTitleAttr": {
+    "message": "नाम बदलें"
+  },
+  "deleteTitleAttr": {
+    "message": "मिटाएं"
+  },
+  "folderNewNamePrompt": {
+    "message": "नए सबफ़ोल्डर का नाम:"
+  },
+  "folderRenamePrompt": {
+    "message": "फ़ोल्डर का नया नाम:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "खाली फ़ोल्डर \"$TITLE$\" मिटाएं?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "त्रुटि: "
+  },
+  "rootNodeLabel": {
+    "message": "(रूट)"
+  },
+  "itemsCountSingular": {
+    "message": "बुकमार्क"
+  },
+  "itemsCountPlural": {
+    "message": "बुकमार्क"
+  },
+  "subfolderCountSingular": {
+    "message": "सबफ़ोल्डर"
+  },
+  "subfolderCountPlural": {
+    "message": "सबफ़ोल्डर"
+  },
+  "emptyFolderLabel": {
+    "message": "खाली"
+  },
+  "noNameFolder": {
+    "message": "(बिना नाम)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 \"$QUERY$\" के परिणाम",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "\"$QUERY$\" के लिए कोई परिणाम नहीं",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "खाली फ़ोल्डर"
+  },
+  "openNewTabTitle": {
+    "message": "नए टैब में खोलें"
+  },
+  "copyUrlTitle": {
+    "message": "URL कॉपी करें"
+  },
+  "renameShortcutTitle": {
+    "message": "नाम बदलें (E)"
+  },
+  "moveToTitle": {
+    "message": "यहां ले जाएं..."
+  },
+  "deleteShortcutTitle": {
+    "message": "मिटाएं (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "CSP सुरक्षा प्रतिबंधों के कारण बुकमार्कलेट (javascript: URL) यहां से नहीं चलाए जा सकते। URL कॉपी करें और उसे एड्रेस बार में पेस्ट करें।"
+  },
+  "urlCopiedFlash": {
+    "message": "URL कॉपी किया गया"
+  },
+  "renameTitlePrompt": {
+    "message": "नया शीर्षक:"
+  },
+  "moveToPrompt": {
+    "message": "यहां ले जाएं ('काम/सर्वर' जैसा पथ, / से अलग किया हुआ):"
+  },
+  "itemDeleteConfirm": {
+    "message": "\"$TITLE$\" मिटाएं?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "\"$TITLE$\" को उसके $COUNT$ बुकमार्क + $SUBCOUNT$ सबफ़ोल्डर के साथ मिटाएं? इसे पहले जैसा नहीं किया जा सकता।",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "नए फ़ोल्डर का नाम (बुकमार्क बार में):"
+  },
+  "bookmarksRootLabel": {
+    "message": "बुकमार्क"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ फ़ोल्डर",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "क्रेडिट · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "क्रेडिट"
+  },
+  "creditsBack": {
+    "message": "← वापस"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "निर्माता: "
+  },
+  "creditsIntroPost": {
+    "message": ", इटली स्थित वेब डेवलपमेंट और ई-कॉमर्स एजेंसी, जो PrestaShop और कस्टम वेब समाधानों में विशेषज्ञ है।"
+  },
+  "creditsWebsiteLabel": {
+    "message": "वेबसाइट:"
+  },
+  "creditsSourceLabel": {
+    "message": "सोर्स कोड:"
+  },
+  "creditsLicenseLabel": {
+    "message": "लाइसेंस: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "यह एक्सटेंशन पूरी तरह आपके डिवाइस पर चलता है। यह आपके बुकमार्क केवल Chrome के आधिकारिक chrome.bookmarks API के ज़रिए पढ़ता और बदलता है — कोई डेटा एकत्र, प्रेषित या बेचा नहीं जाता।"
+  },
+  "dialogOk": {
+    "message": "ठीक है"
+  },
+  "dialogCancel": {
+    "message": "रद्द करें"
+  }
+}

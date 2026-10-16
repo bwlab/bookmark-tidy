@@ -127,6 +127,15 @@ function formatDateFull(ms) {
     { year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
   return dateFullFmt.format(new Date(Number(ms)));
 }
+// "N preferiti" con la forma plurale giusta per la lingua (Intl.PluralRules):
+// chiavi <base>Singular/<base>Plural, piu' <base>Few/<base>Many opzionali (es. russo: 2 закладки, 5 закладок).
+let pluralRules;
+function countLabel(n, base) {
+  pluralRules ??= new Intl.PluralRules(chrome.i18n.getUILanguage());
+  const suffix = { one: "Singular", few: "Few", many: "Many" }[pluralRules.select(n)] || "Plural";
+  const word = chrome.i18n.getMessage(base + suffix) || t(base + (n === 1 ? "Singular" : "Plural"));
+  return `${n} ${word}`;
+}
 function debounce(fn, ms) {
   let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
 }
@@ -349,8 +358,8 @@ function renderList() {
   }
 
   const totalTxt = [];
-  if (subfolders.length) totalTxt.push(`${subfolders.length} ${t(subfolders.length === 1 ? "subfolderCountSingular" : "subfolderCountPlural")}`);
-  totalTxt.push(`${items.length} ${t(items.length === 1 ? "itemsCountSingular" : "itemsCountPlural")}`);
+  if (subfolders.length) totalTxt.push(countLabel(subfolders.length, "subfolderCount"));
+  totalTxt.push(countLabel(items.length, "itemsCount"));
   el.count.textContent = totalTxt.join(" · ");
 
   if (!items.length && !subfolders.length) {
@@ -406,8 +415,8 @@ function folderRowHtml(f) {
   const count = fi ? fi.count : 0;
   const subFolders = (f.children || []).filter(c => !c.url).length;
   const subInfo = [];
-  if (count) subInfo.push(`${count} ${t(count === 1 ? "itemsCountSingular" : "itemsCountPlural")}`);
-  if (subFolders) subInfo.push(`${subFolders} ${t(subFolders === 1 ? "subfolderCountSingular" : "subfolderCountPlural")}`);
+  if (count) subInfo.push(countLabel(count, "itemsCount"));
+  if (subFolders) subInfo.push(countLabel(subFolders, "subfolderCount"));
   const actions = locked ? "" : `
       <button class="act" data-fact="rename" title="${t("renameShortcutTitle")}">✎</button>
       <button class="act danger" data-fact="delete" title="${t("deleteShortcutTitle")}">✕</button>`;

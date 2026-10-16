@@ -1,0 +1,275 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Rydd opp i og administrer Chrome-bokmerkene dine med et moderne grensesnitt. Synkroniseringssikker (chrome.bookmarks-API)."
+  },
+  "commandOpenManager": {
+    "message": "Åpne bwlab Bokmerkebehandling"
+  },
+  "pageTitle": {
+    "message": "Bokmerker · bwlab"
+  },
+  "brandTagline": {
+    "message": "Bokmerker"
+  },
+  "searchPlaceholder": {
+    "message": "Søk i bokmerker (trykk /)"
+  },
+  "themeToggleTitle": {
+    "message": "Bytt tema (mørkt/lyst)"
+  },
+  "viewsLabel": {
+    "message": "Visninger"
+  },
+  "presetAll": {
+    "message": "Alle"
+  },
+  "presetRecent": {
+    "message": "Siste 30 d"
+  },
+  "presetOldest": {
+    "message": "Eldste 100"
+  },
+  "presetStray": {
+    "message": "Uten mappe"
+  },
+  "foldersLabel": {
+    "message": "Mapper"
+  },
+  "newFolderRootTitle": {
+    "message": "Ny mappe i Bokmerkeraden"
+  },
+  "newFolderBtn": {
+    "message": "+ ny"
+  },
+  "sortLabel": {
+    "message": "Sortering"
+  },
+  "sortManual": {
+    "message": "Manuell"
+  },
+  "sortTitle": {
+    "message": "Tittel"
+  },
+  "sortDateDesc": {
+    "message": "Nyeste først"
+  },
+  "sortDateAsc": {
+    "message": "Eldste først"
+  },
+  "sortDomain": {
+    "message": "Domene"
+  },
+  "hintSearch": {
+    "message": "søk"
+  },
+  "hintNav": {
+    "message": "naviger"
+  },
+  "hintOpen": {
+    "message": "åpne"
+  },
+  "hintNewTab": {
+    "message": "ny fane"
+  },
+  "hintRename": {
+    "message": "gi nytt navn"
+  },
+  "hintDelete": {
+    "message": "slett"
+  },
+  "hintReset": {
+    "message": "tilbakestill"
+  },
+  "dateToday": {
+    "message": "i dag"
+  },
+  "dateYesterday": {
+    "message": "i går"
+  },
+  "dateUnitDay": {
+    "message": "d"
+  },
+  "dateUnitWeek": {
+    "message": "u"
+  },
+  "dateUnitMonth": {
+    "message": "md"
+  },
+  "dateUnitYear": {
+    "message": "år"
+  },
+  "newSubfolderTitle": {
+    "message": "Ny undermappe"
+  },
+  "renameTitleAttr": {
+    "message": "Gi nytt navn"
+  },
+  "deleteTitleAttr": {
+    "message": "Slett"
+  },
+  "folderNewNamePrompt": {
+    "message": "Navn på ny undermappe:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nytt mappenavn:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Slette den tomme mappen «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Feil: "
+  },
+  "rootNodeLabel": {
+    "message": "(rot)"
+  },
+  "itemsCountSingular": {
+    "message": "bokmerke"
+  },
+  "itemsCountPlural": {
+    "message": "bokmerker"
+  },
+  "subfolderCountSingular": {
+    "message": "undermappe"
+  },
+  "subfolderCountPlural": {
+    "message": "undermapper"
+  },
+  "emptyFolderLabel": {
+    "message": "tom"
+  },
+  "noNameFolder": {
+    "message": "(uten navn)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Resultater for «$QUERY$»",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Ingen resultater for «$QUERY$»",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Tom mappe"
+  },
+  "openNewTabTitle": {
+    "message": "Åpne i ny fane"
+  },
+  "copyUrlTitle": {
+    "message": "Kopier URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Gi nytt navn (E)"
+  },
+  "moveToTitle": {
+    "message": "Flytt til ..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Slett (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bokmerkeprogrammer (javascript:-nettadresser) kan ikke kjøres herfra på grunn av CSP-sikkerhetsbegrensninger. Kopier nettadressen og lim den inn i adressefeltet."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopiert"
+  },
+  "renameTitlePrompt": {
+    "message": "Ny tittel:"
+  },
+  "moveToPrompt": {
+    "message": "Flytt til (sti som «Jobb/Server», adskilt med /):"
+  },
+  "itemDeleteConfirm": {
+    "message": "Slette «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Slette «$TITLE$» med $COUNT$ bokmerker + $SUBCOUNT$ undermapper? Dette kan ikke angres.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Navn på ny mappe (i Bokmerkeraden):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Bokmerker"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL-er · $FOLDERS$ mapper",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Om · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Om"
+  },
+  "creditsBack": {
+    "message": "← Tilbake"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Utviklet av "
+  },
+  "creditsIntroPost": {
+    "message": ", et italiensk byrå for nettutvikling og netthandel, spesialisert på PrestaShop og skreddersydde nettløsninger."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Nettsted:"
+  },
+  "creditsSourceLabel": {
+    "message": "Kildekode:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Lisens: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Denne utvidelsen kjører helt på enheten din. Den leser og endrer bokmerkene dine bare via Chromes offisielle chrome.bookmarks-API — ingen data samles inn, overføres eller selges."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Avbryt"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Наводите порядок в закладках Chrome и управляйте ими в современном интерфейсе. Безопасно для синхронизации (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Открыть Диспетчер закладок bwlab"
+  },
+  "pageTitle": {
+    "message": "Закладки · bwlab"
+  },
+  "brandTagline": {
+    "message": "Закладки"
+  },
+  "searchPlaceholder": {
+    "message": "Поиск по закладкам (нажмите /)"
+  },
+  "themeToggleTitle": {
+    "message": "Сменить тему (тёмная/светлая)"
+  },
+  "viewsLabel": {
+    "message": "Представления"
+  },
+  "presetAll": {
+    "message": "Все"
+  },
+  "presetRecent": {
+    "message": "За 30 дней"
+  },
+  "presetOldest": {
+    "message": "100 самых старых"
+  },
+  "presetStray": {
+    "message": "Без папки"
+  },
+  "foldersLabel": {
+    "message": "Папки"
+  },
+  "newFolderRootTitle": {
+    "message": "Новая папка на панели закладок"
+  },
+  "newFolderBtn": {
+    "message": "+ новая"
+  },
+  "sortLabel": {
+    "message": "Порядок"
+  },
+  "sortManual": {
+    "message": "Вручную"
+  },
+  "sortTitle": {
+    "message": "Название"
+  },
+  "sortDateDesc": {
+    "message": "Сначала новые"
+  },
+  "sortDateAsc": {
+    "message": "Сначала старые"
+  },
+  "sortDomain": {
+    "message": "Домен"
+  },
+  "hintSearch": {
+    "message": "поиск"
+  },
+  "hintNav": {
+    "message": "навигация"
+  },
+  "hintOpen": {
+    "message": "открыть"
+  },
+  "hintNewTab": {
+    "message": "новая вкладка"
+  },
+  "hintRename": {
+    "message": "переименовать"
+  },
+  "hintDelete": {
+    "message": "удалить"
+  },
+  "hintReset": {
+    "message": "сброс"
+  },
+  "dateToday": {
+    "message": "сегодня"
+  },
+  "dateYesterday": {
+    "message": "вчера"
+  },
+  "dateUnitDay": {
+    "message": " дн."
+  },
+  "dateUnitWeek": {
+    "message": " нед."
+  },
+  "dateUnitMonth": {
+    "message": " мес."
+  },
+  "dateUnitYear": {
+    "message": " г."
+  },
+  "newSubfolderTitle": {
+    "message": "Новая подпапка"
+  },
+  "renameTitleAttr": {
+    "message": "Переименовать"
+  },
+  "deleteTitleAttr": {
+    "message": "Удалить"
+  },
+  "folderNewNamePrompt": {
+    "message": "Название новой подпапки:"
+  },
+  "folderRenamePrompt": {
+    "message": "Новое название папки:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Удалить пустую папку «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Ошибка: "
+  },
+  "rootNodeLabel": {
+    "message": "(корень)"
+  },
+  "itemsCountSingular": {
+    "message": "закладка"
+  },
+  "itemsCountPlural": {
+    "message": "закладки"
+  },
+  "itemsCountFew": {
+    "message": "закладки"
+  },
+  "itemsCountMany": {
+    "message": "закладок"
+  },
+  "subfolderCountSingular": {
+    "message": "подпапка"
+  },
+  "subfolderCountPlural": {
+    "message": "подпапки"
+  },
+  "subfolderCountFew": {
+    "message": "подпапки"
+  },
+  "subfolderCountMany": {
+    "message": "подпапок"
+  },
+  "emptyFolderLabel": {
+    "message": "пусто"
+  },
+  "noNameFolder": {
+    "message": "(без названия)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Результаты по запросу «$QUERY$»",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "По запросу «$QUERY$» ничего не найдено",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Папка пуста"
+  },
+  "openNewTabTitle": {
+    "message": "Открыть в новой вкладке"
+  },
+  "copyUrlTitle": {
+    "message": "Копировать URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Переименовать (E)"
+  },
+  "moveToTitle": {
+    "message": "Переместить в..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Удалить (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Букмарклеты (URL javascript:) нельзя запустить отсюда из-за ограничений безопасности CSP. Скопируйте URL и вставьте его в адресную строку."
+  },
+  "urlCopiedFlash": {
+    "message": "URL скопирован"
+  },
+  "renameTitlePrompt": {
+    "message": "Новое название:"
+  },
+  "moveToPrompt": {
+    "message": "Переместить в (путь вида «Работа/Сервер», разделитель /):"
+  },
+  "itemDeleteConfirm": {
+    "message": "Удалить «$TITLE$»?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Удалить «$TITLE$»? Закладок: $COUNT$, подпапок: $SUBCOUNT$. Это действие нельзя отменить.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Название новой папки (на панели закладок):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Закладки"
+  },
+  "metaSummary": {
+    "message": "Ссылок: $URLS$ · папок: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Авторы · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Авторы"
+  },
+  "creditsBack": {
+    "message": "← Назад"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Разработано "
+  },
+  "creditsIntroPost": {
+    "message": " — итальянским агентством веб-разработки и электронной коммерции, специализирующимся на PrestaShop и индивидуальных веб-решениях."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Сайт:"
+  },
+  "creditsSourceLabel": {
+    "message": "Исходный код:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Лицензия: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Это расширение работает полностью на вашем устройстве. Оно читает и изменяет закладки только через официальный API chrome.bookmarks браузера Chrome — никакие данные не собираются, не передаются и не продаются."
+  },
+  "dialogOk": {
+    "message": "ОК"
+  },
+  "dialogCancel": {
+    "message": "Отмена"
+  }
+}

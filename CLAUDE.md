@@ -39,6 +39,15 @@ Render diviso: `renderTree()` per sidebar, `renderList()` per content. Quando in
 
 Mutazioni via `mutate(fn)`: esegue, mostra l'errore nel dialog, poi `refresh()`. Niente `prompt/confirm/alert` nativi: usare `ui.prompt/ui.confirm/ui.alert` (Promise, `<dialog id="dialog">` in manager.html). Drag&drop interno con MIME custom `DND_TYPE` (drag esterni ignorati).
 
+## i18n
+
+`extension/_locales/` con 19 lingue: it (default), en, es, fr, de, pt_BR, pt_PT, nl, ca, sv, da, no, fi, el, ja, zh_CN, zh_TW, hi, ru. Testi via `t(key, subs)` (i18n.js) e attributi `data-i18n`, `data-i18n-title`, `data-i18n-placeholder`.
+
+- **Ogni chiave nuova va aggiunta in tutte le 19 lingue** (stessi `placeholders` di `en`). `extDescription` ≤132 caratteri (limite manifest).
+- Conteggi con `countLabel(n, base)`: forma scelta da `Intl.PluralRules` → `<base>Singular` / `<base>Plural`, più `<base>Few` / `<base>Many` opzionali (presenti solo in `ru`). Nei messaggi con numeri interpolati preferire la forma neutra "Etichetta: N" dove la lingua ha più plurali.
+- `dateUnit*` vengono concatenate al numero senza spazio (`3d`, `3日前`): includere lo spazio iniziale nel messaggio se la lingua lo richiede (`ru`, `hi`).
+- I testi per il Chrome Web Store, per lingua, stanno in `STORE_LISTING.md`.
+
 ## Vincoli MV3 da ricordare
 
 - **CSP `script-src 'self'`**: no inline `onclick=`, no inline `<script>`, no `javascript:` URLs eseguibili. Tutti gli handler via `addEventListener`. Bookmarklet (`javascript:` URL) renderizzati con `href="#"` neutralizzato + alert su click.
