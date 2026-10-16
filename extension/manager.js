@@ -43,6 +43,25 @@ const bm = {
 
 const ROOT_IDS = new Set(["0", "1", "2", "3"]); // non toccare
 
+// ---- drag&drop interno ----
+// MIME custom: drag esterni (link/testo da altre pagine) non vengono accettati come drop.
+const DND_TYPE = "application/x-bookmark-tidy-ids";
+function setDragIds(e, ids) {
+  e.dataTransfer.setData(DND_TYPE, JSON.stringify(ids));
+  e.dataTransfer.effectAllowed = "move";
+}
+function isInternalDrag(e) { return e.dataTransfer.types.includes(DND_TYPE); }
+async function dropInto(parentId, e) {
+  let ids = [];
+  try { ids = JSON.parse(e.dataTransfer.getData(DND_TYPE) || "[]"); } catch { return; }
+  for (const id of ids) {
+    if (id === parentId) continue;
+    try { await bm.move(id, { parentId }); }
+    catch (err) { alert(t("errorPrefix") + err.message); }
+  }
+  await refresh();
+}
+
 // ---- utils ----
 function hostOf(u) { try { return new URL(u).hostname; } catch { return ""; } }
 function faviconUrl(u) {
@@ -191,8 +210,7 @@ function renderNode(node, parent) {
     row.draggable = true;
     row.addEventListener("dragstart", (e) => {
       e.stopPropagation();
-      e.dataTransfer.setData("text/plain", JSON.stringify([node.id]));
-      e.dataTransfer.effectAllowed = "move";
+      setDragIds(e, [node.id]);
     });
   }
 
@@ -233,16 +251,15 @@ function renderNode(node, parent) {
   });
   row.addEventListener("click", () => selectFolder(node.id));
 
-  row.addEventListener("dragover", (e) => { e.preventDefault(); row.classList.add("drop-target"); });
+  row.addEventListener("dragover", (e) => {
+    if (!isInternalDrag(e)) return;
+    e.preventDefault(); row.classList.add("drop-target");
+  });
   row.addEventListener("dragleave", () => row.classList.remove("drop-target"));
-  row.addEventListener("drop", async (e) => {
+  row.addEventListener("drop", (e) => {
     e.preventDefault();
     row.classList.remove("drop-target");
-    const ids = JSON.parse(e.dataTransfer.getData("text/plain") || "[]");
-    for (const id of ids) {
-      try { await bm.move(id, { parentId: node.id }); } catch (err) { console.error(err); }
-    }
-    await refresh();
+    dropInto(node.id, e);
   });
 
   if (isExpanded && hasSubFolders) {
@@ -356,22 +373,18 @@ function buildFolderRow(f) {
   });
   // drag folder
   if (!ROOT_IDS.has(f.id)) {
-    li.addEventListener("dragstart", (e) => {
-      e.dataTransfer.setData("text/plain", JSON.stringify([f.id]));
-      e.dataTransfer.effectAllowed = "move";
-    });
+    li.addEventListener("dragstart", (e) => setDragIds(e, [f.id]));
   }
   // drop (accetta item/cartelle dentro)
-  li.addEventListener("dragover", (e) => { e.preventDefault(); li.classList.add("drop-target"); });
+  li.addEventListener("dragover", (e) => {
+    if (!isInternalDrag(e)) return;
+    e.preventDefault(); li.classList.add("drop-target");
+  });
   li.addEventListener("dragleave", () => li.classList.remove("drop-target"));
-  li.addEventListener("drop", async (e) => {
+  li.addEventListener("drop", (e) => {
     e.preventDefault();
     li.classList.remove("drop-target");
-    const ids = JSON.parse(e.dataTransfer.getData("text/plain") || "[]");
-    for (const id of ids) {
-      try { await bm.move(id, { parentId: f.id }); } catch (err) { console.error(err); }
-    }
-    await refresh();
+    dropInto(f.id, e);
   });
   // rename / delete
   li.querySelector("[data-fact=rename]").addEventListener("click", async (e) => {
@@ -410,10 +423,7 @@ function bindItemEvents(li, it) {
     if (isJsUrl) return;
     window.location.href = it.url;
   });
-  li.addEventListener("dragstart", (e) => {
-    e.dataTransfer.setData("text/plain", JSON.stringify([it.id]));
-    e.dataTransfer.effectAllowed = "move";
-  });
+  li.addEventListener("dragstart", (e) => setDragIds(e, [it.id]));
 
   li.querySelector("[data-act=newtab]").addEventListener("click", (e) => {
     e.stopPropagation();
@@ -434,7 +444,12 @@ function bindItemEvents(li, it) {
     const path = prompt(t("moveToPrompt"), it.path.join("/"));
     if (!path) return;
     const segs = path.split("/").map(s => s.trim()).filter(Boolean);
+    // Il path proposto parte dal nome della root (es. "Barra dei preferiti/...", come it.path):
+    // se il primo segmento e' una root si parte da li', altrimenti path relativo alla Barra.
+    const roots = await bm.children("0");
+    const root = roots.find(r => r.title === segs[0]);
     let pid = BAR_ROOT_ID;
+    if (root) { pid = root.id; segs.shift(); }
     for (const seg of segs) {
       const kids = await bm.children(pid);
       let f = kids.find(k => !k.url && k.title === seg);
@@ -568,17 +583,18 @@ document.addEventListener("keydown", (e) => {
     state.selectedItemId = items[idx].dataset.id;
   } else if (e.key === "Enter") {
     const sel = el.list.querySelector(".item.selected");
-    if (sel) {
-      const a = sel.querySelector(".title");
-      if (e.ctrlKey || e.metaKey) chrome.tabs.create({ url: a.href, active: false });
-      else window.location.href = a.href;
-    }
+    if (!sel) return;
+    if (sel.classList.contains("folder-row")) { selectFolder(sel.dataset.id); return; }
+    const url = sel.querySelector(".title").dataset.url;
+    if (/^javascript:/i.test(url)) { alert(t("bookmarkletAlert")); return; }
+    if (e.ctrlKey || e.metaKey) chrome.tabs.create({ url, active: false });
+    else window.location.href = url;
   } else if (e.key === "Delete") {
     const sel = el.list.querySelector(".item.selected");
-    sel?.querySelector("[data-act=delete]").click();
+    sel?.querySelector("[data-act=delete], [data-fact=delete]")?.click();
   } else if (e.key.toLowerCase() === "e" && !e.ctrlKey && !e.metaKey) {
     const sel = el.list.querySelector(".item.selected");
-    sel?.querySelector("[data-act=rename]").click();
+    sel?.querySelector("[data-act=rename], [data-fact=rename]")?.click();
   }
 });
 
