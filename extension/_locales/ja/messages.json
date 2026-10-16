@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "キャンセル"
+  },
+  "supportLabel": {
+    "message": "コーヒーをおごる"
+  },
+  "supportTitle": {
+    "message": "Bookmark Tidy が気に入ったら、Buy Me a Coffee で開発を応援してください"
   }
 }

@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "Cancel·la"
+  },
+  "supportLabel": {
+    "message": "Convida'm a un cafè"
+  },
+  "supportTitle": {
+    "message": "T'agrada Bookmark Tidy? Dona suport al desenvolupament a Buy Me a Coffee"
   }
 }

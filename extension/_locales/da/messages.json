@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "Annuller"
+  },
+  "supportLabel": {
+    "message": "Giv mig en kop kaffe"
+  },
+  "supportTitle": {
+    "message": "Kan du lide Bookmark Tidy? Støt udviklingen på Buy Me a Coffee"
   }
 }

@@ -286,5 +286,11 @@
   },
   "dialogCancel": {
     "message": "Отмена"
+  },
+  "supportLabel": {
+    "message": "Угостить кофе"
+  },
+  "supportTitle": {
+    "message": "Нравится Bookmark Tidy? Поддержите разработку на Buy Me a Coffee"
   }
 }

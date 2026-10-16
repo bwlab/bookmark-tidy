@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "取消"
+  },
+  "supportLabel": {
+    "message": "请我喝杯咖啡"
+  },
+  "supportTitle": {
+    "message": "喜欢 Bookmark Tidy？在 Buy Me a Coffee 上支持开发"
   }
 }

@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "Cancel"
+  },
+  "supportLabel": {
+    "message": "Buy me a coffee"
+  },
+  "supportTitle": {
+    "message": "Enjoying Bookmark Tidy? Support development on Buy Me a Coffee"
   }
 }

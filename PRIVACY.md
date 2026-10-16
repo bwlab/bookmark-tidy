@@ -25,7 +25,7 @@ L'estensione richiede i seguenti permessi Chrome:
 
 ## Servizi esterni
 
-**Nessuno.** L'estensione non effettua connessioni a Internet: le favicon dei siti vengono lette dalla cache locale di Chrome tramite il permesso `favicon`.
+**Nessuno.** L'estensione non effettua connessioni a Internet in autonomia. Il pulsante "Offrimi un caffè" è un normale link che apre `https://buymeacoffee.com/bwlab` in una nuova scheda solo quando l'utente lo clicca; nessun dato dell'estensione viene inviato: le favicon dei siti vengono lette dalla cache locale di Chrome tramite il permesso `favicon`.
 
 ## Memorizzazione locale
 

@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "रद्द करें"
+  },
+  "supportLabel": {
+    "message": "मुझे एक कॉफ़ी पिलाएं"
+  },
+  "supportTitle": {
+    "message": "Bookmark Tidy पसंद आया? Buy Me a Coffee पर इसके विकास में सहयोग करें"
   }
 }

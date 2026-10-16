@@ -62,6 +62,7 @@ Palette bwlab: accent lime `#B8FF3E` (`--accent-a`) + rosso `#E30613` (`--accent
    - Tipizzando filtra istantaneamente (debounce 120ms) titolo + URL + path cartella
 
 3. **Header-right** (destra)
+   - **☕ Offrimi un caffè**: pulsante pill giallo pieno (`--support-bg`, uguale nei due temi) → `https://buymeacoffee.com/bwlab` in nuova tab. Sotto 1100px di larghezza mostra solo l'icona (testo nel tooltip). Presente anche nella pagina Credits
    - **Theme toggle** rotondo 42×42px: 🌙 in light mode, ☀ in dark mode. Hover → bordo+icona lime, scale 1.05
    - **Meta counter**: "N URL · M cartelle"
 

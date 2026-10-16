@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "Peruuta"
+  },
+  "supportLabel": {
+    "message": "Tarjoa minulle kahvi"
+  },
+  "supportTitle": {
+    "message": "Pidätkö Bookmark Tidystä? Tue kehitystä Buy Me a Coffee -palvelussa"
   }
 }

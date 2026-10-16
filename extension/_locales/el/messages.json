@@ -274,5 +274,11 @@
   },
   "dialogCancel": {
     "message": "Ακύρωση"
+  },
+  "supportLabel": {
+    "message": "Κέρασέ με έναν καφέ"
+  },
+  "supportTitle": {
+    "message": "Σας αρέσει το Bookmark Tidy; Υποστηρίξτε την ανάπτυξη στο Buy Me a Coffee"
   }
 }

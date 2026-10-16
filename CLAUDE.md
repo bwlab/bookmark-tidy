@@ -28,6 +28,7 @@ Niente test, niente lint, niente bundler. Modifiche → ricaricare estensione (`
 - **`extension/theme-init.js`** — anti-FOUC. Legge `localStorage.bwlab-theme` e applica `data-theme` su `<html>` PRIMA del render. Caricato in `<head>`, file separato per evitare CSP inline-script block.
 - **`extension/background.js`** — service worker. `openManager()` riusa la tab manager esistente se già aperta, altrimenti la crea. Chiamata da `chrome.action.onClicked` (click icona toolbar) e da `chrome.commands.onCommand` (shortcut `Alt+Shift+B`).
 - **`extension/credits.html`** — pagina credits bwlab, linkata dall'header del manager.
+- **Pulsante supporto** `.support-btn` (header manager + credits) → `https://buymeacoffee.com/bwlab`. Colori dai token `--support-bg` / `--support-bg-hover` / `--support-fg` (giallo Buy Me a Coffee, unico colore fuori palette, voluto per visibilità).
 - **`extension/icons/`** — `icon-{16,32,48,128}.png` generate da `icon.svg` (palette lime+nero) via `rsvg-convert`.
 - **`build.sh`** — pacchettizza `extension/` in `dist/bookmark-tidy-bwlab-v<version>.zip` per Chrome Web Store.
 
