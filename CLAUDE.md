@@ -29,7 +29,12 @@ Niente test, niente lint, niente bundler. Modifiche → ricaricare estensione (`
 - **`extension/background.js`** — service worker. `openManager()` riusa la tab manager esistente se già aperta, altrimenti la crea. Chiamata da `chrome.action.onClicked` (click icona toolbar) e da `chrome.commands.onCommand` (shortcut `Alt+Shift+B`).
 - **`extension/credits.html`** — pagina credits bwlab, linkata dall'header del manager.
 - **Pulsante supporto** `.support-btn` (header manager + credits) → `https://buymeacoffee.com/bwlab`. Colori dai token `--support-bg` / `--support-bg-hover` / `--support-fg` (giallo Buy Me a Coffee, unico colore fuori palette, voluto per visibilità).
-- **`extension/icons/`** — `icon-{16,32,48,128}.png` generate da `icon.svg` (palette lime+nero) via `rsvg-convert`.
+- **`extension/icons/`** — icona prodotto: nastro segnalibro lime con angolo piegato nero (richiamo alla diagonale del marchio bwlab), sfondo trasparente. Tre sorgenti SVG, una per fascia di dimensioni:
+  - `icon.svg` → 128, 48 (con righe decrescenti = "tidy"; soggetto entro 96×96 centrali come da linee guida Web Store)
+  - `icon-small.svg` → 32 (solo silhouette, contorno più spesso)
+  - `icon-16.svg` → 16 (disegnata a pixel, `crispEdges`)
+
+  Rigenerare con: `rsvg-convert -w 128 icon.svg -o icon-128.png`, `-w 48 icon.svg -o icon-48.png`, `-w 32 icon-small.svg -o icon-32.png`, `-w 16 icon-16.svg -o icon-16.png`. Gli SVG sono esclusi dallo zip (`build.sh`). Il marchio bwlab (quadrato diagonale) resta solo nell'header del manager e nei Credits.
 - **`build.sh`** — pacchettizza `extension/` in `dist/bookmark-tidy-bwlab-v<version>.zip` per Chrome Web Store.
 
 ### Bookmark Manager state (manager.js)

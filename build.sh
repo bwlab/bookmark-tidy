@@ -13,7 +13,7 @@ rm -f "$OUT"
 cd extension
 zip -r "../$OUT" . \
   -x "*.DS_Store" \
-  -x "icons/icon.svg" \
+  -x "icons/*.svg" \
   -x "*.bak" \
   -x "*.swp"
 cd ..

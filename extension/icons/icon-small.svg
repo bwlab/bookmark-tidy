@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Bookmark Tidy — 32 px (toolbar su schermi retina). La 16 px e' disegnata a pixel in icon-16.svg. Solo silhouette del nastro + angolo piegato:
+       le righe a 16 px si impasterebbero. Contorno piu' spesso per staccare su toolbar chiara e scura. -->
+  <path d="M32 12 H96 Q104 12 104 20 V118 L64 90 L24 118 V20 Q24 12 32 12 Z"
+        fill="#B8FF3E" stroke="#0d0d10" stroke-width="12" stroke-linejoin="round" paint-order="stroke"/>
+  <path d="M58 12 H96 Q104 12 104 20 V58 Z" fill="#0d0d10"/>
+</svg>

@@ -211,6 +211,7 @@ Listener su `chrome.bookmarks.onCreated/onRemoved/onChanged/onMoved/onChildrenRe
 ## 4. Icone usate
 
 ### Brand
+- **Icona estensione** (toolbar, chrome://extensions, Web Store): nastro segnalibro lime con angolo piegato nero; righe decrescenti solo a 128/48 px, silhouette a 32 px, versione a pixel a 16 px (`extension/icons/`)
 - **Quadrato bwlab** (header manager e credits): gradient diagonale 135° lime→nero, rounded
 
 ### UI universali
