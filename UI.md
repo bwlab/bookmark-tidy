@@ -93,8 +93,8 @@ Albero ricorsivo. Ogni nodo è una riga grid con colonne:
 - **Label**: nome cartella (truncate ellipsis)
 - **Conteggio**: numero ricorsivo di URL contenuti (sostituito da actions su hover)
 - **Actions hover**:
-  - `+` → crea sotto-cartella (prompt nome)
-  - `✎` → rinomina (prompt)
+  - `+` → crea sotto-cartella (dialog con nome)
+  - `✎` → rinomina (dialog)
   - `✕` → elimina con conferma; se non vuota usa `removeTree`
   - Root (Barra/Altri/Mobile): solo `+`, no rinomina/cancella
 
@@ -144,7 +144,7 @@ Grid 56px | 1fr | auto:
 
 | Slot 1 | Slot 2 | Slot 3 (hover) |
 |--------|--------|----------------|
-| **Favicon 48×48** rounded, padding 6, bordo soft. Caricata da `google.com/s2/favicons?sz=64` | **Titolo** (link, font 16px, hover lime) sopra · **Sotto-info**: dominio (mono) · data relativa (oggi/2g/3set/...) · chip cartella `📁 path/...` quando sei in search/preset | 5 bottoni icon: `↗` (nuova tab) · `⎘` (copia URL) · `✎` (rinomina) · `→` (sposta in path testuale) · `✕` (elimina, rosso hover) |
+| **Favicon 48×48** rounded, padding 6, bordo soft. Dalla cache locale di Chrome (`_favicon/?pageUrl=…&size=32`, permesso `favicon`), lazy | **Titolo** (link, font 16px, hover lime) sopra · **Sotto-info**: dominio (mono) · data relativa (oggi/2g/3set/...) · chip cartella `📁 path/...` quando sei in search/preset | 5 bottoni icon: `↗` (nuova tab) · `⎘` (copia URL) · `✎` (rinomina) · `→` (sposta in path testuale) · `✕` (elimina, rosso hover) |
 
 - Click sul titolo → naviga (current tab)
 - Ctrl+click / middle-click → nuova tab (default `<a href>`)
@@ -182,14 +182,14 @@ Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓
 
 - **Apri**: click titolo (current tab) · Ctrl+click (nuova tab) · `↗` (nuova tab background)
 - **Copia URL**: `⎘` → clipboard + chip verde "URL copiato" 1.5s
-- **Rinomina**: `✎` o tasto `E` con item selezionato → prompt
-- **Sposta**: `→` → prompt con path testuale precompilato con il path attuale (es. `Barra dei preferiti/01 Lavoro`). Se il primo segmento è il nome di una root (Barra/Altri/Mobile) si parte da lì, altrimenti il path è relativo alla Barra (es. `01 Lavoro/Server`); cartelle mancanti vengono create
-- **Elimina**: `✕` o `Del` → conferma → `chrome.bookmarks.remove`
-- **Drag**: trascina item su qualsiasi cartella (sidebar o lista) → sposta. Accetta solo drag interni al manager (MIME `application/x-bookmark-tidy-ids`); link/testo trascinati da altre pagine vengono ignorati. Errori di spostamento (es. cartella dentro sé stessa) → alert
+- **Rinomina**: `✎` o tasto `E` con item selezionato → dialog
+- **Sposta**: `→` → dialog con path testuale precompilato con il path attuale (es. `Barra dei preferiti/01 Lavoro`). Se il primo segmento è il nome di una root (Barra/Altri/Mobile) si parte da lì, altrimenti il path è relativo alla Barra (es. `01 Lavoro/Server`); cartelle mancanti vengono create
+- **Elimina**: `✕` o `Del` → conferma (bottone rosso) → `chrome.bookmarks.remove`
+- **Drag**: trascina item su qualsiasi cartella (sidebar o lista) → sposta. Accetta solo drag interni al manager (MIME `application/x-bookmark-tidy-ids`); link/testo trascinati da altre pagine vengono ignorati. Errori di spostamento (es. cartella dentro sé stessa) → dialog di errore
 
 ### Operazioni su cartelle
 
-- **Crea root**: bottone `+ nuova` accanto a "CARTELLE" → prompt → crea sotto Barra preferiti
+- **Crea root**: bottone `+ nuova` accanto a "CARTELLE" → dialog → crea sotto Barra preferiti
 - **Crea sotto-cartella**: hover su nodo sidebar → bottone `+`
 - **Rinomina**: `✎` (sidebar o folder row in lista)
 - **Elimina**: `✕` con conferma (mostra conteggio URL+sub se non vuota); usa `removeTree` ricorsivo
@@ -229,7 +229,7 @@ Listener su `chrome.bookmarks.onCreated/onRemoved/onChanged/onMoved/onChildrenRe
 - ✕ elimina (rosso hover)
 
 ### Favicon
-- Caricate da `https://www.google.com/s2/favicons?sz=64&domain=<host>` — fallback grigio se errore
+- Lette dalla cache favicon locale di Chrome: `chrome-extension://<id>/_favicon/?pageUrl=<url>&size=32` (permesso `favicon`). Nessuna richiesta di rete; siti mai visitati su questo device mostrano l'icona generica
 
 ---
 
@@ -239,6 +239,14 @@ Listener su `chrome.bookmarks.onCreated/onRemoved/onChanged/onMoved/onChildrenRe
 
 - **Cartella sidebar**: sfondo rosso pieno, ombra rossa
 - **Folder row in lista**: sfondo rosso soft + bordo sinistro rosso
+
+### Dialog
+
+`<dialog>` modale nativo al posto di `prompt/confirm/alert`: messaggio, input opzionale, bottoni Annulla / OK (OK lime, rosso per le conferme di eliminazione). `Enter` conferma, `Esc` annulla; mentre è aperto le scorciatoie globali sono disattivate.
+
+### Nodi protetti
+
+Root (Barra/Altri/Mobile) e preferiti/cartelle gestiti da policy aziendale (`unmodifiable`): niente bottoni rinomina/sposta/elimina, non trascinabili.
 
 ### Empty state
 

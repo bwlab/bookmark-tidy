@@ -32,7 +32,7 @@ Pacchettizzare per Chrome Web Store:
 1. Crea account developer su https://chrome.google.com/webstore/devconsole/ (fee $5 una tantum)
 2. Carica `dist/bookmark-tidy-bwlab-vX.Y.Z.zip`
 3. Compila Store Listing: nome, descrizione, screenshot (1280×800 o 640×400), icone, categoria "Productivity"
-4. Privacy practices: dichiara i permessi `bookmarks` (gestione preferiti utente) e `tabs` (apertura manager). Linka [PRIVACY.md](PRIVACY.md)
+4. Privacy practices: dichiara i permessi `bookmarks` (gestione preferiti utente), `tabs` (apertura manager) e `favicon` (icone siti dalla cache locale). Linka [PRIVACY.md](PRIVACY.md)
 5. Invia a review (~1-3 giorni)
 
 ## Privacy
