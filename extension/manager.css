@@ -131,12 +131,13 @@ header {
   display: flex; align-items: center; gap: 10px;
   text-transform: lowercase;
 }
+/* icona prodotto (stessa della toolbar); la 128 ridotta resta nitida anche su schermi retina.
+   background-size 134% = 128/96: taglia il margine trasparente del PNG (soggetto 96x96 per il Web Store) */
 .brand::before {
   content: "";
   display: inline-block;
   width: 28px; height: 28px;
-  background: linear-gradient(135deg, var(--accent-a) 0%, var(--accent-a) 50%, var(--bw-ink-900) 50%, var(--bw-ink-900) 100%);
-  border-radius: 4px;
+  background: url("icons/icon-128.png") center / 134% no-repeat;
 }
 .brand span {
   color: var(--fg-4);
