@@ -116,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Neuer Ordnername:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "\"$TITLE$\" und $COUNT$ enthaltene Lesezeichen löschen? Nicht rückgängig zu machen.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Leeren Ordner \"$TITLE$\" löschen?",
     "placeholders": {
@@ -276,5 +265,11 @@
   },
   "creditsPrivacyNote": {
     "message": "Diese Erweiterung läuft vollständig auf deinem Gerät. Sie liest und ändert deine Lesezeichen nur über die offizielle chrome.bookmarks-API von Chrome — es werden keine Daten gesammelt, übertragen oder verkauft."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Abbrechen"
   }
 }

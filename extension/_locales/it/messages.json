@@ -116,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Nuovo nome cartella:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "Eliminare \"$TITLE$\" e $COUNT$ preferiti dentro? Irreversibile.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Eliminare cartella vuota \"$TITLE$\"?",
     "placeholders": {
@@ -276,5 +265,11 @@
   },
   "creditsPrivacyNote": {
     "message": "Questa estensione funziona interamente sul tuo dispositivo. Legge e modifica i tuoi preferiti solo tramite l'API ufficiale chrome.bookmarks — nessun dato viene raccolto, trasmesso o venduto."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Annulla"
   }
 }

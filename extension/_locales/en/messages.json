@@ -116,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "New folder name:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "Delete \"$TITLE$\" and $COUNT$ bookmarks inside? This cannot be undone.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "Delete empty folder \"$TITLE$\"?",
     "placeholders": {
@@ -276,5 +265,11 @@
   },
   "creditsPrivacyNote": {
     "message": "This extension runs entirely on your device. It reads and modifies your bookmarks only through Chrome's official chrome.bookmarks API — no data is collected, transmitted, or sold."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Cancel"
   }
 }

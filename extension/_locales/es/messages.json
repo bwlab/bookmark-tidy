@@ -116,17 +116,6 @@
   "folderRenamePrompt": {
     "message": "Nuevo nombre de carpeta:"
   },
-  "folderDeleteConfirmWithCount": {
-    "message": "¿Eliminar \"$TITLE$\" y $COUNT$ marcadores dentro? No se puede deshacer.",
-    "placeholders": {
-      "title": {
-        "content": "$1"
-      },
-      "count": {
-        "content": "$2"
-      }
-    }
-  },
   "folderDeleteConfirmEmpty": {
     "message": "¿Eliminar la carpeta vacía \"$TITLE$\"?",
     "placeholders": {
@@ -276,5 +265,11 @@
   },
   "creditsPrivacyNote": {
     "message": "Esta extensión funciona completamente en tu dispositivo. Lee y modifica tus marcadores solo a través de la API oficial chrome.bookmarks de Chrome — no se recopilan, transmiten ni venden datos."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Cancelar"
   }
 }

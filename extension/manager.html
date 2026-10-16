@@ -65,6 +65,16 @@
     <kbd>Del</kbd> <span data-i18n="hintDelete">elimina</span> ·
     <kbd>Esc</kbd> <span data-i18n="hintReset">reset</span>
   </footer>
+  <dialog id="dialog">
+    <form method="dialog">
+      <p id="dialog-msg"></p>
+      <input id="dialog-input" type="text" spellcheck="false">
+      <div class="dialog-actions">
+        <button type="button" id="dialog-cancel" class="act" data-i18n="dialogCancel">Annulla</button>
+        <button value="ok" id="dialog-ok" class="act primary" data-i18n="dialogOk">OK</button>
+      </div>
+    </form>
+  </dialog>
   <script src="i18n.js"></script>
   <script src="manager.js"></script>
 </body>
