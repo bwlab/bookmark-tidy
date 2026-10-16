@@ -34,7 +34,7 @@ Niente test, niente lint, niente bundler. Modifiche → ricaricare estensione (`
   - `icon-small.svg` → 32 (solo silhouette, contorno più spesso)
   - `icon-16.svg` → 16 (disegnata a pixel, `crispEdges`)
 
-  Rigenerare con: `rsvg-convert -w 128 icon.svg -o icon-128.png`, `-w 48 icon.svg -o icon-48.png`, `-w 32 icon-small.svg -o icon-32.png`, `-w 16 icon-16.svg -o icon-16.png`. Gli SVG sono esclusi dallo zip (`build.sh`). Il marchio bwlab (quadrato diagonale) resta solo nell'header del manager e nei Credits.
+  Rigenerare con: `rsvg-convert -w 128 icon.svg -o icon-128.png`, `-w 48 icon.svg -o icon-48.png`, `-w 32 icon-small.svg -o icon-32.png`, `-w 16 icon-16.svg -o icon-16.png`. Gli SVG sono esclusi dallo zip (`build.sh`). La stessa icona è il logo nell'header di manager e Credits (`.brand::before`, da `icon-128.png`) e la favicon della scheda (`<link rel="icon">` 16/32 in entrambe le pagine).
 - **`build.sh`** — pacchettizza `extension/` in `dist/bookmark-tidy-bwlab-v<version>.zip` per Chrome Web Store.
 
 ### Bookmark Manager state (manager.js)

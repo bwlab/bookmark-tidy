@@ -52,7 +52,7 @@ Palette bwlab: accent lime `#B8FF3E` (`--accent-a`) + rosso `#E30613` (`--accent
 3 colonne grid:
 
 1. **Brand bwlab** (sinistra, 240px)
-   - Quadrato 28×28 con gradient diagonale 135°: metà lime `#B8FF3E`, metà nero
+   - Icona prodotto 28×28 (segnalibro lime, `icons/icon-128.png`)
    - Testo "bwlab" minuscolo grassetto + "PREFERITI" maiuscolo letter-spacing wider colore muted
    - Sotto: link "Credits" → `credits.html`
 
@@ -212,7 +212,7 @@ Listener su `chrome.bookmarks.onCreated/onRemoved/onChanged/onMoved/onChildrenRe
 
 ### Brand
 - **Icona estensione** (toolbar, chrome://extensions, Web Store): nastro segnalibro lime con angolo piegato nero; righe decrescenti solo a 128/48 px, silhouette a 32 px, versione a pixel a 16 px (`extension/icons/`)
-- **Quadrato bwlab** (header manager e credits): gradient diagonale 135° lime→nero, rounded
+- **Logo header** (manager e credits): la stessa icona prodotto; è anche la favicon della scheda
 
 ### UI universali
 - 🌙 / ☀ — theme toggle
