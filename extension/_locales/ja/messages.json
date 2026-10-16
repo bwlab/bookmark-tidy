@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "移動先（「仕事/サーバー」のように / で区切ったパス）:"
   },
+  "moveIntoItselfError": {
+    "message": "フォルダをそのフォルダ自身やそのサブフォルダ内に移動することはできません。"
+  },
   "itemDeleteConfirm": {
     "message": "「$TITLE$」を削除しますか？",
     "placeholders": {

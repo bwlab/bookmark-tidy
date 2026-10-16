@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Mou a (camí com 'Feina/Servidor', separat per /):"
   },
+  "moveIntoItselfError": {
+    "message": "No es pot moure una carpeta dins d'ella mateixa ni a una de les seves subcarpetes."
+  },
   "itemDeleteConfirm": {
     "message": "Vols suprimir \"$TITLE$\"?",
     "placeholders": {

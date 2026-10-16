@@ -30,9 +30,9 @@ Palette bwlab: accent lime `#B8FF3E` (`--accent-a`) + rosso `#E30613` (`--accent
 │  • Recenti  │                                            M preferiti│
 │    30gg     │  ─────────────────────────────────────────────────────│
 │  • Più      │  📁 BigCommerce                                        │
-│    vecchi   │     10 preferiti                            ✎ ✕       │
+│    vecchi   │     10 preferiti                          ✎ → ✕       │
 │    100      │  📁 Shopify                                            │
-│  • Senza    │     2 preferiti                             ✎ ✕       │
+│  • Senza    │     2 preferiti                           ✎ → ✕       │
 │    cartella │  ────                                                  │
 │             │  [favicon] PrestaShop Hooks Reference                  │
 │  CARTELLE   │           devdocs.prestashop-project.org · 2m         │
@@ -86,7 +86,7 @@ Albero ricorsivo. Ogni nodo è una riga grid con colonne:
 
 | Twisty | Icon | Label | Conteggio | Actions (hover) |
 |--------|------|-------|-----------|-----------------|
-| `▶`/`▼` | `📁`/`📂` | Nome cartella | N (mono) | `+ ✎ ✕` |
+| `▶`/`▼` | `📁`/`📂` | Nome cartella | N (mono) | `+ ✎ → ✕` |
 
 - **Twisty** `▶` chiusa, `▼` aperta. Click solo sul twisty espande/collassa
 - **Folder icon** 18px: `📁` chiusa, `📂` aperta
@@ -95,6 +95,7 @@ Albero ricorsivo. Ogni nodo è una riga grid con colonne:
 - **Actions hover**:
   - `+` → crea sotto-cartella (dialog con nome)
   - `✎` → rinomina (dialog)
+  - `→` → sposta in (dialog con path testuale, come per i preferiti)
   - `✕` → elimina con conferma; se non vuota usa `removeTree`
   - Root (Barra/Altri/Mobile): solo `+`, no rinomina/cancella
 
@@ -131,7 +132,7 @@ Grid 56px | 1fr | auto, padding 14px·24px:
 
 | Slot 1 | Slot 2 | Slot 3 (hover) |
 |--------|--------|----------------|
-| Quadrato 48×48 lime soft + bordo lime, dentro 📁 grande | Titolo cartella **grassetto** + sotto-info "N preferiti · M sotto-cartelle" o "vuota" | `✎` `✕` |
+| Quadrato 48×48 lime soft + bordo lime, dentro 📁 grande | Titolo cartella **grassetto** + sotto-info "N preferiti · M sotto-cartelle" o "vuota" | `✎` `→` `✕` |
 
 - Click ovunque (tranne actions) o `Enter` con riga selezionata → entra nella cartella (selectFolder)
 - `E` / `Del` con riga selezionata → rinomina / elimina cartella
@@ -193,6 +194,7 @@ Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓
 - **Crea root**: bottone `+ nuova` accanto a "CARTELLE" → dialog → crea sotto Barra preferiti
 - **Crea sotto-cartella**: hover su nodo sidebar → bottone `+`
 - **Rinomina**: `✎` (sidebar o folder row in lista)
+- **Sposta**: `→` (sidebar o folder row) → dialog precompilato con il path della cartella genitore; stesse regole dei preferiti (root iniziale opzionale, cartelle mancanti create). Spostare una cartella dentro sé stessa o una sua sotto-cartella → errore, senza creare nulla. Oppure drag&drop
 - **Elimina**: `✕` con conferma (mostra conteggio URL+sub se non vuota); usa `removeTree` ricorsivo
 
 ### Theme switch
@@ -227,6 +229,7 @@ Listener su `chrome.bookmarks.onCreated/onRemoved/onChanged/onMoved/onChildrenRe
 ### Actions cartella (sidebar)
 - + nuova sotto-cartella
 - ✎ rinomina
+- → sposta in
 - ✕ elimina (rosso hover)
 
 ### Favicon

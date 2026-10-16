@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Flyt til (sti som 'Arbejde/Server', adskilt af /):"
   },
+  "moveIntoItselfError": {
+    "message": "En mappe kan ikke flyttes ind i sig selv eller i en af sine undermapper."
+  },
   "itemDeleteConfirm": {
     "message": "Slet \"$TITLE$\"?",
     "placeholders": {

@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Verplaatsen naar (pad zoals 'Werk/Server', gescheiden door /):"
   },
+  "moveIntoItselfError": {
+    "message": "Een map kan niet naar zichzelf of naar een van zijn submappen worden verplaatst."
+  },
   "itemDeleteConfirm": {
     "message": "\"$TITLE$\" verwijderen?",
     "placeholders": {

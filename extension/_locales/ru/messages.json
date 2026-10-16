@@ -209,6 +209,9 @@
   "moveToPrompt": {
     "message": "Переместить в (путь вида «Работа/Сервер», разделитель /):"
   },
+  "moveIntoItselfError": {
+    "message": "Нельзя переместить папку в неё саму или в одну из её подпапок."
+  },
   "itemDeleteConfirm": {
     "message": "Удалить «$TITLE$»?",
     "placeholders": {

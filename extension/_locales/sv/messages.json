@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Flytta till (sökväg som 'Jobb/Server', separerad med /):"
   },
+  "moveIntoItselfError": {
+    "message": "En mapp kan inte flyttas in i sig själv eller i någon av sina undermappar."
+  },
   "itemDeleteConfirm": {
     "message": "Ta bort \"$TITLE$\"?",
     "placeholders": {

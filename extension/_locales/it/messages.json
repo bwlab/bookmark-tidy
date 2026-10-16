@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Sposta in (path tipo '01 Lavoro/Server', separato da /):"
   },
+  "moveIntoItselfError": {
+    "message": "Impossibile spostare una cartella dentro sé stessa o in una sua sotto-cartella."
+  },
   "itemDeleteConfirm": {
     "message": "Eliminare \"$TITLE$\" ?",
     "placeholders": {

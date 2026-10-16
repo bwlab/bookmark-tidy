@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Déplacer vers (chemin type 'Travail/Serveur', séparé par /) :"
   },
+  "moveIntoItselfError": {
+    "message": "Impossible de déplacer un dossier dans lui-même ou dans l'un de ses sous-dossiers."
+  },
   "itemDeleteConfirm": {
     "message": "Supprimer \"$TITLE$\" ?",
     "placeholders": {

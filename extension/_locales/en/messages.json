@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Move to (path like 'Work/Server', separated by /):"
   },
+  "moveIntoItselfError": {
+    "message": "A folder can't be moved into itself or one of its subfolders."
+  },
   "itemDeleteConfirm": {
     "message": "Delete \"$TITLE$\"?",
     "placeholders": {

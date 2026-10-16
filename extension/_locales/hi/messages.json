@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "यहां ले जाएं ('काम/सर्वर' जैसा पथ, / से अलग किया हुआ):"
   },
+  "moveIntoItselfError": {
+    "message": "किसी फ़ोल्डर को उसी के अंदर या उसके किसी सबफ़ोल्डर में नहीं ले जाया जा सकता।"
+  },
   "itemDeleteConfirm": {
     "message": "\"$TITLE$\" मिटाएं?",
     "placeholders": {

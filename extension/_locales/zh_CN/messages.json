@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "移至（路径如“工作/服务器”，用 / 分隔）："
   },
+  "moveIntoItselfError": {
+    "message": "无法将文件夹移到其自身或其子文件夹中。"
+  },
   "itemDeleteConfirm": {
     "message": "删除“$TITLE$”？",
     "placeholders": {

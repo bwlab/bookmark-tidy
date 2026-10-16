@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Mover a (ruta tipo 'Trabajo/Servidor', separada por /):"
   },
+  "moveIntoItselfError": {
+    "message": "No se puede mover una carpeta dentro de sí misma ni a una de sus subcarpetas."
+  },
   "itemDeleteConfirm": {
     "message": "¿Eliminar \"$TITLE$\"?",
     "placeholders": {

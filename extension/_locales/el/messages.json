@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Μετακίνηση σε (διαδρομή όπως 'Εργασία/Server', με διαχωριστικό /):"
   },
+  "moveIntoItselfError": {
+    "message": "Δεν είναι δυνατή η μετακίνηση ενός φακέλου μέσα στον εαυτό του ή σε κάποιον υποφάκελό του."
+  },
   "itemDeleteConfirm": {
     "message": "Διαγραφή του «$TITLE$»;",
     "placeholders": {

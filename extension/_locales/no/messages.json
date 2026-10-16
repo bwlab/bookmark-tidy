@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Flytt til (sti som «Jobb/Server», adskilt med /):"
   },
+  "moveIntoItselfError": {
+    "message": "En mappe kan ikke flyttes inn i seg selv eller i en av sine undermapper."
+  },
   "itemDeleteConfirm": {
     "message": "Slette «$TITLE$»?",
     "placeholders": {

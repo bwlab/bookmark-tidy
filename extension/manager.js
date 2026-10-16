@@ -247,6 +247,31 @@ async function deleteFolder(node) {
   await mutate(() => bm.removeTree(node.id));
 }
 
+// "Sposta in...": path testuale precompilato con la posizione attuale (cartella genitore).
+// Se il primo segmento e' una root (es. "Barra dei preferiti/...") si parte da li',
+// altrimenti path relativo alla Barra. Le cartelle mancanti vengono create.
+async function moveToPath(node) {
+  const parentPath = state.folders.get(node.parentId)?.path || [];
+  const path = await ui.prompt(t("moveToPrompt"), parentPath.join("/"));
+  if (!path) return;
+  await mutate(async () => {
+    const segs = path.split("/").map(s => s.trim()).filter(Boolean);
+    const roots = await bm.children("0");
+    const root = roots.find(r => r.title === segs[0]);
+    let pid = state.barId;
+    if (root) { pid = root.id; segs.shift(); }
+    for (const seg of segs) {
+      const kids = await bm.children(pid);
+      let f = kids.find(k => !k.url && k.title === seg);
+      // una cartella non puo' finire dentro se' stessa: controllo prima di creare cartelle nel suo sotto-albero
+      if (f && f.id === node.id) throw new Error(t("moveIntoItselfError"));
+      if (!f) f = await bm.create({ parentId: pid, title: seg });
+      pid = f.id;
+    }
+    if (pid !== node.parentId) await bm.move(node.id, { parentId: pid });
+  });
+}
+
 // ---- rendering: sidebar tree ----
 function renderTree() {
   el.tree.innerHTML = "";
@@ -284,6 +309,7 @@ function renderNode(node, parent) {
   if (!locked) {
     actions.innerHTML += `
       <button class="folder-act" data-fact="rename" title="${t("renameTitleAttr")}">✎</button>
+      <button class="folder-act" data-fact="move" title="${t("moveToTitle")}">→</button>
       <button class="folder-act danger" data-fact="delete" title="${t("deleteTitleAttr")}">✕</button>
     `;
   }
@@ -308,6 +334,10 @@ function renderNode(node, parent) {
   actions.querySelector("[data-fact=rename]")?.addEventListener("click", (e) => {
     e.stopPropagation();
     renameNode(node, "folderRenamePrompt");
+  });
+  actions.querySelector("[data-fact=move]")?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    moveToPath(node);
   });
   actions.querySelector("[data-fact=delete]")?.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -420,6 +450,7 @@ function folderRowHtml(f) {
   if (subFolders) subInfo.push(countLabel(subFolders, "subfolderCount"));
   const actions = locked ? "" : `
       <button class="act" data-fact="rename" title="${t("renameShortcutTitle")}">✎</button>
+      <button class="act" data-fact="move" title="${t("moveToTitle")}">→</button>
       <button class="act danger" data-fact="delete" title="${t("deleteShortcutTitle")}">✕</button>`;
   return `
     <li class="item folder-row" data-id="${escapeHtml(f.id)}" draggable="${!locked}">
@@ -445,6 +476,7 @@ el.list.addEventListener("click", (e) => {
     if (!node) return;
     const fact = e.target.closest("[data-fact]")?.dataset.fact;
     if (fact === "rename") renameNode(node, "folderRenamePrompt");
+    else if (fact === "move") moveToPath(node);
     else if (fact === "delete") deleteFolder(node);
     else if (!e.target.closest(".actions")) { e.preventDefault(); selectFolder(id); }
     return;
@@ -501,24 +533,7 @@ async function itemAction(act, li, it) {
   } else if (act === "rename") {
     await renameNode(it, "renameTitlePrompt");
   } else if (act === "move") {
-    const path = await ui.prompt(t("moveToPrompt"), it.path.join("/"));
-    if (!path) return;
-    await mutate(async () => {
-      const segs = path.split("/").map(s => s.trim()).filter(Boolean);
-      // Il path proposto parte dal nome della root (es. "Barra dei preferiti/...", come it.path):
-      // se il primo segmento e' una root si parte da li', altrimenti path relativo alla Barra.
-      const roots = await bm.children("0");
-      const root = roots.find(r => r.title === segs[0]);
-      let pid = state.barId;
-      if (root) { pid = root.id; segs.shift(); }
-      for (const seg of segs) {
-        const kids = await bm.children(pid);
-        let f = kids.find(k => !k.url && k.title === seg);
-        if (!f) f = await bm.create({ parentId: pid, title: seg });
-        pid = f.id;
-      }
-      await bm.move(it.id, { parentId: pid });
-    });
+    await moveToPath(it);
   } else if (act === "delete") {
     if (await ui.confirm(t("itemDeleteConfirm", [it.title || it.url]))) {
       await mutate(() => bm.remove(it.id));

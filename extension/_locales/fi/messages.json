@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Siirrä kohteeseen (polku kuten 'Työ/Palvelin', erottimena /):"
   },
+  "moveIntoItselfError": {
+    "message": "Kansiota ei voi siirtää itseensä tai mihinkään sen alikansioista."
+  },
   "itemDeleteConfirm": {
     "message": "Poistetaanko \"$TITLE$\"?",
     "placeholders": {

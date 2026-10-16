@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "移至（路徑如「工作/伺服器」，以 / 分隔）："
   },
+  "moveIntoItselfError": {
+    "message": "無法將資料夾移至其本身或其子資料夾中。"
+  },
   "itemDeleteConfirm": {
     "message": "要刪除「$TITLE$」嗎？",
     "placeholders": {

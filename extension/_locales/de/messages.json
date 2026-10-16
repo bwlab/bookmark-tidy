@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Verschieben nach (Pfad wie 'Arbeit/Server', getrennt durch /):"
   },
+  "moveIntoItselfError": {
+    "message": "Ein Ordner kann nicht in sich selbst oder einen seiner Unterordner verschoben werden."
+  },
   "itemDeleteConfirm": {
     "message": "\"$TITLE$\" löschen?",
     "placeholders": {

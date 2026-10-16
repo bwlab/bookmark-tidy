@@ -197,6 +197,9 @@
   "moveToPrompt": {
     "message": "Mover para (caminho como 'Trabalho/Servidor', separado por /):"
   },
+  "moveIntoItselfError": {
+    "message": "Não é possível mover uma pasta para dentro de si própria ou de uma das suas subpastas."
+  },
   "itemDeleteConfirm": {
     "message": "Eliminar \"$TITLE$\"?",
     "placeholders": {
