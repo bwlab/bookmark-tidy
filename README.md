@@ -5,7 +5,7 @@ Estensione Chrome MV3 per riordinare, ristrutturare e gestire i preferiti via AP
 ## Features
 
 - **Bookmark Manager**: pagina sostitutiva di `chrome://bookmarks` (override) con UX moderna, ricerca istantanea, drag & drop, gestione cartelle, dark/light theme
-- **19 lingue**: italiano, inglese, spagnolo, francese, tedesco, portoghese (BR/PT), olandese, catalano, svedese, danese, norvegese, finlandese, greco, giapponese, cinese (semplificato/tradizionale), hindi, russo
+- **29 lingue**: italiano, inglese, spagnolo, francese, tedesco, portoghese (BR/PT), olandese, catalano, svedese, danese, norvegese, finlandese, greco, polacco, ceco, slovacco, sloveno, croato, ungherese, rumeno, estone, lettone, lituano, giapponese, cinese (semplificato/tradizionale), hindi, russo
 - **Design System bwlab v2**: Inter Tight, dark-first
 
 ## Installazione

@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Korrastage ja hallake Chrome'i järjehoidjaid moodsas liideses. Sünkroonimiskindel (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Ava bwlabi järjehoidjate haldur"
+  },
+  "pageTitle": {
+    "message": "Järjehoidjad · bwlab"
+  },
+  "brandTagline": {
+    "message": "Järjehoidjad"
+  },
+  "searchPlaceholder": {
+    "message": "Otsi järjehoidjatest (vajuta /)"
+  },
+  "themeToggleTitle": {
+    "message": "Vaheta teemat (tume/hele)"
+  },
+  "viewsLabel": {
+    "message": "Vaated"
+  },
+  "presetAll": {
+    "message": "Kõik"
+  },
+  "presetRecent": {
+    "message": "Viimased 30 päeva"
+  },
+  "presetOldest": {
+    "message": "100 vanimat"
+  },
+  "presetStray": {
+    "message": "Kaustata"
+  },
+  "foldersLabel": {
+    "message": "Kaustad"
+  },
+  "newFolderRootTitle": {
+    "message": "Uus kaust järjehoidjaribal"
+  },
+  "newFolderBtn": {
+    "message": "+ uus"
+  },
+  "sortLabel": {
+    "message": "Järjestus"
+  },
+  "sortManual": {
+    "message": "Käsitsi"
+  },
+  "sortTitle": {
+    "message": "Pealkiri"
+  },
+  "sortDateDesc": {
+    "message": "Uusimad eespool"
+  },
+  "sortDateAsc": {
+    "message": "Vanimad eespool"
+  },
+  "sortDomain": {
+    "message": "Domeen"
+  },
+  "hintSearch": {
+    "message": "otsi"
+  },
+  "hintNav": {
+    "message": "liigu"
+  },
+  "hintOpen": {
+    "message": "ava"
+  },
+  "hintNewTab": {
+    "message": "uus vaheleht"
+  },
+  "hintRename": {
+    "message": "nimeta ümber"
+  },
+  "hintDelete": {
+    "message": "kustuta"
+  },
+  "hintReset": {
+    "message": "lähtesta"
+  },
+  "dateToday": {
+    "message": "täna"
+  },
+  "dateYesterday": {
+    "message": "eile"
+  },
+  "dateUnitDay": {
+    "message": " p"
+  },
+  "dateUnitWeek": {
+    "message": " näd"
+  },
+  "dateUnitMonth": {
+    "message": " k"
+  },
+  "dateUnitYear": {
+    "message": " a"
+  },
+  "newSubfolderTitle": {
+    "message": "Uus alamkaust"
+  },
+  "renameTitleAttr": {
+    "message": "Nimeta ümber"
+  },
+  "deleteTitleAttr": {
+    "message": "Kustuta"
+  },
+  "folderNewNamePrompt": {
+    "message": "Uue alamkausta nimi:"
+  },
+  "folderRenamePrompt": {
+    "message": "Kausta uus nimi:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Kas kustutada tühi kaust „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Viga: "
+  },
+  "rootNodeLabel": {
+    "message": "(juur)"
+  },
+  "itemsCountSingular": {
+    "message": "järjehoidja"
+  },
+  "itemsCountPlural": {
+    "message": "järjehoidjat"
+  },
+  "subfolderCountSingular": {
+    "message": "alamkaust"
+  },
+  "subfolderCountPlural": {
+    "message": "alamkausta"
+  },
+  "emptyFolderLabel": {
+    "message": "tühi"
+  },
+  "noNameFolder": {
+    "message": "(nimetu)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Tulemused päringule „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Päringule „$QUERY$” tulemusi pole",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Tühi kaust"
+  },
+  "openNewTabTitle": {
+    "message": "Ava uuel vahelehel"
+  },
+  "copyUrlTitle": {
+    "message": "Kopeeri URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Nimeta ümber (E)"
+  },
+  "moveToTitle": {
+    "message": "Teisalda..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Kustuta (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "järjehoidjarakend"
+  },
+  "bookmarkletAlert": {
+    "message": "Järjehoidjarakendust (javascript: URL) ei saa CSP turvapiirangute tõttu siit käivitada. Kopeerige URL ja kleepige see aadressiribale."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopeeritud"
+  },
+  "renameTitlePrompt": {
+    "message": "Uus pealkiri:"
+  },
+  "moveToPrompt": {
+    "message": "Teisalda (tee kujul „Töö/Server”, eraldajaks /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Kausta ei saa teisaldada iseendasse ega mõnda oma alamkausta."
+  },
+  "itemDeleteConfirm": {
+    "message": "Kas kustutada „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Kas kustutada „$TITLE$”? Järjehoidjaid: $COUNT$, alamkaustu: $SUBCOUNT$. Seda ei saa tagasi võtta.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Uue kausta nimi (järjehoidjaribal):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Järjehoidjad"
+  },
+  "metaSummary": {
+    "message": "URL-e: $URLS$ · kaustu: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Tegijad · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Tegijad"
+  },
+  "creditsBack": {
+    "message": "← Tagasi"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Loonud "
+  },
+  "creditsIntroPost": {
+    "message": " – Itaalia veebiarenduse ja e-kaubanduse agentuur, mis on spetsialiseerunud PrestaShopile ja eritellimusel veebilahendustele."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Veebisait:"
+  },
+  "creditsSourceLabel": {
+    "message": "Lähtekood:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Litsents: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "See laiendus töötab täielikult teie seadmes. See loeb ja muudab järjehoidjaid ainult Chrome'i ametliku chrome.bookmarks API kaudu — andmeid ei koguta, edastata ega müüda."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Tühista"
+  },
+  "supportLabel": {
+    "message": "Osta mulle kohvi"
+  },
+  "supportTitle": {
+    "message": "Meeldib Bookmark Tidy? Toeta arendust Buy Me a Coffee lehel"
+  }
+}

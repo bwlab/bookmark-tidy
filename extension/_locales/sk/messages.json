@@ -1,0 +1,296 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Upratujte a spravujte záložky Chrome v modernom rozhraní. Bezpečné pre synchronizáciu (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Otvoriť správcu záložiek bwlab"
+  },
+  "pageTitle": {
+    "message": "Záložky · bwlab"
+  },
+  "brandTagline": {
+    "message": "Záložky"
+  },
+  "searchPlaceholder": {
+    "message": "Hľadať v záložkách (stlačte /)"
+  },
+  "themeToggleTitle": {
+    "message": "Prepnúť motív (tmavý/svetlý)"
+  },
+  "viewsLabel": {
+    "message": "Zobrazenia"
+  },
+  "presetAll": {
+    "message": "Všetky"
+  },
+  "presetRecent": {
+    "message": "Posledných 30 dní"
+  },
+  "presetOldest": {
+    "message": "100 najstarších"
+  },
+  "presetStray": {
+    "message": "Bez priečinka"
+  },
+  "foldersLabel": {
+    "message": "Priečinky"
+  },
+  "newFolderRootTitle": {
+    "message": "Nový priečinok na paneli záložiek"
+  },
+  "newFolderBtn": {
+    "message": "+ nový"
+  },
+  "sortLabel": {
+    "message": "Zoradenie"
+  },
+  "sortManual": {
+    "message": "Ručne"
+  },
+  "sortTitle": {
+    "message": "Názov"
+  },
+  "sortDateDesc": {
+    "message": "Najnovšie prvé"
+  },
+  "sortDateAsc": {
+    "message": "Najstaršie prvé"
+  },
+  "sortDomain": {
+    "message": "Doména"
+  },
+  "hintSearch": {
+    "message": "hľadať"
+  },
+  "hintNav": {
+    "message": "pohyb"
+  },
+  "hintOpen": {
+    "message": "otvoriť"
+  },
+  "hintNewTab": {
+    "message": "nová karta"
+  },
+  "hintRename": {
+    "message": "premenovať"
+  },
+  "hintDelete": {
+    "message": "odstrániť"
+  },
+  "hintReset": {
+    "message": "reset"
+  },
+  "dateToday": {
+    "message": "dnes"
+  },
+  "dateYesterday": {
+    "message": "včera"
+  },
+  "dateUnitDay": {
+    "message": " d"
+  },
+  "dateUnitWeek": {
+    "message": " týž."
+  },
+  "dateUnitMonth": {
+    "message": " mes."
+  },
+  "dateUnitYear": {
+    "message": " r."
+  },
+  "newSubfolderTitle": {
+    "message": "Nový podpriečinok"
+  },
+  "renameTitleAttr": {
+    "message": "Premenovať"
+  },
+  "deleteTitleAttr": {
+    "message": "Odstrániť"
+  },
+  "folderNewNamePrompt": {
+    "message": "Názov nového podpriečinka:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nový názov priečinka:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Odstrániť prázdny priečinok „$TITLE$“?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Chyba: "
+  },
+  "rootNodeLabel": {
+    "message": "(koreň)"
+  },
+  "itemsCountSingular": {
+    "message": "záložka"
+  },
+  "itemsCountPlural": {
+    "message": "záložiek"
+  },
+  "itemsCountFew": {
+    "message": "záložky"
+  },
+  "itemsCountMany": {
+    "message": "záložky"
+  },
+  "subfolderCountSingular": {
+    "message": "podpriečinok"
+  },
+  "subfolderCountPlural": {
+    "message": "podpriečinkov"
+  },
+  "subfolderCountFew": {
+    "message": "podpriečinky"
+  },
+  "subfolderCountMany": {
+    "message": "podpriečinka"
+  },
+  "emptyFolderLabel": {
+    "message": "prázdny"
+  },
+  "noNameFolder": {
+    "message": "(bez názvu)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Výsledky pre „$QUERY$“",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Žiadne výsledky pre „$QUERY$“",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Prázdny priečinok"
+  },
+  "openNewTabTitle": {
+    "message": "Otvoriť na novej karte"
+  },
+  "copyUrlTitle": {
+    "message": "Kopírovať URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Premenovať (E)"
+  },
+  "moveToTitle": {
+    "message": "Presunúť do..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Odstrániť (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklet (adresa javascript:) sa odtiaľto nedá spustiť pre bezpečnostné obmedzenia CSP. Skopírujte adresu a vložte ju do panela s adresou."
+  },
+  "urlCopiedFlash": {
+    "message": "URL skopírovaná"
+  },
+  "renameTitlePrompt": {
+    "message": "Nový názov:"
+  },
+  "moveToPrompt": {
+    "message": "Presunúť do (cesta ako „Práca/Server“, oddelená /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Priečinok nemožno presunúť do seba ani do žiadneho z jeho podpriečinkov."
+  },
+  "itemDeleteConfirm": {
+    "message": "Odstrániť „$TITLE$“?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Odstrániť „$TITLE$“? Záložky: $COUNT$, podpriečinky: $SUBCOUNT$. Túto akciu nemožno vrátiť.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Názov nového priečinka (na paneli záložiek):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Záložky"
+  },
+  "metaSummary": {
+    "message": "Adresy URL: $URLS$ · priečinky: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "O aplikácii · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "O aplikácii"
+  },
+  "creditsBack": {
+    "message": "← Späť"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Vytvorila agentúra "
+  },
+  "creditsIntroPost": {
+    "message": " z Talianska, zameraná na vývoj webov a e-commerce, špecializovaná na PrestaShop a webové riešenia na mieru."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Web:"
+  },
+  "creditsSourceLabel": {
+    "message": "Zdrojový kód:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licencia: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Toto rozšírenie beží výlučne vo vašom zariadení. Záložky číta a upravuje iba cez oficiálne API chrome.bookmarks prehliadača Chrome — žiadne údaje sa nezhromažďujú, neodosielajú ani nepredávajú."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Zrušiť"
+  },
+  "supportLabel": {
+    "message": "Kúp mi kávu"
+  },
+  "supportTitle": {
+    "message": "Páči sa vám Bookmark Tidy? Podporte vývoj na Buy Me a Coffee"
+  }
+}

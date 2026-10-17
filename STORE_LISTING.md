@@ -16,7 +16,7 @@ Bookmark Tidy bwlab helps you take control of a messy bookmarks bar.
 FEATURES
 - Full Bookmark Manager replacement with sidebar tree, instant search, drag & drop, and folder management
 - Keyboard-first navigation (search, open, rename, delete — no mouse needed)
-- Available in 19 languages, including English, Spanish, French, German, Portuguese, Japanese, Chinese, Hindi and Russian
+- Available in 29 languages, including English, Spanish, French, German, Portuguese, Japanese, Chinese, Hindi and Russian
 - Light/dark theme
 
 PRIVACY
@@ -39,7 +39,7 @@ Bookmark Tidy bwlab ti aiuta a rimettere ordine in una barra dei preferiti caoti
 FUNZIONALITÀ
 - Bookmark Manager completo con albero cartelle, ricerca istantanea, drag & drop e gestione cartelle
 - Navigazione da tastiera (cerca, apri, rinomina, elimina — senza mouse)
-- Disponibile in 19 lingue, tra cui italiano, inglese, spagnolo, francese, tedesco, portoghese, giapponese, cinese, hindi e russo
+- Disponibile in 29 lingue, tra cui italiano, inglese, spagnolo, francese, tedesco, portoghese, giapponese, cinese, hindi e russo
 - Tema chiaro/scuro
 
 PRIVACY
@@ -62,7 +62,7 @@ Bookmark Tidy bwlab te ayuda a poner orden en una barra de marcadores caótica.
 CARACTERÍSTICAS
 - Gestor de marcadores completo con árbol lateral, búsqueda instantánea, arrastrar y soltar, y gestión de carpetas
 - Navegación desde el teclado (buscar, abrir, renombrar, eliminar — sin ratón)
-- Disponible en 19 idiomas, entre ellos español, inglés, francés, alemán, portugués, japonés, chino, hindi y ruso
+- Disponible en 29 idiomas, entre ellos español, inglés, francés, alemán, portugués, japonés, chino, hindi y ruso
 - Tema claro/oscuro
 
 PRIVACIDAD
@@ -85,7 +85,7 @@ Bookmark Tidy bwlab vous aide à remettre de l'ordre dans une barre de favoris c
 FONCTIONNALITÉS
 - Gestionnaire de favoris complet avec arborescence latérale, recherche instantanée, glisser-déposer et gestion des dossiers
 - Navigation au clavier (rechercher, ouvrir, renommer, supprimer — sans souris)
-- Disponible en 19 langues, dont le français, l'anglais, l'espagnol, l'allemand, le portugais, le japonais, le chinois, le hindi et le russe
+- Disponible en 29 langues, dont le français, l'anglais, l'espagnol, l'allemand, le portugais, le japonais, le chinois, le hindi et le russe
 - Thème clair/sombre
 
 CONFIDENTIALITÉ
@@ -108,7 +108,7 @@ Bookmark Tidy bwlab hilft dir, Ordnung in eine chaotische Lesezeichenleiste zu b
 FUNKTIONEN
 - Vollständiger Lesezeichen-Manager mit Ordnerbaum, Sofortsuche, Drag & Drop und Ordnerverwaltung
 - Tastaturnavigation (suchen, öffnen, umbenennen, löschen — ganz ohne Maus)
-- Verfügbar in 19 Sprachen, darunter Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Japanisch, Chinesisch, Hindi und Russisch
+- Verfügbar in 29 Sprachen, darunter Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Japanisch, Chinesisch, Hindi und Russisch
 - Hell-/Dunkelmodus
 
 DATENSCHUTZ
@@ -131,7 +131,7 @@ O Bookmark Tidy bwlab ajuda você a colocar ordem em uma barra de favoritos bagu
 RECURSOS
 - Gerenciador de favoritos completo com árvore de pastas, pesquisa instantânea, arrastar e soltar e gerenciamento de pastas
 - Navegação pelo teclado (pesquisar, abrir, renomear, excluir — sem mouse)
-- Disponível em 19 idiomas
+- Disponível em 29 idiomas
 - Tema claro/escuro
 
 PRIVACIDADE
@@ -154,7 +154,7 @@ O Bookmark Tidy bwlab ajuda-o a pôr ordem numa barra de marcadores desorganizad
 FUNCIONALIDADES
 - Gestor de marcadores completo com árvore de pastas, pesquisa instantânea, arrastar e largar e gestão de pastas
 - Navegação pelo teclado (pesquisar, abrir, mudar o nome, eliminar — sem rato)
-- Disponível em 19 idiomas
+- Disponível em 29 idiomas
 - Tema claro/escuro
 
 PRIVACIDADE
@@ -177,7 +177,7 @@ Bookmark Tidy bwlab helpt je orde te scheppen in een rommelige bladwijzerbalk.
 FUNCTIES
 - Volledig bladwijzerbeheer met mappenstructuur, direct zoeken, slepen en neerzetten en mapbeheer
 - Navigatie met het toetsenbord (zoeken, openen, hernoemen, verwijderen — zonder muis)
-- Beschikbaar in 19 talen
+- Beschikbaar in 29 talen
 - Licht/donker thema
 
 PRIVACY
@@ -200,7 +200,7 @@ Bookmark Tidy bwlab t'ajuda a posar ordre en una barra d'adreces d'interès caò
 FUNCIONALITATS
 - Gestor d'adreces d'interès complet amb arbre de carpetes, cerca instantània, arrossegar i deixar anar i gestió de carpetes
 - Navegació amb el teclat (cercar, obrir, canviar el nom, suprimir — sense ratolí)
-- Disponible en 19 idiomes
+- Disponible en 29 idiomes
 - Tema clar/fosc
 
 PRIVADESA
@@ -223,7 +223,7 @@ Bookmark Tidy bwlab hjälper dig att skapa ordning i ett rörigt bokmärkesfält
 FUNKTIONER
 - Komplett bokmärkeshanterare med mappträd, direktsökning, dra och släpp och mapphantering
 - Tangentbordsnavigering (sök, öppna, byt namn, ta bort — utan mus)
-- Finns på 19 språk
+- Finns på 29 språk
 - Ljust/mörkt tema
 
 INTEGRITET
@@ -246,7 +246,7 @@ Bookmark Tidy bwlab hjælper dig med at skabe orden i en rodet bogmærkelinje.
 FUNKTIONER
 - Komplet bogmærkeadministrator med mappetræ, øjeblikkelig søgning, træk og slip og mappestyring
 - Tastaturnavigation (søg, åbn, omdøb, slet — uden mus)
-- Fås på 19 sprog
+- Fås på 29 sprog
 - Lyst/mørkt tema
 
 PRIVATLIV
@@ -269,7 +269,7 @@ Bookmark Tidy bwlab hjelper deg å skape orden i en rotete bokmerkerad.
 FUNKSJONER
 - Komplett bokmerkebehandling med mappetre, direktesøk, dra og slipp og mappebehandling
 - Tastaturnavigering (søk, åpne, gi nytt navn, slett — uten mus)
-- Tilgjengelig på 19 språk
+- Tilgjengelig på 29 språk
 - Lyst/mørkt tema
 
 PERSONVERN
@@ -292,7 +292,7 @@ Bookmark Tidy bwlab auttaa sinua siivoamaan sotkuisen kirjanmerkkipalkin.
 OMINAISUUDET
 - Täydellinen kirjanmerkkien hallinta: kansiopuu, pikahaku, vedä ja pudota sekä kansioiden hallinta
 - Näppäimistönavigointi (hae, avaa, nimeä uudelleen, poista — ilman hiirtä)
-- Saatavilla 19 kielellä
+- Saatavilla 29 kielellä
 - Vaalea/tumma teema
 
 TIETOSUOJA
@@ -315,7 +315,7 @@ Avoin lähdekoodi (MIT-lisenssi): github.com/bwlab/bookmark-tidy
 ΛΕΙΤΟΥΡΓΙΕΣ
 - Πλήρης διαχείριση σελιδοδεικτών με δέντρο φακέλων, άμεση αναζήτηση, μεταφορά και απόθεση και διαχείριση φακέλων
 - Πλοήγηση με το πληκτρολόγιο (αναζήτηση, άνοιγμα, μετονομασία, διαγραφή — χωρίς ποντίκι)
-- Διαθέσιμο σε 19 γλώσσες
+- Διαθέσιμο σε 29 γλώσσες
 - Φωτεινό/σκούρο θέμα
 
 ΑΠΟΡΡΗΤΟ
@@ -338,7 +338,7 @@ Bookmark Tidy bwlab は、散らかったブックマーク バーの整理を�
 主な機能
 - フォルダツリー、インスタント検索、ドラッグ＆ドロップ、フォルダ管理を備えた本格的なブックマーク マネージャ
 - キーボード操作に対応（検索・開く・名前変更・削除をマウスなしで）
-- 19 言語に対応
+- 29 言語に対応
 - ライト/ダーク テーマ
 
 プライバシー
@@ -361,7 +361,7 @@ Bookmark Tidy bwlab 帮您整理杂乱的书签栏。
 功能
 - 完整的书签管理器：文件夹树、即时搜索、拖放和文件夹管理
 - 键盘导航（搜索、打开、重命名、删除——无需鼠标）
-- 支持 19 种语言
+- 支持 29 种语言
 - 浅色/深色主题
 
 隐私
@@ -384,7 +384,7 @@ Bookmark Tidy bwlab 協助您整理雜亂的書籤列。
 功能
 - 完整的書籤管理員：資料夾樹狀結構、即時搜尋、拖放及資料夾管理
 - 鍵盤操作（搜尋、開啟、重新命名、刪除——不需滑鼠）
-- 支援 19 種語言
+- 支援 29 種語言
 - 淺色/深色主題
 
 隱私權
@@ -407,7 +407,7 @@ Bookmark Tidy bwlab आपके बिखरे हुए बुकमार्
 सुविधाएं
 - फ़ोल्डर ट्री, तुरंत खोज, ड्रैग-एंड-ड्रॉप और फ़ोल्डर प्रबंधन के साथ पूरा बुकमार्क मैनेजर
 - कीबोर्ड से नेविगेशन (खोजें, खोलें, नाम बदलें, मिटाएं — बिना माउस के)
-- 19 भाषाओं में उपलब्ध
+- 29 भाषाओं में उपलब्ध
 - लाइट/डार्क थीम
 
 गोपनीयता
@@ -430,7 +430,7 @@ Bookmark Tidy bwlab поможет навести порядок на захла
 ВОЗМОЖНОСТИ
 - Полноценный диспетчер закладок: дерево папок, мгновенный поиск, перетаскивание и управление папками
 - Управление с клавиатуры (поиск, открытие, переименование, удаление — без мыши)
-- Доступно на 19 языках
+- Доступно на 29 языках
 - Светлая и тёмная темы
 
 КОНФИДЕНЦИАЛЬНОСТЬ
@@ -439,3 +439,233 @@ Bookmark Tidy bwlab поможет навести порядок на захла
 Открытый исходный код (лицензия MIT): github.com/bwlab/bookmark-tidy
 
 ☕ Если Bookmark Tidy вам пригодился, можете угостить меня кофе: buymeacoffee.com/bwlab
+
+---
+
+## Polski (pl)
+
+**Krótki opis** (≤132)
+Porządkuj zakładki Chrome w szybkim, nowoczesnym interfejsie. W 100% lokalnie, bezpieczne dla synchronizacji.
+
+**Szczegółowy opis**
+Bookmark Tidy bwlab pomaga zapanować nad zabałaganionym paskiem zakładek.
+
+FUNKCJE
+- Pełny menedżer zakładek z drzewem folderów, błyskawicznym wyszukiwaniem, przeciąganiem i upuszczaniem oraz zarządzaniem folderami
+- Obsługa z klawiatury (wyszukiwanie, otwieranie, zmiana nazwy, usuwanie — bez myszy)
+- Dostępne w 29 językach
+- Motyw jasny/ciemny
+
+PRYWATNOŚĆ
+Wszystko działa lokalnie na Twoim urządzeniu przez oficjalne API `chrome.bookmarks` przeglądarki Chrome. Żadne dane nie są zbierane, przesyłane ani sprzedawane. Jeśli Synchronizacja Chrome jest włączona, zmiany są synchronizowane przez infrastrukturę Google — nigdy przez serwery firm trzecich.
+
+Otwarte źródło (licencja MIT): github.com/bwlab/bookmark-tidy
+
+☕ Jeśli Bookmark Tidy Ci się przydaje, możesz postawić mi kawę: buymeacoffee.com/bwlab
+
+---
+
+## Čeština (cs)
+
+**Krátký popis** (≤132)
+Uklízejte záložky Chrome v rychlém a moderním rozhraní. 100% lokálně, bezpečné pro synchronizaci.
+
+**Podrobný popis**
+Bookmark Tidy bwlab vám pomůže udělat pořádek v přeplněné liště záložek.
+
+FUNKCE
+- Plnohodnotný správce záložek se stromem složek, okamžitým vyhledáváním, přetahováním a správou složek
+- Ovládání z klávesnice (hledání, otevírání, přejmenování, mazání — bez myši)
+- K dispozici ve 29 jazycích
+- Světlý/tmavý motiv
+
+SOUKROMÍ
+Vše běží lokálně ve vašem zařízení prostřednictvím oficiálního API `chrome.bookmarks` prohlížeče Chrome. Žádná data nejsou shromažďována, odesílána ani prodávána. Pokud je zapnutá synchronizace Chrome, změny se synchronizují přes infrastrukturu Googlu — nikdy přes servery třetích stran.
+
+Open source (licence MIT): github.com/bwlab/bookmark-tidy
+
+☕ Pokud je pro vás Bookmark Tidy užitečný, můžete mi koupit kávu: buymeacoffee.com/bwlab
+
+---
+
+## Slovenčina (sk)
+
+**Krátky popis** (≤132)
+Upratujte záložky Chrome v rýchlom a modernom rozhraní. 100 % lokálne, bezpečné pre synchronizáciu.
+
+**Podrobný popis**
+Bookmark Tidy bwlab vám pomôže urobiť poriadok v preplnenom paneli záložiek.
+
+FUNKCIE
+- Plnohodnotný správca záložiek so stromom priečinkov, okamžitým vyhľadávaním, presúvaním myšou a správou priečinkov
+- Ovládanie z klávesnice (hľadanie, otváranie, premenovanie, odstraňovanie — bez myši)
+- K dispozícii v 29 jazykoch
+- Svetlý/tmavý motív
+
+SÚKROMIE
+Všetko beží lokálne vo vašom zariadení cez oficiálne API `chrome.bookmarks` prehliadača Chrome. Žiadne údaje sa nezhromažďujú, neodosielajú ani nepredávajú. Ak je zapnutá synchronizácia Chrome, zmeny sa synchronizujú cez infraštruktúru Googlu — nikdy cez servery tretích strán.
+
+Open source (licencia MIT): github.com/bwlab/bookmark-tidy
+
+☕ Ak je pre vás Bookmark Tidy užitočný, môžete mi kúpiť kávu: buymeacoffee.com/bwlab
+
+---
+
+## Slovenščina (sl)
+
+**Kratek opis** (≤132)
+Uredite zaznamke v Chromu s hitrim, sodobnim vmesnikom. 100 % lokalno, varno za sinhronizacijo.
+
+**Podroben opis**
+Bookmark Tidy bwlab vam pomaga narediti red v prenatrpani vrstici z zaznamki.
+
+FUNKCIJE
+- Popoln upravitelj zaznamkov z drevesom map, takojšnjim iskanjem, vlečenjem in spuščanjem ter upravljanjem map
+- Upravljanje s tipkovnico (iskanje, odpiranje, preimenovanje, brisanje — brez miške)
+- Na voljo v 29 jezikih
+- Svetla/temna tema
+
+ZASEBNOST
+Vse deluje lokalno v vaši napravi prek uradnega API-ja `chrome.bookmarks` brskalnika Chrome. Nobeni podatki se ne zbirajo, ne pošiljajo in ne prodajajo. Če je sinhronizacija Chrome vklopljena, se spremembe sinhronizirajo prek Googlove infrastrukture — nikoli prek strežnikov tretjih oseb.
+
+Odprta koda (licenca MIT): github.com/bwlab/bookmark-tidy
+
+☕ Če vam je Bookmark Tidy v pomoč, mi lahko kupite kavo: buymeacoffee.com/bwlab
+
+---
+
+## Hrvatski (hr)
+
+**Kratak opis** (≤132)
+Pospremite oznake u Chromeu kroz brzo, moderno sučelje. 100 % lokalno, sigurno za sinkronizaciju.
+
+**Detaljan opis**
+Bookmark Tidy bwlab pomaže vam uvesti red u pretrpanu traku oznaka.
+
+ZNAČAJKE
+- Potpuni upravitelj oznaka sa stablom mapa, trenutnim pretraživanjem, povlačenjem i ispuštanjem te upravljanjem mapama
+- Upravljanje tipkovnicom (traženje, otvaranje, preimenovanje, brisanje — bez miša)
+- Dostupno na 29 jezika
+- Svijetla/tamna tema
+
+PRIVATNOST
+Sve radi lokalno na vašem uređaju putem službenog API-ja `chrome.bookmarks` preglednika Chrome. Nikakvi se podaci ne prikupljaju, ne prenose niti prodaju. Ako je uključena sinkronizacija Chromea, promjene se sinkroniziraju putem Googleove infrastrukture — nikad putem poslužitelja trećih strana.
+
+Otvoreni kod (licenca MIT): github.com/bwlab/bookmark-tidy
+
+☕ Ako vam je Bookmark Tidy koristan, možete me častiti kavom: buymeacoffee.com/bwlab
+
+---
+
+## Magyar (hu)
+
+**Rövid leírás** (≤132)
+Rendezze Chrome-könyvjelzőit gyors, modern felületen. 100%-ban helyi, szinkronizálásbiztos.
+
+**Részletes leírás**
+A Bookmark Tidy bwlab segít rendet tenni a zsúfolt könyvjelzősávon.
+
+FUNKCIÓK
+- Teljes értékű könyvjelzőkezelő mappafával, azonnali kereséssel, húzással és mappakezeléssel
+- Billentyűzetes vezérlés (keresés, megnyitás, átnevezés, törlés — egér nélkül)
+- 29 nyelven érhető el
+- Világos/sötét téma
+
+ADATVÉDELEM
+Minden helyben, az Ön eszközén fut a Chrome hivatalos `chrome.bookmarks` API-ján keresztül. Semmilyen adatot nem gyűjtünk, továbbítunk vagy értékesítünk. Ha a Chrome-szinkronizálás be van kapcsolva, a módosítások a Google saját infrastruktúráján keresztül szinkronizálódnak — soha nem harmadik fél szerverein.
+
+Nyílt forráskód (MIT-licenc): github.com/bwlab/bookmark-tidy
+
+☕ Ha hasznosnak találja a Bookmark Tidyt, meghívhat egy kávéra: buymeacoffee.com/bwlab
+
+---
+
+## Română (ro)
+
+**Descriere scurtă** (≤132)
+Organizează marcajele Chrome cu o interfață rapidă și modernă. 100% local, sigur pentru sincronizare.
+
+**Descriere detaliată**
+Bookmark Tidy bwlab te ajută să faci ordine într-o bară de marcaje aglomerată.
+
+FUNCȚII
+- Manager de marcaje complet, cu arbore de dosare, căutare instantanee, glisare și plasare și gestionarea dosarelor
+- Navigare din tastatură (căutare, deschidere, redenumire, ștergere — fără mouse)
+- Disponibil în 29 de limbi
+- Temă luminoasă/întunecată
+
+CONFIDENȚIALITATE
+Totul rulează local pe dispozitivul tău prin API-ul oficial `chrome.bookmarks` din Chrome. Nicio dată nu este colectată, transmisă sau vândută. Dacă sincronizarea Chrome este activată, modificările se sincronizează prin infrastructura Google — niciodată prin servere terțe.
+
+Open source (licență MIT): github.com/bwlab/bookmark-tidy
+
+☕ Dacă Bookmark Tidy îți este util, îmi poți cumpăra o cafea: buymeacoffee.com/bwlab
+
+---
+
+## Eesti (et)
+
+**Lühikirjeldus** (≤132)
+Korrastage Chrome'i järjehoidjaid kiires ja moodsas liideses. 100% kohalik, sünkroonimiskindel.
+
+**Üksikasjalik kirjeldus**
+Bookmark Tidy bwlab aitab segase järjehoidjariba korda teha.
+
+FUNKTSIOONID
+- Täisväärtuslik järjehoidjate haldur kaustapuu, kiirotsingu, lohistamise ja kaustade haldusega
+- Klaviatuuriga juhtimine (otsimine, avamine, ümbernimetamine, kustutamine — ilma hiireta)
+- Saadaval 29 keeles
+- Hele/tume teema
+
+PRIVAATSUS
+Kõik töötab kohalikult teie seadmes Chrome'i ametliku `chrome.bookmarks` API kaudu. Andmeid ei koguta, edastata ega müüda. Kui Chrome'i sünkroonimine on sisse lülitatud, sünkroonitakse muudatused Google'i enda taristu kaudu — mitte kunagi kolmandate osapoolte serverite kaudu.
+
+Avatud lähtekood (MIT-litsents): github.com/bwlab/bookmark-tidy
+
+☕ Kui Bookmark Tidy on teile kasulik, võite mulle kohvi osta: buymeacoffee.com/bwlab
+
+---
+
+## Latviešu (lv)
+
+**Īss apraksts** (≤132)
+Sakārtojiet Chrome grāmatzīmes ātrā, modernā saskarnē. 100% lokāli, droši sinhronizācijai.
+
+**Detalizēts apraksts**
+Bookmark Tidy bwlab palīdz ieviest kārtību pārblīvētā grāmatzīmju joslā.
+
+FUNKCIJAS
+- Pilnvērtīgs grāmatzīmju pārvaldnieks ar mapju koku, tūlītēju meklēšanu, vilkšanu un nomešanu un mapju pārvaldību
+- Vadība ar tastatūru (meklēšana, atvēršana, pārdēvēšana, dzēšana — bez peles)
+- Pieejams 29 valodās
+- Gaišs/tumšs motīvs
+
+PRIVĀTUMS
+Viss darbojas lokāli jūsu ierīcē, izmantojot Chrome oficiālo `chrome.bookmarks` API. Nekādi dati netiek vākti, pārsūtīti vai pārdoti. Ja ir ieslēgta Chrome sinhronizācija, izmaiņas tiek sinhronizētas, izmantojot Google infrastruktūru, — nekad caur trešo pušu serveriem.
+
+Atvērtais pirmkods (MIT licence): github.com/bwlab/bookmark-tidy
+
+☕ Ja Bookmark Tidy jums noder, varat uzsaukt man kafiju: buymeacoffee.com/bwlab
+
+---
+
+## Lietuvių (lt)
+
+**Trumpas aprašas** (≤132)
+Tvarkykite „Chrome“ žymes greitoje, modernioje sąsajoje. 100 % vietoje, saugu sinchronizuojant.
+
+**Išsamus aprašas**
+Bookmark Tidy bwlab padeda sutvarkyti perpildytą žymių juostą.
+
+FUNKCIJOS
+- Visavertė žymių tvarkytuvė su aplankų medžiu, momentine paieška, vilkimu ir aplankų tvarkymu
+- Valdymas klaviatūra (paieška, atidarymas, pervardijimas, trynimas — be pelės)
+- Pasiekiama 29 kalbomis
+- Šviesi/tamsi tema
+
+PRIVATUMAS
+Viskas veikia vietoje jūsų įrenginyje per oficialią „Chrome“ `chrome.bookmarks` API. Jokie duomenys nerenkami, neperduodami ir neparduodami. Jei įjungtas „Chrome“ sinchronizavimas, pakeitimai sinchronizuojami per „Google“ infrastruktūrą — niekada per trečiųjų šalių serverius.
+
+Atvirasis kodas (MIT licencija): github.com/bwlab/bookmark-tidy
+
+☕ Jei Bookmark Tidy jums naudingas, galite nupirkti man kavos: buymeacoffee.com/bwlab

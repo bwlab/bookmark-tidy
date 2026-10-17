@@ -1,0 +1,296 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Porządkuj zakładki Chrome i zarządzaj nimi w nowoczesnym interfejsie. Bezpieczne dla synchronizacji (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Otwórz menedżer zakładek bwlab"
+  },
+  "pageTitle": {
+    "message": "Zakładki · bwlab"
+  },
+  "brandTagline": {
+    "message": "Zakładki"
+  },
+  "searchPlaceholder": {
+    "message": "Szukaj w zakładkach (naciśnij /)"
+  },
+  "themeToggleTitle": {
+    "message": "Zmień motyw (ciemny/jasny)"
+  },
+  "viewsLabel": {
+    "message": "Widoki"
+  },
+  "presetAll": {
+    "message": "Wszystkie"
+  },
+  "presetRecent": {
+    "message": "Ostatnie 30 dni"
+  },
+  "presetOldest": {
+    "message": "100 najstarszych"
+  },
+  "presetStray": {
+    "message": "Bez folderu"
+  },
+  "foldersLabel": {
+    "message": "Foldery"
+  },
+  "newFolderRootTitle": {
+    "message": "Nowy folder na pasku zakładek"
+  },
+  "newFolderBtn": {
+    "message": "+ nowy"
+  },
+  "sortLabel": {
+    "message": "Sortuj"
+  },
+  "sortManual": {
+    "message": "Ręcznie"
+  },
+  "sortTitle": {
+    "message": "Tytuł"
+  },
+  "sortDateDesc": {
+    "message": "Najnowsze najpierw"
+  },
+  "sortDateAsc": {
+    "message": "Najstarsze najpierw"
+  },
+  "sortDomain": {
+    "message": "Domena"
+  },
+  "hintSearch": {
+    "message": "szukaj"
+  },
+  "hintNav": {
+    "message": "nawigacja"
+  },
+  "hintOpen": {
+    "message": "otwórz"
+  },
+  "hintNewTab": {
+    "message": "nowa karta"
+  },
+  "hintRename": {
+    "message": "zmień nazwę"
+  },
+  "hintDelete": {
+    "message": "usuń"
+  },
+  "hintReset": {
+    "message": "reset"
+  },
+  "dateToday": {
+    "message": "dziś"
+  },
+  "dateYesterday": {
+    "message": "wczoraj"
+  },
+  "dateUnitDay": {
+    "message": " d."
+  },
+  "dateUnitWeek": {
+    "message": " tydz."
+  },
+  "dateUnitMonth": {
+    "message": " mies."
+  },
+  "dateUnitYear": {
+    "message": " r."
+  },
+  "newSubfolderTitle": {
+    "message": "Nowy podfolder"
+  },
+  "renameTitleAttr": {
+    "message": "Zmień nazwę"
+  },
+  "deleteTitleAttr": {
+    "message": "Usuń"
+  },
+  "folderNewNamePrompt": {
+    "message": "Nazwa nowego podfolderu:"
+  },
+  "folderRenamePrompt": {
+    "message": "Nowa nazwa folderu:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Usunąć pusty folder „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Błąd: "
+  },
+  "rootNodeLabel": {
+    "message": "(katalog główny)"
+  },
+  "itemsCountSingular": {
+    "message": "zakładka"
+  },
+  "itemsCountPlural": {
+    "message": "zakładki"
+  },
+  "itemsCountFew": {
+    "message": "zakładki"
+  },
+  "itemsCountMany": {
+    "message": "zakładek"
+  },
+  "subfolderCountSingular": {
+    "message": "podfolder"
+  },
+  "subfolderCountPlural": {
+    "message": "podfolderu"
+  },
+  "subfolderCountFew": {
+    "message": "podfoldery"
+  },
+  "subfolderCountMany": {
+    "message": "podfolderów"
+  },
+  "emptyFolderLabel": {
+    "message": "pusty"
+  },
+  "noNameFolder": {
+    "message": "(bez nazwy)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Wyniki dla „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Brak wyników dla „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Pusty folder"
+  },
+  "openNewTabTitle": {
+    "message": "Otwórz w nowej karcie"
+  },
+  "copyUrlTitle": {
+    "message": "Kopiuj URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Zmień nazwę (E)"
+  },
+  "moveToTitle": {
+    "message": "Przenieś do..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Usuń (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarkletu (adres javascript:) nie można uruchomić stąd z powodu ograniczeń bezpieczeństwa CSP. Skopiuj adres i wklej go na pasku adresu."
+  },
+  "urlCopiedFlash": {
+    "message": "Skopiowano URL"
+  },
+  "renameTitlePrompt": {
+    "message": "Nowy tytuł:"
+  },
+  "moveToPrompt": {
+    "message": "Przenieś do (ścieżka typu „Praca/Serwer”, oddzielona /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Nie można przenieść folderu do niego samego ani do jego podfolderu."
+  },
+  "itemDeleteConfirm": {
+    "message": "Usunąć „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Usunąć „$TITLE$”? Zakładki: $COUNT$, podfoldery: $SUBCOUNT$. Tej operacji nie można cofnąć.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Nazwa nowego folderu (na pasku zakładek):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Zakładki"
+  },
+  "metaSummary": {
+    "message": "Adresy URL: $URLS$ · foldery: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Informacje · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Informacje"
+  },
+  "creditsBack": {
+    "message": "← Wstecz"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Stworzone przez "
+  },
+  "creditsIntroPost": {
+    "message": ", agencję z Włoch zajmującą się tworzeniem stron i e-commerce, specjalizującą się w PrestaShop i rozwiązaniach webowych na zamówienie."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Strona:"
+  },
+  "creditsSourceLabel": {
+    "message": "Kod źródłowy:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licencja: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "To rozszerzenie działa w całości na Twoim urządzeniu. Odczytuje i modyfikuje zakładki wyłącznie przez oficjalne API chrome.bookmarks przeglądarki Chrome — żadne dane nie są zbierane, przesyłane ani sprzedawane."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Anuluj"
+  },
+  "supportLabel": {
+    "message": "Postaw mi kawę"
+  },
+  "supportTitle": {
+    "message": "Podoba Ci się Bookmark Tidy? Wesprzyj rozwój na Buy Me a Coffee"
+  }
+}

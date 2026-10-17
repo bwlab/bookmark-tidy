@@ -1,0 +1,290 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Organizează și gestionează marcajele Chrome cu o interfață modernă. Sigur pentru sincronizare (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Deschide managerul de marcaje bwlab"
+  },
+  "pageTitle": {
+    "message": "Marcaje · bwlab"
+  },
+  "brandTagline": {
+    "message": "Marcaje"
+  },
+  "searchPlaceholder": {
+    "message": "Caută în marcaje (apasă /)"
+  },
+  "themeToggleTitle": {
+    "message": "Schimbă tema (întunecată/luminoasă)"
+  },
+  "viewsLabel": {
+    "message": "Vizualizări"
+  },
+  "presetAll": {
+    "message": "Toate"
+  },
+  "presetRecent": {
+    "message": "Ultimele 30 de zile"
+  },
+  "presetOldest": {
+    "message": "Cele mai vechi 100"
+  },
+  "presetStray": {
+    "message": "Fără dosar"
+  },
+  "foldersLabel": {
+    "message": "Dosare"
+  },
+  "newFolderRootTitle": {
+    "message": "Dosar nou în bara de marcaje"
+  },
+  "newFolderBtn": {
+    "message": "+ nou"
+  },
+  "sortLabel": {
+    "message": "Ordine"
+  },
+  "sortManual": {
+    "message": "Manual"
+  },
+  "sortTitle": {
+    "message": "Titlu"
+  },
+  "sortDateDesc": {
+    "message": "Cele mai noi întâi"
+  },
+  "sortDateAsc": {
+    "message": "Cele mai vechi întâi"
+  },
+  "sortDomain": {
+    "message": "Domeniu"
+  },
+  "hintSearch": {
+    "message": "caută"
+  },
+  "hintNav": {
+    "message": "navighează"
+  },
+  "hintOpen": {
+    "message": "deschide"
+  },
+  "hintNewTab": {
+    "message": "filă nouă"
+  },
+  "hintRename": {
+    "message": "redenumește"
+  },
+  "hintDelete": {
+    "message": "șterge"
+  },
+  "hintReset": {
+    "message": "resetează"
+  },
+  "dateToday": {
+    "message": "azi"
+  },
+  "dateYesterday": {
+    "message": "ieri"
+  },
+  "dateUnitDay": {
+    "message": " z"
+  },
+  "dateUnitWeek": {
+    "message": " săpt."
+  },
+  "dateUnitMonth": {
+    "message": " luni"
+  },
+  "dateUnitYear": {
+    "message": " ani"
+  },
+  "newSubfolderTitle": {
+    "message": "Subdosar nou"
+  },
+  "renameTitleAttr": {
+    "message": "Redenumește"
+  },
+  "deleteTitleAttr": {
+    "message": "Șterge"
+  },
+  "folderNewNamePrompt": {
+    "message": "Numele noului subdosar:"
+  },
+  "folderRenamePrompt": {
+    "message": "Noul nume al dosarului:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Ștergi dosarul gol „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Eroare: "
+  },
+  "rootNodeLabel": {
+    "message": "(rădăcină)"
+  },
+  "itemsCountSingular": {
+    "message": "marcaj"
+  },
+  "itemsCountPlural": {
+    "message": "de marcaje"
+  },
+  "itemsCountFew": {
+    "message": "marcaje"
+  },
+  "subfolderCountSingular": {
+    "message": "subdosar"
+  },
+  "subfolderCountPlural": {
+    "message": "de subdosare"
+  },
+  "subfolderCountFew": {
+    "message": "subdosare"
+  },
+  "emptyFolderLabel": {
+    "message": "gol"
+  },
+  "noNameFolder": {
+    "message": "(fără nume)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Rezultate pentru „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Niciun rezultat pentru „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Dosar gol"
+  },
+  "openNewTabTitle": {
+    "message": "Deschide într-o filă nouă"
+  },
+  "copyUrlTitle": {
+    "message": "Copiază URL-ul"
+  },
+  "renameShortcutTitle": {
+    "message": "Redenumește (E)"
+  },
+  "moveToTitle": {
+    "message": "Mută în..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Șterge (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarkletul (URL javascript:) nu poate fi rulat de aici din cauza restricțiilor de securitate CSP. Copiază URL-ul și lipește-l în bara de adrese."
+  },
+  "urlCopiedFlash": {
+    "message": "URL copiat"
+  },
+  "renameTitlePrompt": {
+    "message": "Titlu nou:"
+  },
+  "moveToPrompt": {
+    "message": "Mută în (cale de tipul „Lucru/Server”, separată prin /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Un dosar nu poate fi mutat în el însuși sau într-unul dintre subdosarele sale."
+  },
+  "itemDeleteConfirm": {
+    "message": "Ștergi „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Ștergi „$TITLE$”? Marcaje: $COUNT$, subdosare: $SUBCOUNT$. Acțiunea nu poate fi anulată.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Numele noului dosar (în bara de marcaje):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Marcaje"
+  },
+  "metaSummary": {
+    "message": "URL-uri: $URLS$ · dosare: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Credite · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Credite"
+  },
+  "creditsBack": {
+    "message": "← Înapoi"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Creat de "
+  },
+  "creditsIntroPost": {
+    "message": ", o agenție de dezvoltare web și e-commerce din Italia, specializată în PrestaShop și soluții web personalizate."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Site web:"
+  },
+  "creditsSourceLabel": {
+    "message": "Cod sursă:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licență: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Această extensie rulează în întregime pe dispozitivul tău. Citește și modifică marcajele doar prin API-ul oficial chrome.bookmarks din Chrome — nicio dată nu este colectată, transmisă sau vândută."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Anulează"
+  },
+  "supportLabel": {
+    "message": "Cumpără-mi o cafea"
+  },
+  "supportTitle": {
+    "message": "Îți place Bookmark Tidy? Susține dezvoltarea pe Buy Me a Coffee"
+  }
+}

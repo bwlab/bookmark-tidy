@@ -1,0 +1,290 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Pospremite i upravljajte oznakama u Chromeu kroz moderno sučelje. Sigurno za sinkronizaciju (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Otvori bwlab upravitelj oznaka"
+  },
+  "pageTitle": {
+    "message": "Oznake · bwlab"
+  },
+  "brandTagline": {
+    "message": "Oznake"
+  },
+  "searchPlaceholder": {
+    "message": "Pretraži oznake (pritisnite /)"
+  },
+  "themeToggleTitle": {
+    "message": "Promijeni temu (tamna/svijetla)"
+  },
+  "viewsLabel": {
+    "message": "Prikazi"
+  },
+  "presetAll": {
+    "message": "Sve"
+  },
+  "presetRecent": {
+    "message": "Zadnjih 30 dana"
+  },
+  "presetOldest": {
+    "message": "100 najstarijih"
+  },
+  "presetStray": {
+    "message": "Bez mape"
+  },
+  "foldersLabel": {
+    "message": "Mape"
+  },
+  "newFolderRootTitle": {
+    "message": "Nova mapa na traci oznaka"
+  },
+  "newFolderBtn": {
+    "message": "+ nova"
+  },
+  "sortLabel": {
+    "message": "Poredak"
+  },
+  "sortManual": {
+    "message": "Ručno"
+  },
+  "sortTitle": {
+    "message": "Naslov"
+  },
+  "sortDateDesc": {
+    "message": "Najnovije prvo"
+  },
+  "sortDateAsc": {
+    "message": "Najstarije prvo"
+  },
+  "sortDomain": {
+    "message": "Domena"
+  },
+  "hintSearch": {
+    "message": "traži"
+  },
+  "hintNav": {
+    "message": "kretanje"
+  },
+  "hintOpen": {
+    "message": "otvori"
+  },
+  "hintNewTab": {
+    "message": "nova kartica"
+  },
+  "hintRename": {
+    "message": "preimenuj"
+  },
+  "hintDelete": {
+    "message": "izbriši"
+  },
+  "hintReset": {
+    "message": "poništi"
+  },
+  "dateToday": {
+    "message": "danas"
+  },
+  "dateYesterday": {
+    "message": "jučer"
+  },
+  "dateUnitDay": {
+    "message": " d"
+  },
+  "dateUnitWeek": {
+    "message": " tj."
+  },
+  "dateUnitMonth": {
+    "message": " mj."
+  },
+  "dateUnitYear": {
+    "message": " g."
+  },
+  "newSubfolderTitle": {
+    "message": "Nova podmapa"
+  },
+  "renameTitleAttr": {
+    "message": "Preimenuj"
+  },
+  "deleteTitleAttr": {
+    "message": "Izbriši"
+  },
+  "folderNewNamePrompt": {
+    "message": "Naziv nove podmape:"
+  },
+  "folderRenamePrompt": {
+    "message": "Novi naziv mape:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Izbrisati praznu mapu „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Pogreška: "
+  },
+  "rootNodeLabel": {
+    "message": "(korijen)"
+  },
+  "itemsCountSingular": {
+    "message": "oznaka"
+  },
+  "itemsCountPlural": {
+    "message": "oznaka"
+  },
+  "itemsCountFew": {
+    "message": "oznake"
+  },
+  "subfolderCountSingular": {
+    "message": "podmapa"
+  },
+  "subfolderCountPlural": {
+    "message": "podmapa"
+  },
+  "subfolderCountFew": {
+    "message": "podmape"
+  },
+  "emptyFolderLabel": {
+    "message": "prazno"
+  },
+  "noNameFolder": {
+    "message": "(bez naziva)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Rezultati za „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Nema rezultata za „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Prazna mapa"
+  },
+  "openNewTabTitle": {
+    "message": "Otvori u novoj kartici"
+  },
+  "copyUrlTitle": {
+    "message": "Kopiraj URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Preimenuj (E)"
+  },
+  "moveToTitle": {
+    "message": "Premjesti u..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Izbriši (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarklet (adresa javascript:) ne može se pokrenuti odavde zbog sigurnosnih ograničenja CSP-a. Kopirajte adresu i zalijepite je u adresnu traku."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopiran"
+  },
+  "renameTitlePrompt": {
+    "message": "Novi naslov:"
+  },
+  "moveToPrompt": {
+    "message": "Premjesti u (putanja poput „Posao/Poslužitelj”, odvojena s /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Mapa se ne može premjestiti u samu sebe ni u neku od svojih podmapa."
+  },
+  "itemDeleteConfirm": {
+    "message": "Izbrisati „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Izbrisati „$TITLE$”? Oznake: $COUNT$, podmape: $SUBCOUNT$. Ovo se ne može poništiti.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Naziv nove mape (na traci oznaka):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Oznake"
+  },
+  "metaSummary": {
+    "message": "URL-ovi: $URLS$ · mape: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Zasluge · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Zasluge"
+  },
+  "creditsBack": {
+    "message": "← Natrag"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Izradila agencija "
+  },
+  "creditsIntroPost": {
+    "message": " iz Italije za web razvoj i e-trgovinu, specijalizirana za PrestaShop i web rješenja po mjeri."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Web-stranica:"
+  },
+  "creditsSourceLabel": {
+    "message": "Izvorni kod:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licenca: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Ovo proširenje radi u potpunosti na vašem uređaju. Oznake čita i mijenja samo putem službenog API-ja chrome.bookmarks preglednika Chrome — nikakvi se podaci ne prikupljaju, ne prenose niti prodaju."
+  },
+  "dialogOk": {
+    "message": "U redu"
+  },
+  "dialogCancel": {
+    "message": "Odustani"
+  },
+  "supportLabel": {
+    "message": "Častite me kavom"
+  },
+  "supportTitle": {
+    "message": "Sviđa vam se Bookmark Tidy? Podržite razvoj na Buy Me a Coffee"
+  }
+}

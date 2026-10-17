@@ -1,0 +1,296 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Tvarkykite „Chrome“ žymes ir valdykite jas modernioje sąsajoje. Saugu sinchronizuojant (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Atidaryti „bwlab“ žymių tvarkytuvę"
+  },
+  "pageTitle": {
+    "message": "Žymės · bwlab"
+  },
+  "brandTagline": {
+    "message": "Žymės"
+  },
+  "searchPlaceholder": {
+    "message": "Ieškoti žymėse (paspauskite /)"
+  },
+  "themeToggleTitle": {
+    "message": "Keisti temą (tamsi/šviesi)"
+  },
+  "viewsLabel": {
+    "message": "Rodiniai"
+  },
+  "presetAll": {
+    "message": "Visos"
+  },
+  "presetRecent": {
+    "message": "Pastarosios 30 d."
+  },
+  "presetOldest": {
+    "message": "100 seniausių"
+  },
+  "presetStray": {
+    "message": "Be aplanko"
+  },
+  "foldersLabel": {
+    "message": "Aplankai"
+  },
+  "newFolderRootTitle": {
+    "message": "Naujas aplankas žymių juostoje"
+  },
+  "newFolderBtn": {
+    "message": "+ naujas"
+  },
+  "sortLabel": {
+    "message": "Rikiuoti"
+  },
+  "sortManual": {
+    "message": "Rankiniu būdu"
+  },
+  "sortTitle": {
+    "message": "Pavadinimas"
+  },
+  "sortDateDesc": {
+    "message": "Naujausios pirma"
+  },
+  "sortDateAsc": {
+    "message": "Seniausios pirma"
+  },
+  "sortDomain": {
+    "message": "Domenas"
+  },
+  "hintSearch": {
+    "message": "ieškoti"
+  },
+  "hintNav": {
+    "message": "naršyti"
+  },
+  "hintOpen": {
+    "message": "atidaryti"
+  },
+  "hintNewTab": {
+    "message": "naujas skirtukas"
+  },
+  "hintRename": {
+    "message": "pervardyti"
+  },
+  "hintDelete": {
+    "message": "ištrinti"
+  },
+  "hintReset": {
+    "message": "atstatyti"
+  },
+  "dateToday": {
+    "message": "šiandien"
+  },
+  "dateYesterday": {
+    "message": "vakar"
+  },
+  "dateUnitDay": {
+    "message": " d."
+  },
+  "dateUnitWeek": {
+    "message": " sav."
+  },
+  "dateUnitMonth": {
+    "message": " mėn."
+  },
+  "dateUnitYear": {
+    "message": " m."
+  },
+  "newSubfolderTitle": {
+    "message": "Naujas poaplankis"
+  },
+  "renameTitleAttr": {
+    "message": "Pervardyti"
+  },
+  "deleteTitleAttr": {
+    "message": "Ištrinti"
+  },
+  "folderNewNamePrompt": {
+    "message": "Naujo poaplankio pavadinimas:"
+  },
+  "folderRenamePrompt": {
+    "message": "Naujas aplanko pavadinimas:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Ištrinti tuščią aplanką „$TITLE$“?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Klaida: "
+  },
+  "rootNodeLabel": {
+    "message": "(šaknis)"
+  },
+  "itemsCountSingular": {
+    "message": "žymė"
+  },
+  "itemsCountPlural": {
+    "message": "žymių"
+  },
+  "itemsCountFew": {
+    "message": "žymės"
+  },
+  "itemsCountMany": {
+    "message": "žymės"
+  },
+  "subfolderCountSingular": {
+    "message": "poaplankis"
+  },
+  "subfolderCountPlural": {
+    "message": "poaplankių"
+  },
+  "subfolderCountFew": {
+    "message": "poaplankiai"
+  },
+  "subfolderCountMany": {
+    "message": "poaplankio"
+  },
+  "emptyFolderLabel": {
+    "message": "tuščias"
+  },
+  "noNameFolder": {
+    "message": "(be pavadinimo)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Rezultatai pagal „$QUERY$“",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Pagal „$QUERY$“ nieko nerasta",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Tuščias aplankas"
+  },
+  "openNewTabTitle": {
+    "message": "Atidaryti naujame skirtuke"
+  },
+  "copyUrlTitle": {
+    "message": "Kopijuoti URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Pervardyti (E)"
+  },
+  "moveToTitle": {
+    "message": "Perkelti į..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Ištrinti (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "žymelė-scenarijus"
+  },
+  "bookmarkletAlert": {
+    "message": "Žymelės-scenarijaus (javascript: URL) negalima paleisti iš čia dėl CSP saugos apribojimų. Nukopijuokite URL ir įklijuokite jį į adreso juostą."
+  },
+  "urlCopiedFlash": {
+    "message": "URL nukopijuotas"
+  },
+  "renameTitlePrompt": {
+    "message": "Naujas pavadinimas:"
+  },
+  "moveToPrompt": {
+    "message": "Perkelti į (kelias, pvz., „Darbas/Serveris“, atskirtas /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Aplanko negalima perkelti į jį patį ar į kurį nors jo poaplankį."
+  },
+  "itemDeleteConfirm": {
+    "message": "Ištrinti „$TITLE$“?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Ištrinti „$TITLE$“? Žymės: $COUNT$, poaplankiai: $SUBCOUNT$. Šio veiksmo anuliuoti negalima.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Naujo aplanko pavadinimas (žymių juostoje):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Žymės"
+  },
+  "metaSummary": {
+    "message": "URL: $URLS$ · aplankai: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Autoriai · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Autoriai"
+  },
+  "creditsBack": {
+    "message": "← Atgal"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Sukūrė "
+  },
+  "creditsIntroPost": {
+    "message": " – Italijos interneto svetainių kūrimo ir el. prekybos agentūra, besispecializuojanti „PrestaShop“ ir individualiuose interneto sprendimuose."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Svetainė:"
+  },
+  "creditsSourceLabel": {
+    "message": "Šaltinio kodas:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licencija: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Šis plėtinys veikia tik jūsų įrenginyje. Jis skaito ir keičia žymes tik per oficialią „Chrome“ chrome.bookmarks API — jokie duomenys nerenkami, neperduodami ir neparduodami."
+  },
+  "dialogOk": {
+    "message": "Gerai"
+  },
+  "dialogCancel": {
+    "message": "Atšaukti"
+  },
+  "supportLabel": {
+    "message": "Nupirk man kavos"
+  },
+  "supportTitle": {
+    "message": "Patinka Bookmark Tidy? Paremkite kūrimą per Buy Me a Coffee"
+  }
+}

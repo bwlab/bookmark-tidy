@@ -1,0 +1,296 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Uredite in upravljajte zaznamke v Chromu s sodobnim vmesnikom. Varno za sinhronizacijo (API chrome.bookmarks)."
+  },
+  "commandOpenManager": {
+    "message": "Odpri upravitelja zaznamkov bwlab"
+  },
+  "pageTitle": {
+    "message": "Zaznamki · bwlab"
+  },
+  "brandTagline": {
+    "message": "Zaznamki"
+  },
+  "searchPlaceholder": {
+    "message": "Iskanje po zaznamkih (pritisnite /)"
+  },
+  "themeToggleTitle": {
+    "message": "Preklopi temo (temna/svetla)"
+  },
+  "viewsLabel": {
+    "message": "Pogledi"
+  },
+  "presetAll": {
+    "message": "Vsi"
+  },
+  "presetRecent": {
+    "message": "Zadnjih 30 dni"
+  },
+  "presetOldest": {
+    "message": "100 najstarejših"
+  },
+  "presetStray": {
+    "message": "Brez mape"
+  },
+  "foldersLabel": {
+    "message": "Mape"
+  },
+  "newFolderRootTitle": {
+    "message": "Nova mapa v vrstici z zaznamki"
+  },
+  "newFolderBtn": {
+    "message": "+ nova"
+  },
+  "sortLabel": {
+    "message": "Razvrsti"
+  },
+  "sortManual": {
+    "message": "Ročno"
+  },
+  "sortTitle": {
+    "message": "Naslov"
+  },
+  "sortDateDesc": {
+    "message": "Najnovejši najprej"
+  },
+  "sortDateAsc": {
+    "message": "Najstarejši najprej"
+  },
+  "sortDomain": {
+    "message": "Domena"
+  },
+  "hintSearch": {
+    "message": "iskanje"
+  },
+  "hintNav": {
+    "message": "premikanje"
+  },
+  "hintOpen": {
+    "message": "odpri"
+  },
+  "hintNewTab": {
+    "message": "nov zavihek"
+  },
+  "hintRename": {
+    "message": "preimenuj"
+  },
+  "hintDelete": {
+    "message": "izbriši"
+  },
+  "hintReset": {
+    "message": "ponastavi"
+  },
+  "dateToday": {
+    "message": "danes"
+  },
+  "dateYesterday": {
+    "message": "včeraj"
+  },
+  "dateUnitDay": {
+    "message": " d"
+  },
+  "dateUnitWeek": {
+    "message": " t"
+  },
+  "dateUnitMonth": {
+    "message": " mes."
+  },
+  "dateUnitYear": {
+    "message": " l."
+  },
+  "newSubfolderTitle": {
+    "message": "Nova podmapa"
+  },
+  "renameTitleAttr": {
+    "message": "Preimenuj"
+  },
+  "deleteTitleAttr": {
+    "message": "Izbriši"
+  },
+  "folderNewNamePrompt": {
+    "message": "Ime nove podmape:"
+  },
+  "folderRenamePrompt": {
+    "message": "Novo ime mape:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Želite izbrisati prazno mapo »$TITLE$«?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Napaka: "
+  },
+  "rootNodeLabel": {
+    "message": "(koren)"
+  },
+  "itemsCountSingular": {
+    "message": "zaznamek"
+  },
+  "itemsCountPlural": {
+    "message": "zaznamkov"
+  },
+  "itemsCountTwo": {
+    "message": "zaznamka"
+  },
+  "itemsCountFew": {
+    "message": "zaznamki"
+  },
+  "subfolderCountSingular": {
+    "message": "podmapa"
+  },
+  "subfolderCountPlural": {
+    "message": "podmap"
+  },
+  "subfolderCountTwo": {
+    "message": "podmapi"
+  },
+  "subfolderCountFew": {
+    "message": "podmape"
+  },
+  "emptyFolderLabel": {
+    "message": "prazna"
+  },
+  "noNameFolder": {
+    "message": "(brez imena)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Rezultati za »$QUERY$«",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Ni rezultatov za »$QUERY$«",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Prazna mapa"
+  },
+  "openNewTabTitle": {
+    "message": "Odpri v novem zavihku"
+  },
+  "copyUrlTitle": {
+    "message": "Kopiraj URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Preimenuj (E)"
+  },
+  "moveToTitle": {
+    "message": "Premakni v ..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Izbriši (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "Bookmarkleta (naslov javascript:) zaradi varnostnih omejitev CSP ni mogoče zagnati od tukaj. Kopirajte naslov in ga prilepite v naslovno vrstico."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kopiran"
+  },
+  "renameTitlePrompt": {
+    "message": "Nov naslov:"
+  },
+  "moveToPrompt": {
+    "message": "Premakni v (pot, npr. »Delo/Strežnik«, ločena z /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Mape ni mogoče premakniti vase ali v katero od njenih podmap."
+  },
+  "itemDeleteConfirm": {
+    "message": "Želite izbrisati »$TITLE$«?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Želite izbrisati »$TITLE$«? Zaznamki: $COUNT$, podmape: $SUBCOUNT$. Tega ni mogoče razveljaviti.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Ime nove mape (v vrstici z zaznamki):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Zaznamki"
+  },
+  "metaSummary": {
+    "message": "URL-ji: $URLS$ · mape: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Zasluge · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Zasluge"
+  },
+  "creditsBack": {
+    "message": "← Nazaj"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Izdelala agencija "
+  },
+  "creditsIntroPost": {
+    "message": " iz Italije, ki se ukvarja s spletnim razvojem in e-trgovino ter je specializirana za PrestaShop in spletne rešitve po meri."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Spletna stran:"
+  },
+  "creditsSourceLabel": {
+    "message": "Izvorna koda:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licenca: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Ta razširitev deluje v celoti v vaši napravi. Zaznamke bere in spreminja samo prek uradnega API-ja chrome.bookmarks brskalnika Chrome — nobeni podatki se ne zbirajo, ne pošiljajo in ne prodajajo."
+  },
+  "dialogOk": {
+    "message": "V redu"
+  },
+  "dialogCancel": {
+    "message": "Prekliči"
+  },
+  "supportLabel": {
+    "message": "Kupi mi kavo"
+  },
+  "supportTitle": {
+    "message": "Vam je Bookmark Tidy všeč? Podprite razvoj na Buy Me a Coffee"
+  }
+}

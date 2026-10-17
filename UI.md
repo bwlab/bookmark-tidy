@@ -185,9 +185,9 @@ Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓
 
 - **Apri**: click titolo (current tab) · Ctrl+click (nuova tab) · `↗` (nuova tab background)
 - **Copia URL**: `⎘` → clipboard + chip verde "URL copiato" 1.5s
-- **Rinomina**: `✎` o tasto `E` con item selezionato → dialog
+- **Rinomina**: `✎` o tasto `E` (o `F2`) con item selezionato → dialog
 - **Sposta**: `→` → dialog con path testuale precompilato con il path attuale (es. `Barra dei preferiti/01 Lavoro`). Se il primo segmento è il nome di una root (Barra/Altri/Mobile) si parte da lì, altrimenti il path è relativo alla Barra (es. `01 Lavoro/Server`); cartelle mancanti vengono create
-- **Elimina**: `✕` o `Del` → conferma (bottone rosso) → `chrome.bookmarks.remove`
+- **Elimina**: `✕` o `Del` (su Mac anche `⌫`) → conferma (bottone rosso) → `chrome.bookmarks.remove`
 - **Drag**: trascina item su qualsiasi cartella (sidebar o lista) → sposta. Accetta solo drag interni al manager (MIME `application/x-bookmark-tidy-ids`); link/testo trascinati da altre pagine vengono ignorati. Errori di spostamento (es. cartella dentro sé stessa) → dialog di errore
 
 ### Operazioni su cartelle

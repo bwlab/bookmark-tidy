@@ -1,0 +1,290 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Sakārtojiet un pārvaldiet Chrome grāmatzīmes modernā saskarnē. Drošs sinhronizācijai (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "Atvērt bwlab grāmatzīmju pārvaldnieku"
+  },
+  "pageTitle": {
+    "message": "Grāmatzīmes · bwlab"
+  },
+  "brandTagline": {
+    "message": "Grāmatzīmes"
+  },
+  "searchPlaceholder": {
+    "message": "Meklēt grāmatzīmēs (nospiediet /)"
+  },
+  "themeToggleTitle": {
+    "message": "Mainīt motīvu (tumšs/gaišs)"
+  },
+  "viewsLabel": {
+    "message": "Skati"
+  },
+  "presetAll": {
+    "message": "Visas"
+  },
+  "presetRecent": {
+    "message": "Pēdējās 30 dienas"
+  },
+  "presetOldest": {
+    "message": "100 vecākās"
+  },
+  "presetStray": {
+    "message": "Bez mapes"
+  },
+  "foldersLabel": {
+    "message": "Mapes"
+  },
+  "newFolderRootTitle": {
+    "message": "Jauna mape grāmatzīmju joslā"
+  },
+  "newFolderBtn": {
+    "message": "+ jauna"
+  },
+  "sortLabel": {
+    "message": "Kārtot"
+  },
+  "sortManual": {
+    "message": "Manuāli"
+  },
+  "sortTitle": {
+    "message": "Nosaukums"
+  },
+  "sortDateDesc": {
+    "message": "Jaunākās vispirms"
+  },
+  "sortDateAsc": {
+    "message": "Vecākās vispirms"
+  },
+  "sortDomain": {
+    "message": "Domēns"
+  },
+  "hintSearch": {
+    "message": "meklēt"
+  },
+  "hintNav": {
+    "message": "pārvietoties"
+  },
+  "hintOpen": {
+    "message": "atvērt"
+  },
+  "hintNewTab": {
+    "message": "jauna cilne"
+  },
+  "hintRename": {
+    "message": "pārdēvēt"
+  },
+  "hintDelete": {
+    "message": "dzēst"
+  },
+  "hintReset": {
+    "message": "atiestatīt"
+  },
+  "dateToday": {
+    "message": "šodien"
+  },
+  "dateYesterday": {
+    "message": "vakar"
+  },
+  "dateUnitDay": {
+    "message": " d."
+  },
+  "dateUnitWeek": {
+    "message": " ned."
+  },
+  "dateUnitMonth": {
+    "message": " mēn."
+  },
+  "dateUnitYear": {
+    "message": " g."
+  },
+  "newSubfolderTitle": {
+    "message": "Jauna apakšmape"
+  },
+  "renameTitleAttr": {
+    "message": "Pārdēvēt"
+  },
+  "deleteTitleAttr": {
+    "message": "Dzēst"
+  },
+  "folderNewNamePrompt": {
+    "message": "Jaunās apakšmapes nosaukums:"
+  },
+  "folderRenamePrompt": {
+    "message": "Jaunais mapes nosaukums:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Vai dzēst tukšo mapi “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Kļūda: "
+  },
+  "rootNodeLabel": {
+    "message": "(sakne)"
+  },
+  "itemsCountSingular": {
+    "message": "grāmatzīme"
+  },
+  "itemsCountPlural": {
+    "message": "grāmatzīmes"
+  },
+  "itemsCountZero": {
+    "message": "grāmatzīmju"
+  },
+  "subfolderCountSingular": {
+    "message": "apakšmape"
+  },
+  "subfolderCountPlural": {
+    "message": "apakšmapes"
+  },
+  "subfolderCountZero": {
+    "message": "apakšmapju"
+  },
+  "emptyFolderLabel": {
+    "message": "tukša"
+  },
+  "noNameFolder": {
+    "message": "(bez nosaukuma)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Rezultāti vaicājumam “$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Vaicājumam “$QUERY$” nav rezultātu",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Tukša mape"
+  },
+  "openNewTabTitle": {
+    "message": "Atvērt jaunā cilnē"
+  },
+  "copyUrlTitle": {
+    "message": "Kopēt URL"
+  },
+  "renameShortcutTitle": {
+    "message": "Pārdēvēt (E)"
+  },
+  "moveToTitle": {
+    "message": "Pārvietot uz..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Dzēst (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "grāmatzīmlets"
+  },
+  "bookmarkletAlert": {
+    "message": "Grāmatzīmletu (javascript: URL) CSP drošības ierobežojumu dēļ nevar palaist no šejienes. Nokopējiet URL un ielīmējiet to adreses joslā."
+  },
+  "urlCopiedFlash": {
+    "message": "URL nokopēts"
+  },
+  "renameTitlePrompt": {
+    "message": "Jaunais nosaukums:"
+  },
+  "moveToPrompt": {
+    "message": "Pārvietot uz (ceļš, piem., “Darbs/Serveris”, atdalīts ar /):"
+  },
+  "moveIntoItselfError": {
+    "message": "Mapi nevar pārvietot pašā sevī vai kādā no tās apakšmapēm."
+  },
+  "itemDeleteConfirm": {
+    "message": "Vai dzēst “$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Vai dzēst “$TITLE$”? Grāmatzīmes: $COUNT$, apakšmapes: $SUBCOUNT$. Šo darbību nevar atsaukt.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Jaunās mapes nosaukums (grāmatzīmju joslā):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Grāmatzīmes"
+  },
+  "metaSummary": {
+    "message": "URL: $URLS$ · mapes: $FOLDERS$",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Autori · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Autori"
+  },
+  "creditsBack": {
+    "message": "← Atpakaļ"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Izstrādājusi "
+  },
+  "creditsIntroPost": {
+    "message": " — Itālijas tīmekļa izstrādes un e-komercijas aģentūra, kas specializējas PrestaShop un pielāgotos tīmekļa risinājumos."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Vietne:"
+  },
+  "creditsSourceLabel": {
+    "message": "Pirmkods:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licence: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Šis paplašinājums darbojas tikai jūsu ierīcē. Tas lasa un maina grāmatzīmes tikai ar Chrome oficiālo chrome.bookmarks API — nekādi dati netiek vākti, pārsūtīti vai pārdoti."
+  },
+  "dialogOk": {
+    "message": "Labi"
+  },
+  "dialogCancel": {
+    "message": "Atcelt"
+  },
+  "supportLabel": {
+    "message": "Uzsauc man kafiju"
+  },
+  "supportTitle": {
+    "message": "Patīk Bookmark Tidy? Atbalstiet izstrādi vietnē Buy Me a Coffee"
+  }
+}

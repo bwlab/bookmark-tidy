@@ -59,7 +59,15 @@ async function mutate(fn) {
 }
 
 // ---- dialog (sostituisce prompt/confirm/alert nativi) ----
-function openDialog({ message, input = false, defaultValue = "", alertOnly = false, danger = false }) {
+// I dialog sono serializzati: una seconda richiesta attende la chiusura della precedente
+// (showModal su un <dialog> gia' aperto lancia InvalidStateError).
+let dialogQueue = Promise.resolve();
+function openDialog(opts) {
+  const run = dialogQueue.then(() => showDialog(opts));
+  dialogQueue = run.catch(() => {});
+  return run;
+}
+function showDialog({ message, input = false, defaultValue = "", alertOnly = false, danger = false }) {
   return new Promise(resolve => {
     el.dialogMsg.textContent = message;
     el.dialogInput.hidden = !input;
@@ -91,13 +99,26 @@ function setDragIds(e, ids) {
   e.dataTransfer.effectAllowed = "move";
 }
 function isInternalDrag(e) { return e.dataTransfer.types.includes(DND_TYPE); }
+// true se ancestorId e' parentId stesso o un suo antenato (cartella trascinata dentro il proprio sotto-albero).
+function isSelfOrAncestor(ancestorId, id) {
+  for (let cur = id; cur; cur = state.folders.get(cur)?.node?.parentId) {
+    if (cur === ancestorId) return true;
+  }
+  return false;
+}
 async function dropInto(parentId, e) {
   let ids = [];
   try { ids = JSON.parse(e.dataTransfer.getData(DND_TYPE) || "[]"); } catch { return; }
+  if (!Array.isArray(ids)) return;
+  if (ids.some(id => state.folders.has(id) && isSelfOrAncestor(id, parentId))) {
+    await ui.alert(t("moveIntoItselfError"));
+    return;
+  }
+  // gia' nella cartella di destinazione: nessuno spostamento (altrimenti finirebbe in fondo)
+  const moving = ids.filter(id => (state.byId.get(id)?.parentId ?? state.folders.get(id)?.node?.parentId) !== parentId);
+  if (!moving.length) return;
   await mutate(async () => {
-    for (const id of ids) {
-      if (id !== parentId) await bm.move(id, { parentId });
-    }
+    for (const id of moving) await bm.move(id, { parentId });
   });
 }
 
@@ -129,11 +150,12 @@ function formatDateFull(ms) {
   return dateFullFmt.format(new Date(Number(ms)));
 }
 // "N preferiti" con la forma plurale giusta per la lingua (Intl.PluralRules):
-// chiavi <base>Singular/<base>Plural, piu' <base>Few/<base>Many opzionali (es. russo: 2 закладки, 5 закладок).
+// chiavi <base>Singular/<base>Plural, piu' <base>Zero/<base>Two/<base>Few/<base>Many opzionali
+// (es. russo: 2 закладки, 5 закладок; sloveno: 2 zaznamka).
 let pluralRules;
 function countLabel(n, base) {
   pluralRules ??= new Intl.PluralRules(chrome.i18n.getUILanguage());
-  const suffix = { one: "Singular", few: "Few", many: "Many" }[pluralRules.select(n)] || "Plural";
+  const suffix = { zero: "Zero", one: "Singular", two: "Two", few: "Few", many: "Many" }[pluralRules.select(n)] || "Plural";
   const word = chrome.i18n.getMessage(base + suffix) || t(base + (n === 1 ? "Singular" : "Plural"));
   return `${n} ${word}`;
 }
@@ -304,13 +326,13 @@ function renderNode(node, parent) {
   const actions = document.createElement("span");
   actions.className = "folder-actions";
   if (!node.unmodifiable) {
-    actions.innerHTML = `<button class="folder-act" data-fact="new" title="${t("newSubfolderTitle")}">+</button>`;
+    actions.innerHTML = `<button class="folder-act" data-fact="new" title="${escapeHtml(t("newSubfolderTitle"))}">+</button>`;
   }
   if (!locked) {
     actions.innerHTML += `
-      <button class="folder-act" data-fact="rename" title="${t("renameTitleAttr")}">✎</button>
-      <button class="folder-act" data-fact="move" title="${t("moveToTitle")}">→</button>
-      <button class="folder-act danger" data-fact="delete" title="${t("deleteTitleAttr")}">✕</button>
+      <button class="folder-act" data-fact="rename" title="${escapeHtml(t("renameTitleAttr"))}">✎</button>
+      <button class="folder-act" data-fact="move" title="${escapeHtml(t("moveToTitle"))}">→</button>
+      <button class="folder-act danger" data-fact="delete" title="${escapeHtml(t("deleteTitleAttr"))}">✕</button>
     `;
   }
 
@@ -356,8 +378,11 @@ function renderNode(node, parent) {
     if (!isInternalDrag(e)) return;
     e.preventDefault(); row.classList.add("drop-target");
   });
-  row.addEventListener("dragleave", () => row.classList.remove("drop-target"));
+  row.addEventListener("dragleave", (e) => {
+    if (!row.contains(e.relatedTarget)) row.classList.remove("drop-target");
+  });
   row.addEventListener("drop", (e) => {
+    if (!isInternalDrag(e)) return;
     e.preventDefault();
     row.classList.remove("drop-target");
     dropInto(node.id, e);
@@ -418,14 +443,14 @@ function itemRowHtml(it) {
   const isJsUrl = /^javascript:/i.test(it.url);
   const safeHref = isJsUrl ? "#" : escapeHtml(it.url);
   const editActions = it.unmodifiable ? "" : `
-        <button class="act" data-act="rename" title="${t("renameShortcutTitle")}">✎</button>
-        <button class="act" data-act="move" title="${t("moveToTitle")}">→</button>
-        <button class="act danger" data-act="delete" title="${t("deleteShortcutTitle")}">✕</button>`;
+        <button class="act" data-act="rename" title="${escapeHtml(t("renameShortcutTitle"))}">✎</button>
+        <button class="act" data-act="move" title="${escapeHtml(t("moveToTitle"))}">→</button>
+        <button class="act danger" data-act="delete" title="${escapeHtml(t("deleteShortcutTitle"))}">✕</button>`;
   return `
     <li class="item" data-id="${escapeHtml(it.id)}" draggable="${!it.unmodifiable}">
       <img class="favicon" src="${faviconUrl(it.url)}" alt="" loading="lazy">
       <div class="main">
-        <a class="title${isJsUrl ? ' jsurl' : ''}" href="${safeHref}" title="${escapeHtml(it.url)}" data-url="${escapeHtml(it.url)}">${highlight(it.title || it.url, state.query)}${isJsUrl ? ` <span class="folder-chip">${t("bookmarkletChip")}</span>` : ''}</a>
+        <a class="title${isJsUrl ? ' jsurl' : ''}" href="${safeHref}" title="${escapeHtml(it.url)}" data-url="${escapeHtml(it.url)}">${highlight(it.title || it.url, state.query)}${isJsUrl ? ` <span class="folder-chip">${escapeHtml(t("bookmarkletChip"))}</span>` : ''}</a>
         <div class="subline">
           <span class="domain">${escapeHtml(hostOf(it.url))}</span>
           <span class="dot">·</span>
@@ -434,8 +459,8 @@ function itemRowHtml(it) {
         </div>
       </div>
       <div class="actions">
-        <button class="act" data-act="newtab" title="${t("openNewTabTitle")}">↗</button>
-        <button class="act" data-act="copy" title="${t("copyUrlTitle")}">⎘</button>${editActions}
+        <button class="act" data-act="newtab" title="${escapeHtml(t("openNewTabTitle"))}">↗</button>
+        <button class="act" data-act="copy" title="${escapeHtml(t("copyUrlTitle"))}">⎘</button>${editActions}
       </div>
     </li>`;
 }
@@ -449,9 +474,9 @@ function folderRowHtml(f) {
   if (count) subInfo.push(countLabel(count, "itemsCount"));
   if (subFolders) subInfo.push(countLabel(subFolders, "subfolderCount"));
   const actions = locked ? "" : `
-      <button class="act" data-fact="rename" title="${t("renameShortcutTitle")}">✎</button>
-      <button class="act" data-fact="move" title="${t("moveToTitle")}">→</button>
-      <button class="act danger" data-fact="delete" title="${t("deleteShortcutTitle")}">✕</button>`;
+      <button class="act" data-fact="rename" title="${escapeHtml(t("renameShortcutTitle"))}">✎</button>
+      <button class="act" data-fact="move" title="${escapeHtml(t("moveToTitle"))}">→</button>
+      <button class="act danger" data-fact="delete" title="${escapeHtml(t("deleteShortcutTitle"))}">✕</button>`;
   return `
     <li class="item folder-row" data-id="${escapeHtml(f.id)}" draggable="${!locked}">
       <span class="favicon folder-big-icon">📁</span>
@@ -518,7 +543,7 @@ el.list.addEventListener("dragleave", (e) => {
 });
 el.list.addEventListener("drop", (e) => {
   const row = e.target.closest(".folder-row");
-  if (!row) return;
+  if (!row || !isInternalDrag(e)) return;
   e.preventDefault();
   row.classList.remove("drop-target");
   dropInto(row.dataset.id, e);
@@ -526,10 +551,15 @@ el.list.addEventListener("drop", (e) => {
 
 async function itemAction(act, li, it) {
   if (act === "newtab") {
-    chrome.tabs.create({ url: it.url, active: false });
+    if (/^javascript:/i.test(it.url)) ui.alert(t("bookmarkletAlert"));
+    else chrome.tabs.create({ url: it.url, active: false });
   } else if (act === "copy") {
-    await navigator.clipboard.writeText(it.url);
-    flash(li, t("urlCopiedFlash"));
+    try {
+      await navigator.clipboard.writeText(it.url);
+      flash(li, t("urlCopiedFlash"));
+    } catch (err) {
+      ui.alert(t("errorPrefix") + err.message);
+    }
   } else if (act === "rename") {
     await renameNode(it, "renameTitlePrompt");
   } else if (act === "move") {
@@ -543,8 +573,7 @@ async function itemAction(act, li, it) {
 
 function flash(li, msg) {
   const chip = document.createElement("span");
-  chip.className = "folder-chip";
-  chip.style.background = "var(--state-success)"; chip.style.color = "#fff";
+  chip.className = "folder-chip flash-chip";
   chip.textContent = msg;
   li.querySelector(".subline").appendChild(chip);
   setTimeout(() => chip.remove(), 1500);
@@ -651,15 +680,20 @@ async function refresh() {
 }
 
 // ---- keyboard ----
+// Su Mac il tasto "delete" della tastiera e' Backspace.
+const IS_MAC = /Mac/i.test(navigator.userAgentData?.platform || navigator.platform);
 document.addEventListener("keydown", (e) => {
   if (el.dialog.open) return;  // il dialog gestisce Enter/Esc da se'
-  const isInput = e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA";
-  if (isInput) {
-    if (e.key === "Escape") {
+  const tag = e.target.tagName;
+  if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || e.target.isContentEditable) {
+    if (e.key === "Escape" && e.target === el.search) {
       el.search.value = ""; setQuery(""); el.search.blur();
     }
     return;
   }
+  if (e.altKey || ((e.ctrlKey || e.metaKey) && e.key !== "Enter")) return;  // scorciatoie browser/OS
+  // Enter su un bottone/link focalizzato lo attiva gia' nativamente
+  if (e.key === "Enter" && (tag === "BUTTON" || (tag === "A" && !e.target.closest(".item")))) return;
   if (e.key === "/") { e.preventDefault(); el.search.focus(); return; }
   if (e.key === "Escape") { selectFolder(state.barId); return; }
 
@@ -684,15 +718,16 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "Enter") {
     const sel = el.list.querySelector(".item.selected");
     if (!sel) return;
+    e.preventDefault();
     if (sel.classList.contains("folder-row")) { selectFolder(sel.dataset.id); return; }
     const url = sel.querySelector(".title").dataset.url;
     if (/^javascript:/i.test(url)) { ui.alert(t("bookmarkletAlert")); return; }
     if (e.ctrlKey || e.metaKey) chrome.tabs.create({ url, active: false });
     else window.location.href = url;
-  } else if (e.key === "Delete") {
+  } else if (e.key === "Delete" || (e.key === "Backspace" && IS_MAC)) {
     const sel = el.list.querySelector(".item.selected");
     sel?.querySelector("[data-act=delete], [data-fact=delete]")?.click();
-  } else if (e.key.toLowerCase() === "e" && !e.ctrlKey && !e.metaKey) {
+  } else if (e.key.toLowerCase() === "e" || e.key === "F2") {
     const sel = el.list.querySelector(".item.selected");
     sel?.querySelector("[data-act=rename], [data-fact=rename]")?.click();
   }

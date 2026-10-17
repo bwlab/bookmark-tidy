@@ -1,0 +1,284 @@
+{
+  "extName": {
+    "message": "Bookmark Tidy bwlab"
+  },
+  "extDescription": {
+    "message": "Rendezze és kezelje Chrome-könyvjelzőit modern felületen. Szinkronizálásbiztos (chrome.bookmarks API)."
+  },
+  "commandOpenManager": {
+    "message": "A bwlab könyvjelzőkezelő megnyitása"
+  },
+  "pageTitle": {
+    "message": "Könyvjelzők · bwlab"
+  },
+  "brandTagline": {
+    "message": "Könyvjelzők"
+  },
+  "searchPlaceholder": {
+    "message": "Keresés a könyvjelzők között (nyomja meg: /)"
+  },
+  "themeToggleTitle": {
+    "message": "Téma váltása (sötét/világos)"
+  },
+  "viewsLabel": {
+    "message": "Nézetek"
+  },
+  "presetAll": {
+    "message": "Összes"
+  },
+  "presetRecent": {
+    "message": "Utolsó 30 nap"
+  },
+  "presetOldest": {
+    "message": "100 legrégebbi"
+  },
+  "presetStray": {
+    "message": "Mappa nélkül"
+  },
+  "foldersLabel": {
+    "message": "Mappák"
+  },
+  "newFolderRootTitle": {
+    "message": "Új mappa a könyvjelzősávon"
+  },
+  "newFolderBtn": {
+    "message": "+ új"
+  },
+  "sortLabel": {
+    "message": "Rendezés"
+  },
+  "sortManual": {
+    "message": "Kézi"
+  },
+  "sortTitle": {
+    "message": "Cím"
+  },
+  "sortDateDesc": {
+    "message": "Legújabb elöl"
+  },
+  "sortDateAsc": {
+    "message": "Legrégebbi elöl"
+  },
+  "sortDomain": {
+    "message": "Domain"
+  },
+  "hintSearch": {
+    "message": "keresés"
+  },
+  "hintNav": {
+    "message": "navigálás"
+  },
+  "hintOpen": {
+    "message": "megnyitás"
+  },
+  "hintNewTab": {
+    "message": "új lap"
+  },
+  "hintRename": {
+    "message": "átnevezés"
+  },
+  "hintDelete": {
+    "message": "törlés"
+  },
+  "hintReset": {
+    "message": "visszaállítás"
+  },
+  "dateToday": {
+    "message": "ma"
+  },
+  "dateYesterday": {
+    "message": "tegnap"
+  },
+  "dateUnitDay": {
+    "message": " n"
+  },
+  "dateUnitWeek": {
+    "message": " hét"
+  },
+  "dateUnitMonth": {
+    "message": " hó"
+  },
+  "dateUnitYear": {
+    "message": " év"
+  },
+  "newSubfolderTitle": {
+    "message": "Új almappa"
+  },
+  "renameTitleAttr": {
+    "message": "Átnevezés"
+  },
+  "deleteTitleAttr": {
+    "message": "Törlés"
+  },
+  "folderNewNamePrompt": {
+    "message": "Az új almappa neve:"
+  },
+  "folderRenamePrompt": {
+    "message": "A mappa új neve:"
+  },
+  "folderDeleteConfirmEmpty": {
+    "message": "Törli a(z) „$TITLE$” üres mappát?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorPrefix": {
+    "message": "Hiba: "
+  },
+  "rootNodeLabel": {
+    "message": "(gyökér)"
+  },
+  "itemsCountSingular": {
+    "message": "könyvjelző"
+  },
+  "itemsCountPlural": {
+    "message": "könyvjelző"
+  },
+  "subfolderCountSingular": {
+    "message": "almappa"
+  },
+  "subfolderCountPlural": {
+    "message": "almappa"
+  },
+  "emptyFolderLabel": {
+    "message": "üres"
+  },
+  "noNameFolder": {
+    "message": "(névtelen)"
+  },
+  "searchResultsFor": {
+    "message": "🔍 Találatok erre: „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "noResultsFor": {
+    "message": "Nincs találat erre: „$QUERY$”",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyFolder": {
+    "message": "Üres mappa"
+  },
+  "openNewTabTitle": {
+    "message": "Megnyitás új lapon"
+  },
+  "copyUrlTitle": {
+    "message": "URL másolása"
+  },
+  "renameShortcutTitle": {
+    "message": "Átnevezés (E)"
+  },
+  "moveToTitle": {
+    "message": "Áthelyezés ide..."
+  },
+  "deleteShortcutTitle": {
+    "message": "Törlés (Del)"
+  },
+  "bookmarkletChip": {
+    "message": "bookmarklet"
+  },
+  "bookmarkletAlert": {
+    "message": "A bookmarklet (javascript: URL) a CSP biztonsági korlátozásai miatt innen nem futtatható. Másolja ki az URL-t, és illessze be a címsávba."
+  },
+  "urlCopiedFlash": {
+    "message": "URL kimásolva"
+  },
+  "renameTitlePrompt": {
+    "message": "Új cím:"
+  },
+  "moveToPrompt": {
+    "message": "Áthelyezés ide (útvonal, pl. „Munka/Szerver”, / jellel elválasztva):"
+  },
+  "moveIntoItselfError": {
+    "message": "Egy mappa nem helyezhető át önmagába vagy valamelyik almappájába."
+  },
+  "itemDeleteConfirm": {
+    "message": "Törli ezt: „$TITLE$”?",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      }
+    }
+  },
+  "folderDeleteConfirmFull": {
+    "message": "Törli ezt: „$TITLE$”? Könyvjelzők: $COUNT$, almappák: $SUBCOUNT$. A művelet nem vonható vissza.",
+    "placeholders": {
+      "title": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      },
+      "subcount": {
+        "content": "$3"
+      }
+    }
+  },
+  "rootFolderPrompt": {
+    "message": "Az új mappa neve (a könyvjelzősávon):"
+  },
+  "bookmarksRootLabel": {
+    "message": "Könyvjelzők"
+  },
+  "metaSummary": {
+    "message": "$URLS$ URL · $FOLDERS$ mappa",
+    "placeholders": {
+      "urls": {
+        "content": "$1"
+      },
+      "folders": {
+        "content": "$2"
+      }
+    }
+  },
+  "creditsPageTitle": {
+    "message": "Készítők · Bookmark Tidy"
+  },
+  "creditsLinkLabel": {
+    "message": "Készítők"
+  },
+  "creditsBack": {
+    "message": "← Vissza"
+  },
+  "creditsHeading": {
+    "message": "Bookmark Tidy"
+  },
+  "creditsIntroPre": {
+    "message": "Készítette: "
+  },
+  "creditsIntroPost": {
+    "message": ", olaszországi webfejlesztő és e-kereskedelmi ügynökség, amely PrestaShopra és egyedi webes megoldásokra szakosodott."
+  },
+  "creditsWebsiteLabel": {
+    "message": "Weboldal:"
+  },
+  "creditsSourceLabel": {
+    "message": "Forráskód:"
+  },
+  "creditsLicenseLabel": {
+    "message": "Licenc: MIT"
+  },
+  "creditsPrivacyNote": {
+    "message": "Ez a bővítmény teljes egészében az Ön eszközén fut. A könyvjelzőket kizárólag a Chrome hivatalos chrome.bookmarks API-ján keresztül olvassa és módosítja — semmilyen adatot nem gyűjt, nem továbbít és nem értékesít."
+  },
+  "dialogOk": {
+    "message": "OK"
+  },
+  "dialogCancel": {
+    "message": "Mégse"
+  },
+  "supportLabel": {
+    "message": "Hívj meg egy kávéra"
+  },
+  "supportTitle": {
+    "message": "Tetszik a Bookmark Tidy? Támogassa a fejlesztést a Buy Me a Coffee oldalon"
+  }
+}

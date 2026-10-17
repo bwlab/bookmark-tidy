@@ -494,6 +494,11 @@ aside {
   font-size: 11px;
   border: 1px solid var(--border-1);
 }
+.subline .flash-chip {
+  background: var(--state-success);
+  border-color: var(--state-success);
+  color: var(--bw-ink-900);
+}
 
 .actions { display: none; gap: 6px; }
 .item:hover .actions, .item.selected .actions { display: flex; }
