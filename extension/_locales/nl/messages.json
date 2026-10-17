@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Orden en beheer je Chrome-bladwijzers met een moderne interface. Sync-veilig (chrome.bookmarks-API)."
   },
+  "extDescriptionFirefox": {
+    "message": "Orden en beheer je Firefox-bladwijzers met een moderne interface. Werkt met Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "bwlab Bladwijzerbeheer openen"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Vind je Bookmark Tidy handig? Steun de ontwikkeling via Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Bladwijzermenu"
+  },
+  "rootToolbar": {
+    "message": "Bladwijzerwerkbalk"
+  },
+  "rootUnfiled": {
+    "message": "Andere bladwijzers"
+  },
+  "rootMobile": {
+    "message": "Mobiele bladwijzers"
   }
 }

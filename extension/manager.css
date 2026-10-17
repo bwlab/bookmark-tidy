@@ -442,6 +442,17 @@ aside {
   padding: 6px;
   border: 1px solid var(--border-1);
 }
+/* Firefox (nessuna API favicon): iniziale del dominio. Tinta da --hue (calcolata dal dominio),
+   saturazione/luminosita' fisse per contrasto col testo bianco in entrambi i temi. */
+.favicon-letter {
+  width: 48px; height: 48px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-1);
+  background: hsl(var(--hue) 55% 38%);
+  color: var(--bw-white);
+  font-weight: 700; font-size: 20px;
+}
 .folder-big-icon {
   width: 48px; height: 48px;
   display: inline-flex; align-items: center; justify-content: center;

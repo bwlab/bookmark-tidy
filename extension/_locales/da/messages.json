@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Ryd op i og administrer dine Chrome-bogmærker med en moderne brugerflade. Synkroniseringssikker (chrome.bookmarks-API)."
   },
+  "extDescriptionFirefox": {
+    "message": "Ryd op i og administrer dine Firefox-bogmærker med en moderne brugerflade. Fungerer med Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Åbn bwlab Bogmærkeadministrator"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Kan du lide Bookmark Tidy? Støt udviklingen på Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Bogmærkemenu"
+  },
+  "rootToolbar": {
+    "message": "Bogmærkelinje"
+  },
+  "rootUnfiled": {
+    "message": "Andre bogmærker"
+  },
+  "rootMobile": {
+    "message": "Mobil-bogmærker"
   }
 }

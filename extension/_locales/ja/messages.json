@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "モダンなインターフェースで Chrome のブックマークを整理・管理します。同期にも安全（chrome.bookmarks API）。"
   },
+  "extDescriptionFirefox": {
+    "message": "モダンなインターフェースで Firefox のブックマークを整理・管理します。Firefox Sync に対応。"
+  },
   "commandOpenManager": {
     "message": "bwlab ブックマーク マネージャを開く"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Bookmark Tidy が気に入ったら、Buy Me a Coffee で開発を応援してください"
+  },
+  "rootMenu": {
+    "message": "ブックマークメニュー"
+  },
+  "rootToolbar": {
+    "message": "ブックマークツールバー"
+  },
+  "rootUnfiled": {
+    "message": "他のブックマーク"
+  },
+  "rootMobile": {
+    "message": "モバイルのブックマーク"
   }
 }

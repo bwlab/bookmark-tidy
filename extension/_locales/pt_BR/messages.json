@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Organize e gerencie seus favoritos do Chrome com uma interface moderna. Compatível com sincronização (API chrome.bookmarks)."
   },
+  "extDescriptionFirefox": {
+    "message": "Organize e gerencie seus favoritos do Firefox com uma interface moderna. Compatível com o Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Abrir o Gerenciador de favoritos bwlab"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Gostou do Bookmark Tidy? Apoie o desenvolvimento no Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Menu de favoritos"
+  },
+  "rootToolbar": {
+    "message": "Barra de favoritos"
+  },
+  "rootUnfiled": {
+    "message": "Outros favoritos"
+  },
+  "rootMobile": {
+    "message": "Favoritos do celular"
   }
 }

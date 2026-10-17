@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Τακτοποιήστε και διαχειριστείτε τους σελιδοδείκτες του Chrome με σύγχρονο περιβάλλον. Ασφαλές για συγχρονισμό (chrome.bookmarks)."
   },
+  "extDescriptionFirefox": {
+    "message": "Τακτοποιήστε και διαχειριστείτε τους σελιδοδείκτες του Firefox με σύγχρονο περιβάλλον. Συμβατό με Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Άνοιγμα Διαχείρισης σελιδοδεικτών bwlab"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Σας αρέσει το Bookmark Tidy; Υποστηρίξτε την ανάπτυξη στο Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Μενού σελιδοδεικτών"
+  },
+  "rootToolbar": {
+    "message": "Γραμμή σελιδοδεικτών"
+  },
+  "rootUnfiled": {
+    "message": "Άλλοι σελιδοδείκτες"
+  },
+  "rootMobile": {
+    "message": "Σελιδοδείκτες κινητού"
   }
 }

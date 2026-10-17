@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Endreça i gestiona les adreces d'interès de Chrome amb una interfície moderna. Segur per a la sincronització (chrome.bookmarks)."
   },
+  "extDescriptionFirefox": {
+    "message": "Endreça i gestiona les adreces d'interès del Firefox amb una interfície moderna. Compatible amb el Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Obre el Gestor d'adreces d'interès bwlab"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "T'agrada Bookmark Tidy? Dona suport al desenvolupament a Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Menú d'adreces d'interès"
+  },
+  "rootToolbar": {
+    "message": "Barra d'adreces d'interès"
+  },
+  "rootUnfiled": {
+    "message": "Altres adreces d'interès"
+  },
+  "rootMobile": {
+    "message": "Adreces d'interès del mòbil"
   }
 }

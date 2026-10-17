@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "以現代化介面整理及管理 Chrome 書籤。同步安全（chrome.bookmarks API）。"
   },
+  "extDescriptionFirefox": {
+    "message": "以現代化介面整理及管理 Firefox 書籤。相容 Firefox Sync。"
+  },
   "commandOpenManager": {
     "message": "開啟 bwlab 書籤管理員"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "喜歡 Bookmark Tidy 嗎？在 Buy Me a Coffee 上支持開發"
+  },
+  "rootMenu": {
+    "message": "書籤選單"
+  },
+  "rootToolbar": {
+    "message": "書籤工具列"
+  },
+  "rootUnfiled": {
+    "message": "其他書籤"
+  },
+  "rootMobile": {
+    "message": "行動裝置書籤"
   }
 }

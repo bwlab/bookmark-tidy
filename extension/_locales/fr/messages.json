@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Nettoyez et gérez vos favoris Chrome avec une interface moderne. Compatible sync (API chrome.bookmarks)."
   },
+  "extDescriptionFirefox": {
+    "message": "Nettoyez et gérez vos marque-pages Firefox avec une interface moderne. Compatible Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Ouvrir le gestionnaire de favoris bwlab"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Vous aimez Bookmark Tidy ? Soutenez son développement sur Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Menu des marque-pages"
+  },
+  "rootToolbar": {
+    "message": "Barre personnelle"
+  },
+  "rootUnfiled": {
+    "message": "Autres marque-pages"
+  },
+  "rootMobile": {
+    "message": "Marque-pages des appareils mobiles"
   }
 }

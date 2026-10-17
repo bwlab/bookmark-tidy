@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Наводите порядок в закладках Chrome и управляйте ими в современном интерфейсе. Безопасно для синхронизации (API chrome.bookmarks)."
   },
+  "extDescriptionFirefox": {
+    "message": "Наводите порядок в закладках Firefox и управляйте ими в современном интерфейсе. Совместимо с Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Открыть Диспетчер закладок bwlab"
   },
@@ -292,5 +295,17 @@
   },
   "supportTitle": {
     "message": "Нравится Bookmark Tidy? Поддержите разработку на Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Меню закладок"
+  },
+  "rootToolbar": {
+    "message": "Панель закладок"
+  },
+  "rootUnfiled": {
+    "message": "Другие закладки"
+  },
+  "rootMobile": {
+    "message": "Мобильные закладки"
   }
 }

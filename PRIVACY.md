@@ -12,7 +12,7 @@ L'estensione richiede i seguenti permessi Chrome:
 
 - **`bookmarks`**: per leggere, modificare, creare ed eliminare i preferiti del browser. Tutte le operazioni passano dall'API ufficiale `chrome.bookmarks` e restano sul dispositivo. Se l'utente ha la sincronizzazione Chrome attiva, le modifiche sono sincronizzate da Google ai suoi altri device — questo avviene tramite l'infrastruttura di sync di Chrome, non tramite server di terze parti gestiti da noi.
 - **`tabs`**: per aprire la pagina del Bookmark Manager in una nuova tab quando l'utente clicca l'icona o usa la scorciatoia da tastiera.
-- **`favicon`**: per mostrare l'icona dei siti salvati leggendola dalla cache locale di Chrome, senza richieste di rete.
+- **`favicon`** (solo Chrome): per mostrare l'icona dei siti salvati leggendola dalla cache locale di Chrome, senza richieste di rete. La versione Firefox non chiede questo permesso e mostra al suo posto l'iniziale del dominio.
 
 ## Dati raccolti, trasmessi o venduti
 
@@ -25,7 +25,7 @@ L'estensione richiede i seguenti permessi Chrome:
 
 ## Servizi esterni
 
-**Nessuno.** L'estensione non effettua connessioni a Internet in autonomia. Il pulsante "Offrimi un caffè" è un normale link che apre `https://buymeacoffee.com/bwlab` in una nuova scheda solo quando l'utente lo clicca; nessun dato dell'estensione viene inviato: le favicon dei siti vengono lette dalla cache locale di Chrome tramite il permesso `favicon`.
+**Nessuno.** L'estensione non effettua connessioni a Internet in autonomia. Il pulsante "Offrimi un caffè" è un normale link che apre `https://buymeacoffee.com/bwlab` in una nuova scheda solo quando l'utente lo clicca; nessun dato dell'estensione viene inviato. In Chrome le favicon dei siti vengono lette dalla cache locale del browser tramite il permesso `favicon`; in Firefox non vengono caricate affatto.
 
 ## Memorizzazione locale
 

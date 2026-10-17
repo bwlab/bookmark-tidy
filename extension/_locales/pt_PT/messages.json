@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Organize e gira os seus marcadores do Chrome com uma interface moderna. Compatível com sincronização (API chrome.bookmarks)."
   },
+  "extDescriptionFirefox": {
+    "message": "Organize e gira os seus marcadores do Firefox com uma interface moderna. Compatível com o Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Abrir o Gestor de marcadores bwlab"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Gosta do Bookmark Tidy? Apoie o desenvolvimento no Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Menu de marcadores"
+  },
+  "rootToolbar": {
+    "message": "Barra de marcadores"
+  },
+  "rootUnfiled": {
+    "message": "Outros marcadores"
+  },
+  "rootMobile": {
+    "message": "Marcadores móveis"
   }
 }

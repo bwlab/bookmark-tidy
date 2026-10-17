@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "आधुनिक इंटरफ़ेस के साथ अपने Chrome बुकमार्क व्यवस्थित और प्रबंधित करें। सिंक-सुरक्षित (chrome.bookmarks API)।"
   },
+  "extDescriptionFirefox": {
+    "message": "आधुनिक इंटरफ़ेस के साथ अपने Firefox बुकमार्क व्यवस्थित और प्रबंधित करें। Firefox Sync के साथ काम करता है।"
+  },
   "commandOpenManager": {
     "message": "bwlab बुकमार्क मैनेजर खोलें"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Bookmark Tidy पसंद आया? Buy Me a Coffee पर इसके विकास में सहयोग करें"
+  },
+  "rootMenu": {
+    "message": "बुकमार्क मेनू"
+  },
+  "rootToolbar": {
+    "message": "बुकमार्क टूलबार"
+  },
+  "rootUnfiled": {
+    "message": "अन्य बुकमार्क"
+  },
+  "rootMobile": {
+    "message": "मोबाइल बुकमार्क"
   }
 }

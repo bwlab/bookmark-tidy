@@ -1,6 +1,6 @@
 # Bookmark Tidy (bwlab)
 
-Estensione Chrome MV3 per riordinare, ristrutturare e gestire i preferiti via API `chrome.bookmarks` (sync-safe, propaga modifiche a tutti i device).
+Estensione MV3 per **Chrome** e **Firefox** per riordinare, ristrutturare e gestire i preferiti via API `bookmarks` (sync-safe: le modifiche si propagano a tutti i device tramite Chrome Sync / Firefox Sync).
 
 ## Features
 
@@ -10,9 +10,17 @@ Estensione Chrome MV3 per riordinare, ristrutturare e gestire i preferiti via AP
 
 ## Installazione
 
+### Chrome
 1. `chrome://extensions` → attiva **Modalità sviluppatore**
 2. **Carica estensione non pacchettizzata** → seleziona cartella `extension/`
 3. Apri il manager cliccando l'icona toolbar oppure premendo `Alt+Shift+B`
+
+### Firefox (140+)
+1. `./build.sh` → genera `dist/firefox/`
+2. `about:debugging#/runtime/this-firefox` → **Carica componente aggiuntivo temporaneo** → seleziona `dist/firefox/manifest.json`
+3. Apri il manager con l'icona toolbar o `Alt+Shift+B`
+
+Differenze in Firefox: la pagina dei segnalibri del browser non è sostituibile (si apre solo da icona/scorciatoia) e non esiste un'API per le favicon in cache, quindi ogni preferito mostra l'iniziale del dominio su un colore derivato dal dominio. Firefox per Android non è supportato (manca l'API `bookmarks`).
 
 ## Note
 
@@ -21,12 +29,14 @@ Estensione Chrome MV3 per riordinare, ristrutturare e gestire i preferiti via AP
 
 ## Build & release
 
-Pacchettizzare per Chrome Web Store:
-
 ```bash
 ./build.sh
-# → dist/bookmark-tidy-bwlab-v<version>.zip
+# → dist/bookmark-tidy-bwlab-v<version>.zip          Chrome Web Store
+# → dist/bookmark-tidy-bwlab-firefox-v<version>.zip  addons.mozilla.org
+# → dist/firefox/                                    cartella per about:debugging
 ```
+
+Il manifest Firefox è derivato in `build.sh` da `extension/manifest.json`: niente `chrome_url_overrides` né permesso `favicon`, background `scripts` al posto di `service_worker`, `browser_specific_settings.gecko` (id `bookmark-tidy@bwlab.it`, Firefox ≥ 140, nessuna raccolta dati), descrizione `extDescriptionFirefox`, locale `nb` copiato da `no`.
 
 ## Pubblicazione su Chrome Web Store
 
@@ -35,6 +45,14 @@ Pacchettizzare per Chrome Web Store:
 3. Compila Store Listing: nome, descrizione, screenshot (1280×800 o 640×400), icone, categoria "Productivity"
 4. Privacy practices: dichiara i permessi `bookmarks` (gestione preferiti utente), `tabs` (apertura manager) e `favicon` (icone siti dalla cache locale). Linka [PRIVACY.md](PRIVACY.md)
 5. Invia a review (~1-3 giorni)
+
+## Pubblicazione su addons.mozilla.org
+
+1. Account su https://addons.mozilla.org/developers/ (gratuito)
+2. **Submit a New Add-on** → carica `dist/bookmark-tidy-bwlab-firefox-vX.Y.Z.zip`, distribuzione "On this site"
+3. Compatibilità: solo **Firefox desktop** (togliere Android)
+4. Il codice sorgente non è minificato: non serve caricarlo a parte
+5. Validazione locale (facoltativa): `npx addons-linter dist/bookmark-tidy-bwlab-firefox-vX.Y.Z.zip`
 
 ## Privacy
 

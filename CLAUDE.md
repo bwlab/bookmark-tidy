@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Cosa è
 
-Estensione Chrome MV3 (vanilla JS, niente bundler) per riordinare e gestire preferiti Chrome. Una sola UI:
+Estensione MV3 per Chrome e Firefox (vanilla JS, niente bundler) per riordinare e gestire i preferiti. Un solo sorgente in `extension/`; `build.sh` genera i pacchetti per entrambi gli store. Una sola UI:
 
 - **Manager** (override `chrome://bookmarks`, apribile anche da icona toolbar o `Alt+Shift+B`): page application con sidebar albero, lista item, ricerca istantanea, drag&drop, gestione cartelle
 
@@ -13,7 +13,7 @@ Tutte le mutazioni passano da `chrome.bookmarks` API → sync Chrome propaga ad 
 ## Comandi
 
 ```bash
-./build.sh                       # zip pronto per Chrome Web Store in dist/bookmark-tidy-bwlab-v<X.Y.Z>.zip
+./build.sh                       # dist/bookmark-tidy-bwlab-v<X.Y.Z>.zip (Chrome) + -firefox-v<X.Y.Z>.zip (AMO) + dist/firefox/ (about:debugging)
 git push                         # repo pubblico github.com/bwlab/bookmark-tidy
 ```
 
@@ -49,10 +49,21 @@ Mutazioni via `mutate(fn)`: esegue, mostra l'errore nel dialog, poi `refresh()`.
 
 `extension/_locales/` con 19 lingue: it (default), en, es, fr, de, pt_BR, pt_PT, nl, ca, sv, da, no, fi, el, ja, zh_CN, zh_TW, hi, ru. Testi via `t(key, subs)` (i18n.js) e attributi `data-i18n`, `data-i18n-title`, `data-i18n-placeholder`.
 
-- **Ogni chiave nuova va aggiunta in tutte le 19 lingue** (stessi `placeholders` di `en`). `extDescription` ≤132 caratteri (limite manifest).
+- **Ogni chiave nuova va aggiunta in tutte le 19 lingue** (in Firefox `no` viene servito anche come `nb`) (stessi `placeholders` di `en`). `extDescription` ≤132 caratteri (limite manifest).
 - Conteggi con `countLabel(n, base)`: forma scelta da `Intl.PluralRules` → `<base>Singular` / `<base>Plural`, più `<base>Few` / `<base>Many` opzionali (presenti solo in `ru`). Nei messaggi con numeri interpolati preferire la forma neutra "Etichetta: N" dove la lingua ha più plurali.
 - `dateUnit*` vengono concatenate al numero senza spazio (`3d`, `3日前`): includere lo spazio iniziale nel messaggio se la lingua lo richiede (`ru`, `hi`).
 - I testi per il Chrome Web Store, per lingua, stanno in `STORE_LISTING.md`.
+
+## Firefox
+
+Stesso codice, nessuno sniffing del browser: le differenze sono gestite con **feature detection** in `manager.js` e con il **manifest derivato** in `build.sh` (fonte unica: `extension/manifest.json`, che resta quello Chrome).
+
+- **Albero**: super-root `root________` (non `"0"`) → usare `state.rootId`; root `menu________`, `toolbar_____` (= `state.barId`, Firefox non ha `folderType`), `unfiled_____`, `mobile______` con titoli interni non localizzati → mostrarli sempre con `nodeTitle(node)` (chiavi `rootMenu`/`rootToolbar`/`rootUnfiled`/`rootMobile`), anche nei path e nel confronto di "Sposta in…".
+- **Separatori**: Firefox li restituisce come nodi `type: "separator"` con `url: "data:"`. Usare sempre `isFolder(n)` / `isBookmark(n)`, mai `n.url` / `!n.url`, per distinguere cartelle e preferiti.
+- **Favicon**: `HAS_FAVICON_API` (permesso `favicon` nel manifest) → `_favicon/`; altrimenti `faviconHtml()` disegna l'iniziale del dominio (`.favicon-letter`, tinta da `--hue`).
+- **Niente override** di `chrome://bookmarks`, niente `onChildrenReordered`: il manager si apre da icona/`Alt+Shift+B`, i listener sono già condizionali.
+- **Manifest Firefox** (in `build.sh`): via `chrome_url_overrides` e `favicon`, `background.scripts`, `browser_specific_settings.gecko` (id `bookmark-tidy@bwlab.it`, `strict_min_version` 140 per `data_collection_permissions`), `description` = `__MSG_extDescriptionFirefox__`, `_locales/nb` copiato da `no`.
+- **Verifica**: `npx addons-linter dist/bookmark-tidy-bwlab-firefox-v<X.Y.Z>.zip` → 0 errori; avvisi attesi: Android (non supportato) e `innerHTML` della lista (valori escapati).
 
 ## Vincoli MV3 da ricordare
 

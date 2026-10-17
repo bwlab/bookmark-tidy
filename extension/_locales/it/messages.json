@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Riordina e gestisci i preferiti Chrome con un'interfaccia moderna. Sync-safe (chrome.bookmarks API)."
   },
+  "extDescriptionFirefox": {
+    "message": "Riordina e gestisci i segnalibri di Firefox con un'interfaccia moderna. Compatibile con Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Apri il Bookmark Manager bwlab"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Ti piace Bookmark Tidy? Sostieni lo sviluppo su Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Menu segnalibri"
+  },
+  "rootToolbar": {
+    "message": "Barra dei segnalibri"
+  },
+  "rootUnfiled": {
+    "message": "Altri segnalibri"
+  },
+  "rootMobile": {
+    "message": "Segnalibri da dispositivi mobili"
   }
 }

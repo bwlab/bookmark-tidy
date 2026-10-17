@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "用现代化界面整理和管理 Chrome 书签。同步安全（chrome.bookmarks API）。"
   },
+  "extDescriptionFirefox": {
+    "message": "用现代化界面整理和管理 Firefox 书签。兼容 Firefox 同步。"
+  },
   "commandOpenManager": {
     "message": "打开 bwlab 书签管理器"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "喜欢 Bookmark Tidy？在 Buy Me a Coffee 上支持开发"
+  },
+  "rootMenu": {
+    "message": "书签菜单"
+  },
+  "rootToolbar": {
+    "message": "书签工具栏"
+  },
+  "rootUnfiled": {
+    "message": "其他书签"
+  },
+  "rootMobile": {
+    "message": "移动设备上的书签"
   }
 }

@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Järjestä ja hallinnoi Chromen kirjanmerkkejä modernilla käyttöliittymällä. Synkronointiturvallinen (chrome.bookmarks-API)."
   },
+  "extDescriptionFirefox": {
+    "message": "Järjestä ja hallinnoi Firefoxin kirjanmerkkejä modernilla käyttöliittymällä. Toimii Firefox Syncin kanssa."
+  },
   "commandOpenManager": {
     "message": "Avaa bwlab-kirjanmerkkien hallinta"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Pidätkö Bookmark Tidystä? Tue kehitystä Buy Me a Coffee -palvelussa"
+  },
+  "rootMenu": {
+    "message": "Kirjanmerkkivalikko"
+  },
+  "rootToolbar": {
+    "message": "Kirjanmerkkipalkki"
+  },
+  "rootUnfiled": {
+    "message": "Muut kirjanmerkit"
+  },
+  "rootMobile": {
+    "message": "Mobiilikirjanmerkit"
   }
 }

@@ -21,6 +21,7 @@ const state = {
   flat: [],                  // {id,title,url,path,pathIds,parentId,dateAdded,unmodifiable}
   byId: new Map(),           // id -> item di flat
   folders: new Map(),        // id -> {node, count, path}
+  rootId: "0",               // super-root: "0" in Chrome, "root________" in Firefox (letto da getTree)
   rootIds: new Set(["0"]),   // super-root + figli diretti (Barra, Altri, Mobile, eventuali root account)
   barId: "1",                // Barra preferiti (ricalcolata in loadTree)
   selectedFolderId: null,
@@ -48,7 +49,20 @@ const bm = {
                                   x => chrome.runtime.lastError ? rej(chrome.runtime.lastError) : res(x))),
 };
 
-// Root (figli di "0") e nodi gestiti da policy (unmodifiable) non si rinominano/spostano/eliminano.
+// ---- compatibilita' Chrome / Firefox (feature detection, niente sniffing del browser) ----
+// Firefox restituisce anche i separatori (type "separator", url "data:"); Chrome non ha "type" sui nodi.
+function isFolder(n) { return n.type ? n.type === "folder" : !n.url; }
+function isBookmark(n) { return n.type ? n.type === "bookmark" : !!n.url; }
+// Root di Firefox: id fissi e titoli interni non localizzati ("toolbar", "menu"...) → etichette tradotte.
+const FIREFOX_ROOT_LABELS = {
+  "menu________": "rootMenu", "toolbar_____": "rootToolbar",
+  "unfiled_____": "rootUnfiled", "mobile______": "rootMobile",
+};
+function nodeTitle(n) { const k = FIREFOX_ROOT_LABELS[n.id]; return k ? t(k) : (n.title || ""); }
+// Favicon dalla cache locale: solo Chrome (permesso "favicon"); in Firefox iniziale del dominio.
+const HAS_FAVICON_API = (chrome.runtime.getManifest().permissions || []).includes("favicon");
+
+// Root (figli del super-root) e nodi gestiti da policy (unmodifiable) non si rinominano/spostano/eliminano.
 function isProtected(node) { return state.rootIds.has(node.id) || !!node.unmodifiable; }
 
 // Esegue una mutazione, mostra eventuali errori e ricarica l'albero.
@@ -110,6 +124,13 @@ function faviconUrl(u) {
   url.searchParams.set("size", "32");
   return url.toString();
 }
+function faviconHtml(u) {
+  if (HAS_FAVICON_API) return `<img class="favicon" src="${faviconUrl(u)}" alt="" loading="lazy">`;
+  // Nessuna API favicon (Firefox): iniziale del dominio su tinta derivata dal dominio, nessuna richiesta di rete.
+  const host = hostOf(u).replace(/^www\./, "");
+  const hue = [...host].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 0);
+  return `<span class="favicon favicon-letter" style="--hue:${hue}" aria-hidden="true">${escapeHtml((host[0] || "•").toUpperCase())}</span>`;
+}
 function formatDate(ms) {
   if (!ms) return "";
   const diff = (Date.now() - Number(ms)) / 86400000;
@@ -162,15 +183,18 @@ async function loadTree() {
   state.byId.clear();
   state.folders.clear();
   const roots = state.tree.children || [];
-  state.rootIds = new Set(["0", ...roots.map(r => r.id)]);
-  // Chrome recenti: folderType + syncing distinguono Barra locale/account; fallback primo root (id "1").
+  state.rootId = state.tree.id;
+  state.rootIds = new Set([state.rootId, ...roots.map(r => r.id)]);
+  // Chrome recenti: folderType + syncing distinguono Barra locale/account.
+  // Firefox: nessun folderType, la barra e' "toolbar_____". Fallback: primo root (Chrome vecchi, id "1").
   const bars = roots.filter(r => r.folderType === "bookmarks-bar");
-  state.barId = (bars.find(r => r.syncing) || bars[0] || roots[0])?.id || "1";
+  state.barId = (bars.find(r => r.syncing) || bars[0] || roots.find(r => r.id === "toolbar_____") || roots[0])?.id || "1";
   buildIndex(state.tree, [], []);
 }
 
 function buildIndex(node, path, pathIds) {
-  if (node.url) {
+  if (!isFolder(node)) {
+    if (!isBookmark(node)) return 0;  // separatore (Firefox)
     const it = {
       id: node.id, title: node.title || "", url: node.url,
       path, pathIds, parentId: node.parentId, dateAdded: node.dateAdded || 0,
@@ -180,8 +204,9 @@ function buildIndex(node, path, pathIds) {
     state.byId.set(it.id, it);
     return 1;
   }
-  const p = node.id === "0" ? [] : [...path, node.title || ""];
-  const pids = node.id === "0" ? [] : [...pathIds, node.id];
+  const isSuperRoot = node.id === state.rootId;
+  const p = isSuperRoot ? [] : [...path, nodeTitle(node)];
+  const pids = isSuperRoot ? [] : [...pathIds, node.id];
   let count = 0;
   for (const c of node.children || []) count += buildIndex(c, p, pids);
   state.folders.set(node.id, { node, count, path: p });
@@ -239,10 +264,10 @@ async function renameNode(node, promptKey) {
 async function deleteFolder(node) {
   const fi = state.folders.get(node.id);
   const count = fi ? fi.count : 0;
-  const subFolders = (node.children || []).filter(c => !c.url).length;
+  const subFolders = (node.children || []).filter(isFolder).length;
   const msg = count > 0 || subFolders > 0
-    ? t("folderDeleteConfirmFull", [node.title, String(count), String(subFolders)])
-    : t("folderDeleteConfirmEmpty", [node.title]);
+    ? t("folderDeleteConfirmFull", [nodeTitle(node), String(count), String(subFolders)])
+    : t("folderDeleteConfirmEmpty", [nodeTitle(node)]);
   if (!(await ui.confirm(msg))) return;
   await mutate(() => bm.removeTree(node.id));
 }
@@ -256,13 +281,13 @@ async function moveToPath(node) {
   if (!path) return;
   await mutate(async () => {
     const segs = path.split("/").map(s => s.trim()).filter(Boolean);
-    const roots = await bm.children("0");
-    const root = roots.find(r => r.title === segs[0]);
+    const roots = await bm.children(state.rootId);
+    const root = roots.find(r => nodeTitle(r) === segs[0]);
     let pid = state.barId;
     if (root) { pid = root.id; segs.shift(); }
     for (const seg of segs) {
       const kids = await bm.children(pid);
-      let f = kids.find(k => !k.url && k.title === seg);
+      let f = kids.find(k => isFolder(k) && k.title === seg);
       // una cartella non puo' finire dentro se' stessa: controllo prima di creare cartelle nel suo sotto-albero
       if (f && f.id === node.id) throw new Error(t("moveIntoItselfError"));
       if (!f) f = await bm.create({ parentId: pid, title: seg });
@@ -279,12 +304,12 @@ function renderTree() {
 }
 
 function renderNode(node, parent) {
-  if (node.url) return;
+  if (!isFolder(node)) return;
   const row = document.createElement("div");
   row.className = "node";
   row.dataset.id = node.id;
   if (state.selectedFolderId === node.id && !state.preset && !state.query) row.classList.add("active");
-  const hasSubFolders = (node.children || []).some(c => !c.url);
+  const hasSubFolders = (node.children || []).some(isFolder);
   const isExpanded = state.expanded.has(node.id);
   const fi = state.folders.get(node.id);
   const count = fi ? fi.count : 0;
@@ -297,21 +322,23 @@ function renderNode(node, parent) {
   icon.textContent = hasSubFolders && isExpanded ? "📂" : "📁";
   const label = document.createElement("span");
   label.className = "label";
-  label.textContent = node.title || t("rootNodeLabel");
+  label.textContent = nodeTitle(node) || t("rootNodeLabel");
   const cnt = document.createElement("span");
   cnt.className = "count";
   cnt.textContent = count;
   const actions = document.createElement("span");
   actions.className = "folder-actions";
-  if (!node.unmodifiable) {
-    actions.innerHTML = `<button class="folder-act" data-fact="new" title="${t("newSubfolderTitle")}">+</button>`;
-  }
+  const addAct = (fact, titleKey, label, danger = false) => {
+    const b = document.createElement("button");
+    b.className = "folder-act" + (danger ? " danger" : "");
+    b.dataset.fact = fact; b.title = t(titleKey); b.textContent = label;
+    actions.appendChild(b);
+  };
+  if (!node.unmodifiable) addAct("new", "newSubfolderTitle", "+");
   if (!locked) {
-    actions.innerHTML += `
-      <button class="folder-act" data-fact="rename" title="${t("renameTitleAttr")}">✎</button>
-      <button class="folder-act" data-fact="move" title="${t("moveToTitle")}">→</button>
-      <button class="folder-act danger" data-fact="delete" title="${t("deleteTitleAttr")}">✕</button>
-    `;
+    addAct("rename", "renameTitleAttr", "✎");
+    addAct("move", "moveToTitle", "→");
+    addAct("delete", "deleteTitleAttr", "✕", true);
   }
 
   row.appendChild(twisty); row.appendChild(icon); row.appendChild(label); row.appendChild(cnt); row.appendChild(actions);
@@ -376,7 +403,7 @@ function getSubFolders() {
   if (state.query || state.preset) return [];
   const fi = state.folders.get(state.selectedFolderId);
   if (!fi) return [];
-  return (fi.node.children || []).filter(c => !c.url);
+  return (fi.node.children || []).filter(isFolder);
 }
 
 function renderList() {
@@ -403,6 +430,8 @@ function renderList() {
   }
 
   // Una sola stringa HTML + listener delegati su #list (vedi "list events"): scala a migliaia di item.
+  // Sicuro: ogni valore dinamico (titoli, URL, path, id) passa da escapeHtml()/highlight() in
+  // itemRowHtml/folderRowHtml; il resto sono stringhe i18n dell'estensione.
   const html = subfolders.map(folderRowHtml);
   for (const it of items) html.push(itemRowHtml(it));
   el.list.innerHTML = html.join("");
@@ -423,7 +452,7 @@ function itemRowHtml(it) {
         <button class="act danger" data-act="delete" title="${t("deleteShortcutTitle")}">✕</button>`;
   return `
     <li class="item" data-id="${escapeHtml(it.id)}" draggable="${!it.unmodifiable}">
-      <img class="favicon" src="${faviconUrl(it.url)}" alt="" loading="lazy">
+      ${faviconHtml(it.url)}
       <div class="main">
         <a class="title${isJsUrl ? ' jsurl' : ''}" href="${safeHref}" title="${escapeHtml(it.url)}" data-url="${escapeHtml(it.url)}">${highlight(it.title || it.url, state.query)}${isJsUrl ? ` <span class="folder-chip">${t("bookmarkletChip")}</span>` : ''}</a>
         <div class="subline">
@@ -444,7 +473,7 @@ function folderRowHtml(f) {
   const locked = isProtected(f);
   const fi = state.folders.get(f.id);
   const count = fi ? fi.count : 0;
-  const subFolders = (f.children || []).filter(c => !c.url).length;
+  const subFolders = (f.children || []).filter(isFolder).length;
   const subInfo = [];
   if (count) subInfo.push(countLabel(count, "itemsCount"));
   if (subFolders) subInfo.push(countLabel(subFolders, "subfolderCount"));
@@ -456,7 +485,7 @@ function folderRowHtml(f) {
     <li class="item folder-row" data-id="${escapeHtml(f.id)}" draggable="${!locked}">
       <span class="favicon folder-big-icon">📁</span>
       <div class="main">
-        <a class="title folder-title" href="#">${escapeHtml(f.title || t("noNameFolder"))}</a>
+        <a class="title folder-title" href="#">${escapeHtml(nodeTitle(f) || t("noNameFolder"))}</a>
         <div class="subline">
           <span class="date">${subInfo.join(" · ") || t("emptyFolderLabel")}</span>
         </div>
@@ -583,7 +612,7 @@ function renderBreadcrumb() {
     }
     const c = document.createElement("span");
     c.className = "crumb" + (i === ancestors.length - 1 ? " current" : "");
-    c.textContent = a.title || t("bookmarksRootLabel");
+    c.textContent = nodeTitle(a) || t("bookmarksRootLabel");
     c.addEventListener("click", () => selectFolder(a.id));
     el.breadcrumb.appendChild(c);
   });

@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Clean up and manage your Chrome bookmarks with a modern interface. Sync-safe (chrome.bookmarks API)."
   },
+  "extDescriptionFirefox": {
+    "message": "Clean up and manage your Firefox bookmarks with a modern interface. Works with Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "Open bwlab Bookmark Manager"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Enjoying Bookmark Tidy? Support development on Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Bookmarks Menu"
+  },
+  "rootToolbar": {
+    "message": "Bookmarks Toolbar"
+  },
+  "rootUnfiled": {
+    "message": "Other Bookmarks"
+  },
+  "rootMobile": {
+    "message": "Mobile Bookmarks"
   }
 }

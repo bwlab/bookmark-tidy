@@ -5,6 +5,9 @@
   "extDescription": {
     "message": "Chrome-Lesezeichen aufräumen und verwalten mit einer modernen Oberfläche. Sync-sicher (chrome.bookmarks-API)."
   },
+  "extDescriptionFirefox": {
+    "message": "Firefox-Lesezeichen aufräumen und verwalten mit einer modernen Oberfläche. Kompatibel mit Firefox Sync."
+  },
   "commandOpenManager": {
     "message": "bwlab Lesezeichen-Manager öffnen"
   },
@@ -280,5 +283,17 @@
   },
   "supportTitle": {
     "message": "Gefällt dir Bookmark Tidy? Unterstütze die Entwicklung auf Buy Me a Coffee"
+  },
+  "rootMenu": {
+    "message": "Lesezeichen-Menü"
+  },
+  "rootToolbar": {
+    "message": "Lesezeichen-Symbolleiste"
+  },
+  "rootUnfiled": {
+    "message": "Weitere Lesezeichen"
+  },
+  "rootMobile": {
+    "message": "Mobile Lesezeichen"
   }
 }
