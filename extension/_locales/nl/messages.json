@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Vind je Bookmark Tidy handig? Steun de ontwikkeling via Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Bladwijzer"
+  },
+  "newBookmarkTitle": {
+    "message": "Nieuwe bladwijzer in de geopende map (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Nieuwe bladwijzer in ‘$FOLDER$’",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Titel"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Optioneel: leeg = de URL wordt getoond"
+  },
+  "invalidUrlError": {
+    "message": "Voer een geldig adres in, bijv. example.com of https://example.com"
+  },
+  "hintNew": {
+    "message": "nieuw"
   }
 }

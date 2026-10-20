@@ -404,6 +404,19 @@ aside {
   cursor: pointer;
 }
 #sort:focus { outline: none; border-color: var(--accent-a); }
+.toolbar-right { display: flex; align-items: center; gap: 14px; }
+.toolbar-btn {
+  background: var(--accent-a-weak);
+  color: var(--accent-a-text);
+  border: 1px solid var(--accent-a);
+  border-radius: var(--r-pill);
+  padding: 5px 14px;
+  font: inherit; font-size: var(--fs-xs); font-weight: 700;
+  cursor: pointer; white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.toolbar-btn:hover { background: var(--accent-a); color: var(--bw-ink-900); }
+.toolbar-btn:focus-visible { outline: 2px solid var(--accent-a); outline-offset: 2px; }
 #count {
   color: var(--fg-4);
   font-size: var(--fs-xs);
@@ -546,7 +559,14 @@ mark {
 }
 #dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
 #dialog-msg { color: var(--fg-1); white-space: pre-line; overflow-wrap: anywhere; margin-bottom: 14px; }
-#dialog-input {
+.dialog-field { display: block; margin-bottom: 14px; }
+.dialog-field-label {
+  display: block; margin-bottom: 6px;
+  color: var(--fg-4); font-size: var(--fs-xs); font-weight: 600;
+  text-transform: uppercase; letter-spacing: var(--tr-wider);
+}
+#dialog-error { color: var(--state-danger); font-size: var(--fs-sm); margin: -6px 0 12px; }
+.dialog-input {
   width: 100%;
   background: var(--surface-2);
   color: var(--fg-1);
@@ -555,9 +575,8 @@ mark {
   padding: 10px 14px;
   font: inherit;
   outline: none;
-  margin-bottom: 14px;
 }
-#dialog-input:focus { border-color: var(--accent-a); box-shadow: 0 0 0 3px var(--accent-a-weak); }
+.dialog-input:focus { border-color: var(--accent-a); box-shadow: 0 0 0 3px var(--accent-a-weak); }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; }
 .dialog-actions .act { font-size: var(--fs-base); font-weight: 600; }
 .act.primary { background: var(--accent-a); color: var(--bw-ink-900); border-color: var(--accent-a); }

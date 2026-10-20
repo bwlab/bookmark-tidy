@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Bookmark Tidy が気に入ったら、Buy Me a Coffee で開発を応援してください"
+  },
+  "newBookmarkBtn": {
+    "message": "+ ブックマーク"
+  },
+  "newBookmarkTitle": {
+    "message": "開いているフォルダに新しいブックマークを追加 (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "「$FOLDER$」に新しいブックマーク",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "タイトル"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "省略可：空欄の場合は URL を表示"
+  },
+  "invalidUrlError": {
+    "message": "有効なアドレスを入力してください（例: example.com、https://example.com）"
+  },
+  "hintNew": {
+    "message": "新規"
   }
 }

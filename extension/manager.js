@@ -11,7 +11,8 @@ const el = {
   presets: document.querySelectorAll(".preset"),
   dialog: document.getElementById("dialog"),
   dialogMsg: document.getElementById("dialog-msg"),
-  dialogInput: document.getElementById("dialog-input"),
+  dialogFields: document.getElementById("dialog-fields"),
+  dialogError: document.getElementById("dialog-error"),
   dialogOk: document.getElementById("dialog-ok"),
   dialogCancel: document.getElementById("dialog-cancel"),
 };
@@ -59,25 +60,58 @@ async function mutate(fn) {
 }
 
 // ---- dialog (sostituisce prompt/confirm/alert nativi) ----
-function openDialog({ message, input = false, defaultValue = "", alertOnly = false, danger = false }) {
+// fields: [{name, label?, value?, placeholder?}] → risolve con {name: valore} su OK, null su Annulla/Esc.
+// validate(values) → messaggio d'errore (il dialog resta aperto e lo mostra) oppure null.
+let dialogValidate = null;
+function openDialog({ message, fields = [], alertOnly = false, danger = false, validate = null }) {
   return new Promise(resolve => {
     el.dialogMsg.textContent = message;
-    el.dialogInput.hidden = !input;
-    el.dialogInput.value = defaultValue;
+    el.dialogFields.replaceChildren(...fields.map(f => {
+      const wrap = document.createElement("label");
+      wrap.className = "dialog-field";
+      if (f.label) {
+        const l = document.createElement("span");
+        l.className = "dialog-field-label"; l.textContent = f.label;
+        wrap.appendChild(l);
+      }
+      const inp = document.createElement("input");
+      inp.className = "dialog-input"; inp.type = "text"; inp.name = f.name;
+      inp.spellcheck = false; inp.value = f.value || ""; inp.placeholder = f.placeholder || "";
+      wrap.appendChild(inp);
+      return wrap;
+    }));
+    el.dialogError.hidden = true;
     el.dialogCancel.hidden = alertOnly;
     el.dialogOk.classList.toggle("danger", danger);
+    dialogValidate = validate;
     el.dialog.returnValue = "";
     el.dialog.addEventListener("close", () => {
       const ok = el.dialog.returnValue === "ok";
-      resolve(input ? (ok ? el.dialogInput.value : null) : ok);
+      if (!fields.length) return resolve(ok);
+      resolve(ok ? dialogValues() : null);
     }, { once: true });
     el.dialog.showModal();
-    if (input) { el.dialogInput.focus(); el.dialogInput.select(); }
+    const first = el.dialogFields.querySelector("input");
+    if (first) { first.focus(); first.select(); }
     else el.dialogOk.focus();
   });
 }
+function dialogValues() {
+  return Object.fromEntries([...el.dialogFields.querySelectorAll("input")].map(i => [i.name, i.value]));
+}
+// validazione al submit: se fallisce il dialog non si chiude
+el.dialog.querySelector("form").addEventListener("submit", (e) => {
+  const msg = dialogValidate?.(dialogValues());
+  if (!msg) return;
+  e.preventDefault();
+  el.dialogError.textContent = msg;
+  el.dialogError.hidden = false;
+  el.dialogFields.querySelector("input")?.focus();
+});
 const ui = {
-  prompt:  (message, defaultValue) => openDialog({ message, input: true, defaultValue }),
+  prompt:  async (message, defaultValue) =>
+    (await openDialog({ message, fields: [{ name: "value", value: defaultValue }] }))?.value ?? null,
+  form:    (message, fields, validate) => openDialog({ message, fields, validate }),
   confirm: (message, danger = true) => openDialog({ message, danger }),
   alert:   (message) => openDialog({ message, alertOnly: true }),
 };
@@ -270,6 +304,45 @@ async function moveToPath(node) {
     }
     if (pid !== node.parentId) await bm.move(node.id, { parentId: pid });
   });
+}
+
+// ---- nuovo preferito ----
+// Accetta "example.com" (aggiunge https://) e URL con schema esplicito; null se non valido.
+function normalizeUrl(raw) {
+  const v = raw.trim();
+  if (!v) return null;
+  const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(v) && !/^[^:/]+:\d+(\/|$)/.test(v);  // "host:8080" non e' uno schema
+  try {
+    const u = new URL(hasScheme ? v : "https://" + v);
+    if (!hasScheme && !(u.hostname.includes(".") || u.hostname === "localhost")) return null;
+    return u.href;
+  } catch { return null; }
+}
+
+// Crea il preferito nella cartella aperta (nelle viste/ricerca: nella Barra) e lo seleziona.
+async function newBookmark() {
+  const inFolder = !state.preset && !state.query && state.folders.has(state.selectedFolderId);
+  const parent = state.folders.get(inFolder ? state.selectedFolderId : state.barId)?.node;
+  if (!parent) return;
+  const res = await ui.form(
+    t("newBookmarkPrompt", [parent.title || t("bookmarksRootLabel")]),
+    [
+      { name: "url", label: t("fieldUrl"), placeholder: "https://" },
+      { name: "title", label: t("fieldTitle"), placeholder: t("fieldTitlePlaceholder") },
+    ],
+    v => normalizeUrl(v.url) ? null : t("invalidUrlError"),
+  );
+  if (!res) return;
+  const url = normalizeUrl(res.url);
+  let created;
+  await mutate(async () => {
+    created = await bm.create({ parentId: parent.id, title: res.title.trim(), url });
+  });
+  if (!created) return;
+  if (!inFolder) selectFolder(parent.id);   // dalle viste/ricerca: mostra la cartella dove e' finito
+  state.selectedItemId = created.id;
+  renderList();
+  el.list.querySelector(`.item[data-id="${CSS.escape(created.id)}"]`)?.scrollIntoView({ block: "nearest" });
 }
 
 // ---- rendering: sidebar tree ----
@@ -662,6 +735,10 @@ document.addEventListener("keydown", (e) => {
   }
   if (e.key === "/") { e.preventDefault(); el.search.focus(); return; }
   if (e.key === "Escape") { selectFolder(state.barId); return; }
+  // N funziona anche in una cartella vuota (prima del controllo sulla lista)
+  if (e.key.toLowerCase() === "n" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+    e.preventDefault(); newBookmark(); return;
+  }
 
   const items = [...el.list.querySelectorAll(".item")];
   if (!items.length) return;
@@ -719,6 +796,9 @@ document.getElementById("theme-toggle")?.addEventListener("click", () => {
   document.documentElement.dataset.theme = next;
   try { localStorage.setItem("bwlab-theme", next); } catch {}
 });
+
+// ---- bottone nuovo preferito ----
+document.getElementById("new-bookmark")?.addEventListener("click", () => newBookmark());
 
 // ---- bottone nuova cartella root ----
 document.getElementById("new-root-folder")?.addEventListener("click", (e) => {

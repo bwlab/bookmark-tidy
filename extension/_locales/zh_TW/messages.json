@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "喜歡 Bookmark Tidy 嗎？在 Buy Me a Coffee 上支持開發"
+  },
+  "newBookmarkBtn": {
+    "message": "+ 書籤"
+  },
+  "newBookmarkTitle": {
+    "message": "在目前資料夾中新增書籤 (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "在「$FOLDER$」中新增書籤",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "網址"
+  },
+  "fieldTitle": {
+    "message": "標題"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "選填：留空則顯示網址"
+  },
+  "invalidUrlError": {
+    "message": "請輸入有效的網址，例如 example.com 或 https://example.com"
+  },
+  "hintNew": {
+    "message": "新增"
   }
 }

@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Gillar du Bookmark Tidy? Stöd utvecklingen på Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Bokmärke"
+  },
+  "newBookmarkTitle": {
+    "message": "Nytt bokmärke i den öppna mappen (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Nytt bokmärke i ”$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Titel"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Valfritt: om tomt visas URL:en"
+  },
+  "invalidUrlError": {
+    "message": "Ange en giltig adress, t.ex. example.com eller https://example.com"
+  },
+  "hintNew": {
+    "message": "nytt"
   }
 }

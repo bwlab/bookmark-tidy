@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Gefällt dir Bookmark Tidy? Unterstütze die Entwicklung auf Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Lesezeichen"
+  },
+  "newBookmarkTitle": {
+    "message": "Neues Lesezeichen im geöffneten Ordner (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Neues Lesezeichen in „$FOLDER$“",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Titel"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Optional: wenn leer, wird die URL angezeigt"
+  },
+  "invalidUrlError": {
+    "message": "Gib eine gültige Adresse ein, z. B. example.com oder https://example.com"
+  },
+  "hintNew": {
+    "message": "neu"
   }
 }

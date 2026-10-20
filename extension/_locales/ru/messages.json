@@ -292,5 +292,34 @@
   },
   "supportTitle": {
     "message": "Нравится Bookmark Tidy? Поддержите разработку на Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Закладка"
+  },
+  "newBookmarkTitle": {
+    "message": "Новая закладка в открытой папке (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Новая закладка в папке «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Название"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Необязательно: если пусто, показывается URL"
+  },
+  "invalidUrlError": {
+    "message": "Введите корректный адрес, например example.com или https://example.com"
+  },
+  "hintNew": {
+    "message": "новая"
   }
 }

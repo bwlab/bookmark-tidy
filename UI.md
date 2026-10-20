@@ -121,7 +121,7 @@ Click su crumb → naviga al livello corrispondente.
 #### Toolbar (40px)
 
 - **Sinistra**: label "ORDINE" + select 5 opzioni (Manuale · Titolo · Recenti prima · Vecchi prima · Dominio). Manuale = ordine Chrome originale.
-- **Destra**: counter "N cartelle · M preferiti" (mono, tabular-nums).
+- **Destra**: counter "N cartelle · M preferiti" (mono, tabular-nums) + pulsante pill **+ Preferito** (nuovo preferito, scorciatoia `N`).
 
 #### Lista item (scrollabile)
 
@@ -160,7 +160,7 @@ Grid 56px | 1fr | auto:
 
 ### 2.4 Footer hint (24px)
 
-Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓` naviga · `Enter` apri · `Ctrl+Click` nuova tab · `E` rinomina · `Del` elimina · `Esc` reset
+Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓` naviga · `Enter` apri · `Ctrl+Click` nuova tab · `N` nuovo · `E` rinomina · `Del` elimina · `Esc` reset
 
 ---
 
@@ -183,6 +183,7 @@ Linea unica con keyboard shortcuts in `<kbd>` mono pill: `/` cerca · `↑` `↓
 
 ### Operazioni su item
 
+- **Nuovo preferito**: pulsante **+ Preferito** o tasto `N` (funziona anche in una cartella vuota) → dialog con campi **URL** e **Titolo** (facoltativo: se vuoto la riga mostra l'URL). Destinazione: la cartella aperta; da viste predefinite o ricerca, la Barra preferiti, che viene poi aperta. URL normalizzato: `example.com` → `https://example.com/`, schemi espliciti mantenuti (`http:`, `mailto:`, `javascript:`…); se non valido l'errore compare nel dialog, che resta aperto. Il nuovo preferito viene selezionato
 - **Apri**: click titolo (current tab) · Ctrl+click (nuova tab) · `↗` (nuova tab background)
 - **Copia URL**: `⎘` → clipboard + chip verde "URL copiato" 1.5s
 - **Rinomina**: `✎` o tasto `E` con item selezionato → dialog

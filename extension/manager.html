@@ -56,7 +56,12 @@
             <option value="domain" data-i18n="sortDomain">Dominio</option>
           </select>
         </div>
-        <span id="count"></span>
+        <div class="toolbar-right">
+          <span id="count"></span>
+          <button id="new-bookmark" class="toolbar-btn" data-i18n-title="newBookmarkTitle" title="Nuovo preferito nella cartella aperta (N)">
+            <span data-i18n="newBookmarkBtn">+ Preferito</span>
+          </button>
+        </div>
       </div>
       <ul id="list"></ul>
     </section>
@@ -66,6 +71,7 @@
     <kbd>↑</kbd><kbd>↓</kbd> <span data-i18n="hintNav">naviga</span> ·
     <kbd>Enter</kbd> <span data-i18n="hintOpen">apri</span> ·
     <kbd>Ctrl+Click</kbd> <span data-i18n="hintNewTab">nuova tab</span> ·
+    <kbd>N</kbd> <span data-i18n="hintNew">nuovo</span> ·
     <kbd>E</kbd> <span data-i18n="hintRename">rinomina</span> ·
     <kbd>Del</kbd> <span data-i18n="hintDelete">elimina</span> ·
     <kbd>Esc</kbd> <span data-i18n="hintReset">reset</span>
@@ -73,7 +79,8 @@
   <dialog id="dialog">
     <form method="dialog">
       <p id="dialog-msg"></p>
-      <input id="dialog-input" type="text" spellcheck="false">
+      <div id="dialog-fields"></div>
+      <p id="dialog-error" role="alert" hidden></p>
       <div class="dialog-actions">
         <button type="button" id="dialog-cancel" class="act" data-i18n="dialogCancel">Annulla</button>
         <button value="ok" id="dialog-ok" class="act primary" data-i18n="dialogOk">OK</button>

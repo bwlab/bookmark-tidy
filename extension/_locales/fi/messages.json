@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Pidätkö Bookmark Tidystä? Tue kehitystä Buy Me a Coffee -palvelussa"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Kirjanmerkki"
+  },
+  "newBookmarkTitle": {
+    "message": "Uusi kirjanmerkki avoimeen kansioon (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Uusi kirjanmerkki kansioon ”$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Otsikko"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Valinnainen: jos tyhjä, näytetään URL"
+  },
+  "invalidUrlError": {
+    "message": "Anna kelvollinen osoite, esim. example.com tai https://example.com"
+  },
+  "hintNew": {
+    "message": "uusi"
   }
 }

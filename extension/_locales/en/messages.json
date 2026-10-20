@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Enjoying Bookmark Tidy? Support development on Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Bookmark"
+  },
+  "newBookmarkTitle": {
+    "message": "New bookmark in the open folder (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "New bookmark in “$FOLDER$”",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Title"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Optional: the URL is shown if empty"
+  },
+  "invalidUrlError": {
+    "message": "Enter a valid address, e.g. example.com or https://example.com"
+  },
+  "hintNew": {
+    "message": "new"
   }
 }
