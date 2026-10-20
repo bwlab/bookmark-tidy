@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Σας αρέσει το Bookmark Tidy; Υποστηρίξτε την ανάπτυξη στο Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Σελιδοδείκτης"
+  },
+  "newBookmarkTitle": {
+    "message": "Νέος σελιδοδείκτης στον ανοιχτό φάκελο (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Νέος σελιδοδείκτης στο «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Τίτλος"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Προαιρετικό: αν μείνει κενό εμφανίζεται το URL"
+  },
+  "invalidUrlError": {
+    "message": "Εισαγάγετε έγκυρη διεύθυνση, π.χ. example.com ή https://example.com"
+  },
+  "hintNew": {
+    "message": "νέος"
   }
 }

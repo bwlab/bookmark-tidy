@@ -43,7 +43,7 @@ Stato globale `state` con `tree`, `flat[]` (URL flat indicizzati con path), `fol
 
 Render diviso: `renderTree()` per sidebar, `renderList()` per content. Quando in folder view, `renderList` mostra **prima sotto-cartelle** (`folderRowHtml`) poi URL (`itemRowHtml`). La lista è generata come unica stringa HTML; click/dblclick/drag&drop sono **listener delegati su `#list`** (item ritrovati via `state.byId` / `state.folders`), così migliaia di righe non costano migliaia di listener. Righe con `content-visibility: auto` in CSS.
 
-Mutazioni via `mutate(fn)`: esegue, mostra l'errore nel dialog, poi `refresh()`. Niente `prompt/confirm/alert` nativi: usare `ui.prompt/ui.confirm/ui.alert` (Promise, `<dialog id="dialog">` in manager.html). Drag&drop interno con MIME custom `DND_TYPE` (drag esterni ignorati).
+Mutazioni via `mutate(fn)`: esegue, mostra l'errore nel dialog, poi `refresh()`. Niente `prompt/confirm/alert` nativi: usare `ui.prompt/ui.confirm/ui.alert` e, per più campi, `ui.form(message, fields, validate)` (Promise, `<dialog id="dialog">` in manager.html; i campi sono generati in `#dialog-fields`, `validate` restituisce un messaggio d'errore e il dialog resta aperto). Nuovo preferito: `newBookmark()` (pulsante `#new-bookmark` e tasto `N`), URL normalizzato da `normalizeUrl()`. Drag&drop interno con MIME custom `DND_TYPE` (drag esterni ignorati).
 
 ## i18n
 

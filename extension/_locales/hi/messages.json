@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "Bookmark Tidy पसंद आया? Buy Me a Coffee पर इसके विकास में सहयोग करें"
+  },
+  "newBookmarkBtn": {
+    "message": "+ बुकमार्क"
+  },
+  "newBookmarkTitle": {
+    "message": "खुले फ़ोल्डर में नया बुकमार्क (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "\"$FOLDER$\" में नया बुकमार्क",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "शीर्षक"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "वैकल्पिक: खाली होने पर URL दिखेगा"
+  },
+  "invalidUrlError": {
+    "message": "मान्य पता दर्ज करें, जैसे example.com या https://example.com"
+  },
+  "hintNew": {
+    "message": "नया"
   }
 }

@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "喜欢 Bookmark Tidy？在 Buy Me a Coffee 上支持开发"
+  },
+  "newBookmarkBtn": {
+    "message": "+ 书签"
+  },
+  "newBookmarkTitle": {
+    "message": "在当前文件夹中新建书签 (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "在“$FOLDER$”中新建书签",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "网址"
+  },
+  "fieldTitle": {
+    "message": "标题"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "可选：留空则显示网址"
+  },
+  "invalidUrlError": {
+    "message": "请输入有效的地址，例如 example.com 或 https://example.com"
+  },
+  "hintNew": {
+    "message": "新建"
   }
 }

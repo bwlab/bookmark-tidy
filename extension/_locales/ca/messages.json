@@ -280,5 +280,34 @@
   },
   "supportTitle": {
     "message": "T'agrada Bookmark Tidy? Dona suport al desenvolupament a Buy Me a Coffee"
+  },
+  "newBookmarkBtn": {
+    "message": "+ Adreça d'interès"
+  },
+  "newBookmarkTitle": {
+    "message": "Nova adreça d'interès a la carpeta oberta (N)"
+  },
+  "newBookmarkPrompt": {
+    "message": "Nova adreça d'interès a «$FOLDER$»",
+    "placeholders": {
+      "folder": {
+        "content": "$1"
+      }
+    }
+  },
+  "fieldUrl": {
+    "message": "URL"
+  },
+  "fieldTitle": {
+    "message": "Títol"
+  },
+  "fieldTitlePlaceholder": {
+    "message": "Opcional: si és buit es mostra l'URL"
+  },
+  "invalidUrlError": {
+    "message": "Introdueix una adreça vàlida, p. ex. example.com o https://example.com"
+  },
+  "hintNew": {
+    "message": "nova"
   }
 }
